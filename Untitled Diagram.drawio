@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-02T21:12:51.625Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" etag="PJFol6SPEpm_-VFEwXdH" version="14.2.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-02-02T21:15:22.350Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" etag="UrN5C8OTwqzOrf39Cw9L" version="14.2.9" type="github" pages="5">
   <diagram id="ZF-j_Kfc-rWgUnqr_sys" name="Home-Page">
     <mxGraphModel dx="1186" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -431,7 +431,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="h-29UPVBTcc8Act7N06u" name="Tailor-Me">
+  <diagram id="h-29UPVBTcc8Act7N06u" name="single-pattern">
     <mxGraphModel dx="1186" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="3-rsKWC5_WAhKkG6cqj2-0" />
@@ -489,6 +489,15 @@
         </mxCell>
         <mxCell id="HG5MHXBcOhTknc7DJ071-1" value="" style="shape=actor;whiteSpace=wrap;html=1;rounded=0;labelBackgroundColor=none;sketch=0;fontFamily=Courier New;fontSize=12;fontColor=#000000;" vertex="1" parent="3-rsKWC5_WAhKkG6cqj2-1">
           <mxGeometry x="290" y="300" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wrVBNVLCyTUefA-69QEs-0" value="photo1" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;labelBackgroundColor=none;sketch=0;fontFamily=Courier New;fontSize=12;fontColor=#000000;" vertex="1" parent="3-rsKWC5_WAhKkG6cqj2-1">
+          <mxGeometry x="210" y="500" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wrVBNVLCyTUefA-69QEs-1" value="photo2" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;labelBackgroundColor=none;sketch=0;fontFamily=Courier New;fontSize=12;fontColor=#000000;" vertex="1" parent="3-rsKWC5_WAhKkG6cqj2-1">
+          <mxGeometry x="280" y="500" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wrVBNVLCyTUefA-69QEs-2" value="photo3" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;labelBackgroundColor=none;sketch=0;fontFamily=Courier New;fontSize=12;fontColor=#000000;" vertex="1" parent="3-rsKWC5_WAhKkG6cqj2-1">
+          <mxGeometry x="360" y="500" width="60" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
