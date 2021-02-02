@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-02T19:17:37.777Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" etag="PPvlLOL7lXUFGWrH9AK2" version="14.2.9" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-02-02T19:18:37.842Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" etag="sarL3EYQ9O5Mul5FN89B" version="14.2.9" type="github" pages="3">
   <diagram id="ZF-j_Kfc-rWgUnqr_sys" name="Home-Page">
     <mxGraphModel dx="1186" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -31,20 +31,11 @@
         <mxCell id="5ONEdWV0JbBe8F0KcMtm-0" value="&lt;div style=&quot;text-align: justify; font-size: 24px;&quot;&gt;Discover a New Shopping Experience&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Courier New;fontSize=24;align=center;verticalAlign=top;spacing=10;comic=1;fontStyle=3" vertex="1" parent="h0NclJYZKfTawZEcLkxr-1">
           <mxGeometry x="40" y="170" width="1040" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="5ONEdWV0JbBe8F0KcMtm-1" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="h0NclJYZKfTawZEcLkxr-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="190" y="440" as="sourcePoint" />
-            <mxPoint x="140" y="1030" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="5ONEdWV0JbBe8F0KcMtm-2" value="Sign Up" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;mainText=;buttonStyle=round;fontSize=11;fontStyle=3;whiteSpace=wrap;rounded=0;sketch=0;fontFamily=Courier New;" vertex="1" parent="h0NclJYZKfTawZEcLkxr-1">
           <mxGeometry x="532.5" y="300" width="55" height="20" as="geometry" />
         </mxCell>
         <mxCell id="5ONEdWV0JbBe8F0KcMtm-3" value="Img2" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12;align=center;comic=1;" vertex="1" parent="h0NclJYZKfTawZEcLkxr-1">
           <mxGeometry x="455" y="570" width="170" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="5ONEdWV0JbBe8F0KcMtm-5" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;strokeColor=#006658;fillColor=#21C0A5;fontFamily=Courier New;fontSize=24;fontColor=#5C5C5C;" edge="1" parent="h0NclJYZKfTawZEcLkxr-1" source="5ONEdWV0JbBe8F0KcMtm-4" target="wjpB9X4ulBl3ossLOCH--38">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5ONEdWV0JbBe8F0KcMtm-4" value="Img3" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12;align=center;comic=1;" vertex="1" parent="h0NclJYZKfTawZEcLkxr-1">
           <mxGeometry x="660" y="570" width="170" height="180" as="geometry" />
@@ -254,9 +245,6 @@
         <mxCell id="-jwKYOR1kxbknsJQBqWC-43" value="Check Out" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;mainText=;buttonStyle=round;fontSize=15;fontStyle=2;whiteSpace=wrap;rounded=0;sketch=0;fontFamily=Courier New;labelBackgroundColor=none;labelBorderColor=none;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="qmzfm-Hbsrc31AAW3Ivz-1">
           <mxGeometry x="760" y="450" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-jwKYOR1kxbknsJQBqWC-46" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#006658;fillColor=#21C0A5;fontFamily=Courier New;fontSize=15;fontColor=#000000;" edge="1" parent="qmzfm-Hbsrc31AAW3Ivz-1" source="-jwKYOR1kxbknsJQBqWC-49" target="-jwKYOR1kxbknsJQBqWC-11">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="-jwKYOR1kxbknsJQBqWC-45" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;rounded=0;labelBackgroundColor=none;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontFamily=Courier New;fontSize=15;fontColor=#000000;" vertex="1" parent="qmzfm-Hbsrc31AAW3Ivz-1">
           <mxGeometry x="90" y="320" width="40" height="80" as="geometry" />
         </mxCell>
@@ -268,12 +256,6 @@
         </mxCell>
         <mxCell id="-jwKYOR1kxbknsJQBqWC-49" value="Shopping Bag(count)&amp;nbsp;&amp;nbsp;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=18;fontFamily=Courier New;fontStyle=3" vertex="1" parent="qmzfm-Hbsrc31AAW3Ivz-1">
           <mxGeometry x="100" y="240" width="170" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="-jwKYOR1kxbknsJQBqWC-50" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#006658;fillColor=#21C0A5;fontFamily=Courier New;fontSize=15;fontColor=#000000;" edge="1" parent="qmzfm-Hbsrc31AAW3Ivz-1" source="-jwKYOR1kxbknsJQBqWC-45" target="-jwKYOR1kxbknsJQBqWC-49">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="110" y="320" as="sourcePoint" />
-            <mxPoint x="370" y="250" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="-jwKYOR1kxbknsJQBqWC-51" value="Continue Shopping" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=18;fontFamily=Courier New;fontStyle=3" vertex="1" parent="qmzfm-Hbsrc31AAW3Ivz-1">
           <mxGeometry x="465" y="240" width="170" height="20" as="geometry" />
