@@ -1,11 +1,19 @@
 'use strict';
-const { Validator } = require('sequelize');
+const { Validator, Sequelize } = require('sequelize');
 const bcrypt = require('bcryptjs');
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
     'User',
     {
+      firstName: {
+        type: Sequelize.STRING(50),
+        allowNull: false,
+      },
+      lastName: {
+        type: Sequelize.String(50),
+        allowNull: false,
+      },
       username: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -31,7 +39,15 @@ module.exports = (sequelize, DataTypes) => {
         validate: {
           len: [60, 60]
         }
-      }
+      },
+      addressId:{
+        type: Sequelize.Integer,
+        allowNull: false
+      },
+      measurementId: {
+        type: Sequelize.Integer,
+        allowNull: false
+      },
     },
     {
       defaultScope: {
