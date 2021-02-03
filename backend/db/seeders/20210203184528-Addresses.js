@@ -9,21 +9,27 @@ module.exports = {
           city: 'Peith',
           state: 'Georgia',
           country: 'United States',
-          postalCode: 6000
+          postalCode: 6000,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         },
         {
           streetAddress1: '2222 Falsity',
           city: 'False',
           state: 'Florida',
           country: 'United States',
-          postalCode: 9000
+          postalCode: 9000,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         },
         {
           streetAddress1: '1111 Fake Lane',
           city: 'Faker',
           state: 'Iowa',
           country: 'United States',
-          postalCode: 3344
+          postalCode: 3344,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         }
     ], {});
 
