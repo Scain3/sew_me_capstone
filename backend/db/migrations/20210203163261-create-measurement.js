@@ -40,6 +40,42 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false
       },
+      hip: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      thighCircumference: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      kneeCircumference: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      ankleCircumference: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      waistToAnkle: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      ankleToKnee: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      kneeToThigh: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      frontRise: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      backRise: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
