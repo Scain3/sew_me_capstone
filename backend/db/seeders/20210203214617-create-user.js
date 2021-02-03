@@ -7,19 +7,19 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     const address1 = await Address.findOne({
       where: {
-        streetAddress1: 'Unit 42'
+        state: 'Georgia'
       }
     })
 
     const address2 = await Address.findOne({
       where: {
-        streetAddress1: '2222 Falsity'
+        state: 'Florida'
       }
     })
 
     const address3 = await Address.findOne({
       where: {
-        streetAddress1: '1111 Fake Lane'
+        state: 'Iowa'
       }
     })
 
@@ -45,29 +45,35 @@ module.exports = {
       {
         firstName: 'Demo',
         lastName: 'Lition',
-        email: 'demo@user.io',
         username: 'Demo-lition',
+        email: 'demo@user.io',
         hashedPassword: bcrypt.hashSync('password'),
-        addressId: address1,
-        measurementId: measure1,
+        addressId: address1.id,
+        measurementId: measure1.id,
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         firstName: 'Fake',
         lastName: 'User1',
-        email: faker.internet.email(),
         username: 'FakeUser1',
+        email: faker.internet.email(),
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
-        addressId: address2,
-        measurementId: measure2,
+        addressId: address2.id,
+        measurementId: measure2.id,
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         firstName: 'Fake',
         lastName: 'User2',
-        email: faker.internet.email(),
         username: 'FakeUser2',
+        email: faker.internet.email(),
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
-        addressId: address3,
-        measurementId: measure3,
+        addressId: address3.id,
+        measurementId: measure3.id,
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
     ], {});
   },

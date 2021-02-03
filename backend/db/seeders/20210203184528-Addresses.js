@@ -15,6 +15,7 @@ module.exports = {
         },
         {
           streetAddress1: '2222 Falsity',
+          streetAddress2: null,
           city: 'False',
           state: 'Florida',
           country: 'United States',
@@ -24,6 +25,7 @@ module.exports = {
         },
         {
           streetAddress1: '1111 Fake Lane',
+          streetAddress2: null,
           city: 'Faker',
           state: 'Iowa',
           country: 'United States',

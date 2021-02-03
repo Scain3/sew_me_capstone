@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
       lastName: {
-        type: Sequelize.String(50),
+        type: Sequelize.STRING(50),
         allowNull: false,
       },
       username: {
@@ -41,11 +41,11 @@ module.exports = (sequelize, DataTypes) => {
         }
       },
       addressId:{
-        type: Sequelize.Integer,
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       measurementId: {
-        type: Sequelize.Integer,
+        type: Sequelize.INTEGER,
         allowNull: false
       },
     },

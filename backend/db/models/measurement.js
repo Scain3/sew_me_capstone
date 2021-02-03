@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     biceps: DataTypes.INTEGER,
     wrist: DataTypes.INTEGER,
     waist: DataTypes.INTEGER,
-    jacket_length: DataTypes.INTEGER,
+    jacketLength: DataTypes.INTEGER,
     height: DataTypes.INTEGER
   }, {});
   Measurement.associate = function(models) {
