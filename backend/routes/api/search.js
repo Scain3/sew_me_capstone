@@ -5,23 +5,38 @@ const { Op } = require('sequelize');
 const { Pattern, Fabric } = require('../../db/models');
 
 
-const searchProducts = async(term) => {
-    return await Pattern.findAll({ where: {patternCompany: { [Op.iLike]: term }}});
+const patternProducts = async(term) => {
+    return await Pattern.findAll({
+        where: {
+            [Op.or]: [{ patternCompany: { [Op.iLike]: term }}, {patternNumber: { [Op.iLike]: term }}, {patternType: { [Op.iLike]: term }}]
+
+        }
+    });
+}
+const fabricProducts = async(term) => {
+    return await Fabric.findAll({
+        where: {
+            type:
+            { [Op.iLike]: term }
+        }
+    });
 }
 
 router.get('/', asyncHandler(async(req, res) => {
-    let products;
+    let patterns;
+    let fabrics;
     let error = "";
     try{
-        console.log(searchProducts);
-        products = await searchProducts(`%${req.query.term}%`);
-        console.log(products);
+        patterns = await patternProducts(`%${req.query.term}%`);
+        fabrics = await fabricProducts(`%${req.query.term}%`);
     } catch(e){
         console.error(e);
         error = `An error occurred that reads "${e.message}". Check the console for more details.`;
     }
     res.json({
-        products
+        patterns,
+        fabrics,
+        error
     })
 }))
 
