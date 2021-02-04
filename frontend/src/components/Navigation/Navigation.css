@@ -1,3 +1,38 @@
 .profile-dropdown {
   position: absolute;
 }
+
+.signup{
+text-decoration: none;
+margin-right: 30px;
+margin-left: 30px;
+font-family: 'Big Shoulders Display', cursive;
+color: black;
+}
+
+.home{
+text-decoration: none;
+font-family: 'Big Shoulders Display', cursive;
+/* font-weight: 300; */
+font-weight: 100;
+font-size: 80px;
+color: black;
+}
+
+.link-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #C89F9C;
+ 
+
+}
+
+.auth-links{
+  position: absolute;
+  right: 0;
+}
+
+ul{
+  list-style: none;
+}

@@ -15,17 +15,17 @@ function Navigation({ isLoaded }){
     );
   } else {
     sessionLinks = (
-      <>
+      <span className="auth-links">
         <LoginFormModal />
-        <NavLink to="/signup">Sign Up</NavLink>
-      </>
+        <NavLink className="signup" to="/signup">Sign Up</NavLink>
+      </span>
     );
   }
 
   return (
-    <ul>
+    <ul className='link-container'>
       <li>
-        <NavLink exact to="/">Home</NavLink>
+        <NavLink className="home" exact to="/">Sew Me</NavLink>
         {isLoaded && sessionLinks}
       </li>
     </ul>
