@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     patternCompany: DataTypes.STRING,
     patternNumber: DataTypes.STRING,
     patternType: DataTypes.STRING,
-    image: DataTypes.TEXT,
+    images: DataTypes.TEXT,
     price: DataTypes.FLOAT
   }, {});
   Pattern.associate = function(models) {
