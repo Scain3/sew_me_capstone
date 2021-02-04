@@ -4,7 +4,6 @@ const asyncHandler = (handler) => (req, res, next) => handler(req, res, next).ca
 const { Op } = require('sequelize');
 const { Pattern, Fabric } = require('../../db/models');
 
-// const {term} = req.body;
 
 const searchProducts = async(term) => {
     return await Pattern.findAll({ where: {patternCompany: { [Op.iLike]: term }}});
