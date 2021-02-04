@@ -6,14 +6,11 @@
 text-decoration: none;
 margin-right: 30px;
 margin-left: 30px;
-font-family: 'Big Shoulders Display', cursive;
 color: black;
 }
 
 .home{
 text-decoration: none;
-font-family: 'Big Shoulders Display', cursive;
-/* font-weight: 300; */
 font-weight: 100;
 font-size: 80px;
 color: black;
@@ -24,8 +21,7 @@ color: black;
   display: flex;
   justify-content: center;
   background-color: #C89F9C;
- 
-
+  margin-top: 0;
 }
 
 .auth-links{
@@ -35,4 +31,11 @@ color: black;
 
 ul{
   list-style: none;
+}
+
+body{
+  background-color: #EEE2DF;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
