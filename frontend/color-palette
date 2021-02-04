@@ -1,2 +1,9 @@
-/* TODO Add site wide styles */
+#EEE2DF (Isabelline)
+#EED7C5 (Champagne Pink)
+#C89F9C (Tuscany)
+#C97C5D (Copper Crayola)
+
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400&display=swap');
+</style>
+
