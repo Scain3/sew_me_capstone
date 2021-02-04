@@ -1,28 +1,27 @@
 const express = require('express');
 const router = express.Router();
 const asyncHandler = (handler) => (req, res, next) => handler(req, res, next).catch(next);
-const { Pattern } = require("../../db/models");
+const { Fabric } = require("../../db/models");
 
-
-//Get all of the patterns from the patterns table
+//Get all of the fabrics from the fabrics table
 router.get('/', asyncHandler(async(req, res) => {
-    const allPatterns = await Pattern.findAll();
+    const allFabrics = await Fabric.findAll();
     res.json({
-        allPatterns
+        allFabrics
     })
 }));
 
-//Get a single pattern that matches the id
+//Get a single fabric pattern that matches the id
 router.get('/:id(\\d+)', asyncHandler(async(req, res, next) => {
-    const eachPattern = await Pattern.findOne({
+    const eachFabric = await Fabric.findOne({
         where: {
             id: req.params.id
         }
     })
-
     res.json({
-        eachPattern
+        eachFabric
     })
 }))
+
 
 module.exports = router;
