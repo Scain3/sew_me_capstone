@@ -16,8 +16,8 @@ const patternProducts = async(term) => {
 const fabricProducts = async(term) => {
     return await Fabric.findAll({
         where: {
-            type:
-            { [Op.iLike]: term }
+            [Op.or]: [{ type: { [Op.iLike]: term }}, {color: { [Op.iLike]: term }}]
+
         }
     });
 }
