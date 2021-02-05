@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import ProfileButton from './ProfileButton';
 import LoginFormModal from '../LoginFormModal';
 import './Navigation.css';
+import SearchBar from '../Search/SearchBar';
 
 function Navigation({ isLoaded }){
   const sessionUser = useSelector(state => state.session.user);
@@ -25,6 +26,7 @@ function Navigation({ isLoaded }){
   return (
     <ul className='link-container'>
       <li>
+        <SearchBar />
         <NavLink className="home" exact to="/">Sew Me</NavLink>
         {isLoaded && sessionLinks}
       </li>

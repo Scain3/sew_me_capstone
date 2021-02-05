@@ -10,7 +10,7 @@ function SingleProductPage(){
     const singleItem = useSelector(state => state.product);
     const { id } = useParams();
     const dispatch = useDispatch();
-    const singleItem = products[id];
+    // const singleItem = products[id];
 
     useEffect((id)=> {
         dispatch(fetchSingleProduct(id));
