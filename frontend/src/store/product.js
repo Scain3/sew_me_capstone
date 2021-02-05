@@ -42,7 +42,9 @@ const productReducer = (state=initialState, action) => {
             action.payload.forEach((product) => {
                 newProducts[product.id] = product
             })
-            return newProducts;
+            return {
+                ...state, byId: newProducts
+            }
         case GET_ONE_PATTERN:
             return{...state, [action.payload.id]: action.payload};
         default:

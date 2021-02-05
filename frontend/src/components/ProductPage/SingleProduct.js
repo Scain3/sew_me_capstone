@@ -4,17 +4,17 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { useParams, useHistory } from "react-router-dom";
 
-import { fetchSingleProduct } from "../../store/product";
+import { fetchSinglePattern, fetchProducts } from "../../store/product";
 
 function SingleProductPage(){
-    const singleItem = useSelector(state => state.product);
+    const products = useSelector(state => state.product);
     const { id } = useParams();
     const dispatch = useDispatch();
-    // const singleItem = products[id];
+    const singleItem = products[id];
 
-    useEffect((id)=> {
-        dispatch(fetchSingleProduct(id));
-    }, [dispatch], id)
+    useEffect(()=> {
+        dispatch(fetchProducts());
+    }, [dispatch])
 
     if(!singleItem){
         return null;
@@ -22,7 +22,7 @@ function SingleProductPage(){
 
     return(
         <div>
-            {}
+            {singleItem.title}
         </div>
     )
 
@@ -30,3 +30,5 @@ function SingleProductPage(){
 
 
 }
+
+export default SingleProductPage;

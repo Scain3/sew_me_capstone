@@ -6,6 +6,7 @@ import SignupFormPage from "./components/SignupFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import SearchPage from "./components/Search/SearchPage";
+import SingleProductPage from "./components/ProductPage/SingleProduct";
 
 function App() {
   const dispatch = useDispatch();
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/search">
             <SearchPage />
+          </Route>
+          <Route path="/patterns/:id">
+            <SingleProductPage />
           </Route>
         </Switch>
       )}
