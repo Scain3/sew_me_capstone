@@ -12,14 +12,12 @@
     display: flex;
     flex-direction: row;
     margin: 10px;
-    /* height: 250px;
-    width: 175px; */
+   
 }
 
 .sub-images{
     margin: 5px;
-    /* height: 150px;
-    width: 150px; */
+
 }
 
 .img{
