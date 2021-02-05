@@ -13,12 +13,24 @@ function SearchPage(){
 
     return(
         <div className="search-page__container">
-            <div>{patternInfo && patternInfo.map((pattern)=> (
-                <div><img src={pattern.image1} alt={pattern.patternNumber} /></div>
+            <div className="search-page__divs">{patternInfo && patternInfo.map((pattern)=> (
+                <div>
+                    <div><img className="search-page__img" src={pattern.image1} alt={pattern.patternNumber} /></div>
+                    <div className="patternCompany">{pattern.patternCompany}</div>
+                    <div className="patternNumber">{pattern.patternNumber}</div>
+                    <div className="search-price">${pattern.price}</div>
+                </div>
             ))}</div>
 
-            <div>{fabricInfo && fabricInfo.map((fabric)=> (
-                <div><img src={fabric.image} atl={fabric.type} /></div>
+            <div className="search-page__divs">{fabricInfo && fabricInfo.map((fabric)=> (
+                <div>
+                    <div><img className="search-page__img" src={fabric.image} alt={fabric.type} /></div>
+                    <div className="fabric-details">
+                        <span className="fabric-color">{fabric.color}</span>
+                        <span className="fabric-type">{fabric.type}</span>
+                    </div>
+                    <div className="search-price">${fabric.price}</div>
+                </div>
             ) )}</div>
         </div>
     )

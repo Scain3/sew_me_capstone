@@ -1,7 +1,41 @@
-.nav-search__form{
+.search-page__container{
 
 }
 
-.nav-search__input{
-    
+.search-page__divs{
+
+}
+
+.search-page__img{
+    width: 291px;
+    height: 415px;
+}
+
+.search-price{
+    font-size: 16px;
+}
+
+.fabric-details{
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.fabric-type{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.fabric-color{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.patternCompany{
+font-size: 14px;
+}
+
+.patternNumber{
+font-size: 16px;
+font-weight: bold;
 }
