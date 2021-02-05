@@ -3,7 +3,10 @@
 }
 
 .search-page__divs{
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .search-page__img{
@@ -41,7 +44,5 @@ font-weight: bold;
 }
 
 .product-container{
-    display: block;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 10px;
 }
