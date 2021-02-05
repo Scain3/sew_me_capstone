@@ -39,3 +39,9 @@ font-size: 14px;
 font-size: 16px;
 font-weight: bold;
 }
+
+.product-container{
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
