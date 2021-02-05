@@ -9,13 +9,21 @@ function SearchPage(){
     const patternInfo = useSelector(state => state.search.pattern);
     const fabricInfo = useSelector(state => state.search.fabric);
 
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
     return(
-        <div>{searchInfo && searchInfo.map((search)=> (
-            <div><img src={search} /></div>
-        ))}</div>
+        <div className="search-page__container">
+            <div>{patternInfo && patternInfo.map((pattern)=> (
+                <div><img src={pattern.image1} alt={pattern.patternNumber} /></div>
+            ))}</div>
+
+            <div>{fabricInfo && fabricInfo.map((fabric)=> (
+                <div><img src={fabric.image} atl={fabric.type} /></div>
+            ) )}</div>
+        </div>
     )
 
 
 }
+
+export default SearchPage;

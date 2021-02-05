@@ -20,9 +20,18 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      images: {
+      image1: {
         type: Sequelize.TEXT,
         allowNull: false,
+      },
+      image2: {
+        type: Sequelize.TEXT,
+      },
+      image3: {
+        type: Sequelize.TEXT,
+      },
+      image4: {
+        type: Sequelize.TEXT,
       },
       price: {
         type: Sequelize.FLOAT,
