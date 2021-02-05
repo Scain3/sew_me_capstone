@@ -4,7 +4,7 @@ const GET_ONE_PATTERN = 'GET_ONE_PRODUCT';
 
 const GET_PRODUCTS = 'GET_PRODUCTS';
 
-//GET ALL THE PRODUCTS
+//GET ALL THE PRODUCTS action creator
 const getProducts = (products) => {
     return {
         type: GET_PRODUCTS,
@@ -38,13 +38,12 @@ const initialState = {};
 const productReducer = (state=initialState, action) => {
     switch(action.type){
         case GET_PRODUCTS:
-            const newProducts = {};
+            const allProducts = {};
             action.payload.forEach((product) => {
-                newProducts[product.id] = product
+                allProducts[product.id] = product
             })
-            return {
-                ...state, byId: newProducts
-            }
+            return allProducts
+
         case GET_ONE_PATTERN:
             return{...state, [action.payload.id]: action.payload};
         default:
