@@ -24,13 +24,15 @@ function Navigation({ isLoaded }){
   }
 
   return (
-    <ul className='link-container'>
-      <li>
-        <SearchBar />
-        <NavLink className="home" exact to="/">Sew Me</NavLink>
-        {isLoaded && sessionLinks}
-      </li>
-    </ul>
+      <ul className='nav-container'>
+        <li className='link-container'>
+          <span className='search-container'>
+            <SearchBar />
+          </span>
+          <NavLink className="home" exact to="/">Sew Me</NavLink>
+          {isLoaded && sessionLinks}
+        </li>
+      </ul>
   );
 }
 

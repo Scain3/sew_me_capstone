@@ -16,18 +16,23 @@ font-size: 80px;
 color: black;
 }
 
-.link-container{
+.nav-container{
   position: relative;
-  display: flex;
-  justify-content: center;
   background-color: #C89F9C;
   margin-top: 0;
+}
+
+.link-container{
+  display: flex;
+  justify-content: center;
 }
 
 .auth-links{
   position: absolute;
   right: 0;
 }
+
+
 
 ul{
   list-style: none;
@@ -38,4 +43,10 @@ body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.search-container{
+  position: absolute;
+  left: 0;
+  margin-left: 30px;
 }

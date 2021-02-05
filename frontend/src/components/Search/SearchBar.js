@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {useDispatch} from "react-redux";
 import {fetchProductInfo} from "../../store/search";
 import {useHistory} from "react-router-dom";
+import './Search.css';
 
 function SearchBar(){
     const [search, setSearch] = useState();
