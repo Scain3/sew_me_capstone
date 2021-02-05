@@ -27,17 +27,19 @@ function SingleProductPage(){
     }
 
     return(
-        <div>
+        <div className="single-product__container">
             <div>
                 <img className="main-product__image" src={singleItem.image1} alt={singleItem.patternNumber} />
-                <div>
-                    <img src= {singleItem.image2} alt={singleItem.patternNumber} />
-                    <img src={singleItem.image3} alt={singleItem.patternNumber} />
-                    <img src={singleItem.image4} alt={singleItem.patternNumber} />
+                <div className="sub-img__container">
+                    <div className="sub-images"><img className="img"  src={singleItem.image2} alt={singleItem.patternNumber} /></div>
+                    <div className="sub-images"><img className="img" src={singleItem.image3} alt={singleItem.patternNumber} /></div>
+                    <div className="sub-images"><img className="img" src={singleItem.image4} alt={singleItem.patternNumber} /></div>
                 </div>
             </div>
-            <div>{singleItem.patternCompany}</div>
-            <div>{singleItem.patternNumber}</div>
+            <div className="single-product__description">
+                <div>{singleItem.patternCompany}</div>
+                <div>{singleItem.patternNumber}</div>
+            </div>
         </div>
     )
 

@@ -1,4 +1,28 @@
+.single-product__container{
+    display: flex;
+    justify-content: center;
+}
+
 .main-product__image{
     height: 500px;
     width: 500px;
+}
+
+.sub-img__container{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    /* height: 250px;
+    width: 175px; */
+}
+
+.sub-images{
+    margin: 5px;
+    /* height: 150px;
+    width: 150px; */
+}
+
+.img{
+    height: 175px;
+    width: 150px;
 }
