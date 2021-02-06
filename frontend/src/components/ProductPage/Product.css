@@ -30,6 +30,7 @@
     position: absolute;
     right: 0;
     margin-right: 200px;
+    text-align: right;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -53,5 +54,5 @@
 }
 
 .fabric-color{
-    
+
 }
