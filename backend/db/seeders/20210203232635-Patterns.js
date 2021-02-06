@@ -19,7 +19,10 @@ module.exports = {
         patternCompany: 'Simplicity',
         patternNumber: '8462',
         patternType: 'skirt',
-        image1: 'https://images-na.ssl-images-amazon.com/images/I/816Mic8nTpL._AC_SX679_.jpg',
+        image1: 'https://i.pinimg.com/564x/d5/f3/cc/d5f3ccd54c132c6a3f7112c68547d5b4.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/816Mic8nTpL._AC_SX679_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/81918HRpHwL._AC_SX679_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/91AAVx49cvL._AC_SX679_.jpg',
         price: 13.95,
         createdAt: new Date(),
         updatedAt: new Date()
