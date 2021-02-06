@@ -9,7 +9,7 @@ const rootReducer = combineReducers({
   session,
   patterns: patternReducer,
   search: searchReducer,
-  fabric: fabricReducer
+  fabrics: fabricReducer
 });
 
 let enhancer;

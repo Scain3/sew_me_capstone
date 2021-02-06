@@ -35,7 +35,7 @@
     justify-content: center; */
 }
 
-.pattern-number{
+.product-header{
     font-size: 50px;
 }
 
@@ -43,7 +43,15 @@
     font-size: 25px;
 }
 
-.pattern-price{
+.price{
     font-size: 20px;
 
+}
+
+.fabric-type{
+
+}
+
+.fabric-color{
+    
 }

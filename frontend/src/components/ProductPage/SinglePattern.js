@@ -8,9 +8,8 @@ import { fetchPatterns } from "../../store/pattern";
 
 import './Product.css';
 
-function SingleProductPage(){
+function SinglePatternPage(){
     const patterns = useSelector(state => state.patterns);
-    const [singleItem, setSingleItem] = useState(null);
     const { id } = useParams();
     const dispatch = useDispatch();
 
@@ -18,9 +17,7 @@ function SingleProductPage(){
         dispatch(fetchPatterns());
     }, [dispatch])
 
-    useEffect(()=>{
-        setSingleItem(patterns[id])
-    }, [patterns, id])
+    const singleItem = patterns[id];
 
     if(!singleItem){
         return null;
@@ -37,9 +34,9 @@ function SingleProductPage(){
                 </div>
             </div>
             <div className="single-product__description">
-                <div className="pattern-number">{singleItem.patternNumber}</div>
+                <div className="product-header">{singleItem.patternNumber}</div>
                 <div className="pattern-company">{singleItem.patternCompany}</div>
-                <div className="pattern-price">${singleItem.price}</div>
+                <div className="price">${singleItem.price}</div>
                 <div><button>Add To Cart</button></div>
                 <div><button>Tailor This!</button></div>
             </div>
@@ -51,4 +48,4 @@ function SingleProductPage(){
 
 }
 
-export default SingleProductPage;
+export default SinglePatternPage;

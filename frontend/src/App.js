@@ -6,7 +6,8 @@ import SignupFormPage from "./components/SignupFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import SearchPage from "./components/Search/SearchPage";
-import SingleProductPage from "./components/ProductPage/SingleProduct";
+import SinglePatternPage from "./components/ProductPage/SinglePattern";
+import SingleFabricPage from "./components/ProductPage/SingleFabric";
 
 function App() {
   const dispatch = useDispatch();
@@ -30,7 +31,10 @@ function App() {
             <SearchPage />
           </Route>
           <Route path="/patterns/:id">
-            <SingleProductPage />
+            <SinglePatternPage />
+          </Route>
+          <Route path="/fabrics/:id">
+            <SingleFabricPage />
           </Route>
         </Switch>
       )}
