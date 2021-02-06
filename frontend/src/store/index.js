@@ -3,13 +3,13 @@ import thunk from 'redux-thunk';
 import session from './session';
 import patternReducer from './pattern';
 import searchReducer from './search';
-//import fabricReducer from './fabric';
+import fabricReducer from './fabric';
 
 const rootReducer = combineReducers({
   session,
   patterns: patternReducer,
   search: searchReducer,
-  //fabric: fabricReducer
+  fabric: fabricReducer
 });
 
 let enhancer;
