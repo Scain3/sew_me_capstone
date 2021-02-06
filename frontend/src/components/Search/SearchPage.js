@@ -14,7 +14,7 @@ function SearchPage(){
     return(
         <div className="search-page__container">
             <div className="search-page__divs">{patternInfo && patternInfo.map((pattern, index)=> (
-                <div className="product-container" key={index}>
+                <div className="product-container" key={index} onClick={()=>history.push(`patterns/${pattern.id}`)}>
                     <div><img className="search-page__img" src={pattern.image1} alt={pattern.patternNumber} /></div>
                     <div className="patternCompany">{pattern.patternCompany}</div>
                     <div className="patternNumber">{pattern.patternNumber}</div>

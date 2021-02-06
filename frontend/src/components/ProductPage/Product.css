@@ -30,4 +30,20 @@
     position: absolute;
     right: 0;
     margin-right: 200px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.pattern-number{
+    font-size: 50px;
+}
+
+.pattern-company{
+    font-size: 25px;
+}
+
+.pattern-price{
+    font-size: 20px;
+
 }

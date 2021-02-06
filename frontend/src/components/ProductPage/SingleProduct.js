@@ -37,8 +37,11 @@ function SingleProductPage(){
                 </div>
             </div>
             <div className="single-product__description">
-                <div>{singleItem.patternCompany}</div>
-                <div>{singleItem.patternNumber}</div>
+                <div className="pattern-number">{singleItem.patternNumber}</div>
+                <div className="pattern-company">{singleItem.patternCompany}</div>
+                <div className="pattern-price">${singleItem.price}</div>
+                <div><button>Add To Cart</button></div>
+                <div><button>Tailor This!</button></div>
             </div>
         </div>
     )
