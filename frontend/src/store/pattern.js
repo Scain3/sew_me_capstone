@@ -2,12 +2,12 @@ import { fetch } from './csrf';
 
 const GET_ONE_PATTERN = 'GET_ONE_PRODUCT';
 
-const GET_PRODUCTS = 'GET_PRODUCTS';
+const GET_PATTERNS = 'GET_PATTERNS';
 
 //GET ALL THE PRODUCTS action creator
 const getProducts = (products) => {
     return {
-        type: GET_PRODUCTS,
+        type: GET_PATTERNS,
         payload: products
     }
 }
@@ -21,7 +21,7 @@ const getOnePattern = (product) => {
 }
 
 //THUNK ACTION FOR GETTING ALL PRODUCTS;
-export const fetchProducts = () => async(dispatch) => {
+export const fetchPatterns = () => async(dispatch) => {
     const response = await fetch('/api/patterns');
     dispatch(getProducts(response.data.allPatterns))
 }
@@ -35,14 +35,14 @@ export const fetchSinglePattern = (id) => async(dispatch) => {
 
 const initialState = {};
 
-const productReducer = (state=initialState, action) => {
+const patternReducer = (state=initialState, action) => {
     switch(action.type){
-        case GET_PRODUCTS:
-            const allProducts = {};
-            action.payload.forEach((product) => {
-                allProducts[product.id] = product
+        case GET_PATTERNS:
+            const allPatterns = {};
+            action.payload.forEach((pattern) => {
+                allPatterns[pattern.id] = pattern
             })
-            return allProducts
+            return allPatterns
 
         case GET_ONE_PATTERN:
             return{...state, [action.payload.id]: action.payload};
@@ -51,4 +51,4 @@ const productReducer = (state=initialState, action) => {
     }
 }
 
-export default productReducer;
+export default patternReducer;

@@ -4,23 +4,23 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { useParams, useHistory } from "react-router-dom";
 
-import { fetchProducts } from "../../store/product";
+import { fetchPatterns } from "../../store/pattern";
 
 import './Product.css';
 
 function SingleProductPage(){
-    const products = useSelector(state => state.products);
+    const patterns = useSelector(state => state.patterns);
     const [singleItem, setSingleItem] = useState(null);
     const { id } = useParams();
     const dispatch = useDispatch();
 
     useEffect(()=> {
-        dispatch(fetchProducts());
+        dispatch(fetchPatterns());
     }, [dispatch])
 
     useEffect(()=>{
-        setSingleItem(products[id])
-    }, [products, id])
+        setSingleItem(patterns[id])
+    }, [patterns, id])
 
     if(!singleItem){
         return null;

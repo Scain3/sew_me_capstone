@@ -1,13 +1,15 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import session from './session';
-import productReducer from './product';
+import patternReducer from './pattern';
 import searchReducer from './search';
+//import fabricReducer from './fabric';
 
 const rootReducer = combineReducers({
   session,
-  products: productReducer,
-  search: searchReducer
+  patterns: patternReducer,
+  search: searchReducer,
+  //fabric: fabricReducer
 });
 
 let enhancer;
