@@ -1,0 +1,21 @@
+.top-main__div{
+    background-color: #C97C5D;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 250px;
+    height: 300px;
+}
+
+.top-main__header{
+    font-size: 100px;
+}
+
+.signup-container{
+    margin-top: 75px;
+}
+
+.signup{
+    font-size: 25px;
+    background-color: #C89F9C;
+    border-radius: 35px;
+}

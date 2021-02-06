@@ -8,6 +8,7 @@ import Navigation from "./components/Navigation";
 import SearchPage from "./components/Search/SearchPage";
 import SinglePatternPage from "./components/ProductPage/SinglePattern";
 import SingleFabricPage from "./components/ProductPage/SingleFabric";
+import HomePage from "./components/HomePage/HomePage";
 
 function App() {
   const dispatch = useDispatch();
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/fabrics/:id">
             <SingleFabricPage />
+          </Route>
+          <Route path="/" exact={true}>
+            <HomePage />
           </Route>
         </Switch>
       )}
