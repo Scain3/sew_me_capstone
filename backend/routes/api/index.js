@@ -4,6 +4,7 @@ const usersRouter = require('./users.js');
 const patternRouter = require('./patterns.js');
 const fabricRouter = require('./fabrics.js');
 const searchRouter = require('./search.js');
+const tailorRouter = require('./tailor.js');
 
 // GET /api/set-token-cookie
 const asyncHandler = require('express-async-handler');
@@ -51,5 +52,7 @@ router.use('/patterns', patternRouter);
 router.use('/fabrics', fabricRouter);
 
 router.use('/search', searchRouter);
+
+router.use('/tailor-me', tailorRouter);
 
 module.exports = router;
