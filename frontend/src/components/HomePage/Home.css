@@ -1,13 +1,15 @@
 .top-main__div{
-    background-color: #C97C5D;
+    color: black;
     text-align: center;
     margin-top: 0px;
     padding-top: 150px;
     height: 300px;
+    background-image: url("https://images.pexels.com/photos/3965543/pexels-photo-3965543.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 }
 
 .top-main__header{
     font-size: 100px;
+    background-color: #EEE2DF;
 }
 
 .signup-container{
