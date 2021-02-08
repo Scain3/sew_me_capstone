@@ -11,7 +11,7 @@ router.get('/', asyncHandler(async(req, res) => {
     })
 }));
 
-//Get a single fabric pattern that matches the id
+//Get a single fabric pattern that matches the id and something
 router.get('/:id(\\d+)', asyncHandler(async(req, res, next) => {
     const eachFabric = await Fabric.findOne({
         where: {
