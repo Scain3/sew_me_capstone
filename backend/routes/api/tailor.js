@@ -27,3 +27,5 @@ router.post('/:id(\\d+)', asyncHandler(async(req, res) => {
         tailorItem
     })
 }))
+
+module.exports = router;

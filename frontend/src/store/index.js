@@ -4,12 +4,14 @@ import session from './session';
 import patternReducer from './pattern';
 import searchReducer from './search';
 import fabricReducer from './fabric';
+import tailorReducer from './tailor';
 
 const rootReducer = combineReducers({
   session,
   patterns: patternReducer,
   search: searchReducer,
-  fabrics: fabricReducer
+  fabrics: fabricReducer,
+  tailor: tailorReducer,
 });
 
 let enhancer;
