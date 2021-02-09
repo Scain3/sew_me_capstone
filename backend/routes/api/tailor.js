@@ -17,6 +17,8 @@ router.post('/:id(\\d+)', asyncHandler(async(req, res) => {
         buyerId: user.id,
         patternId: pattern.id,
         title: pattern.title,
+        patternImage: pattern.image1,
+        price: pattern.price
         //fabricId: fabrics.id,
         //fabricId: fabrics[0].id
     })
