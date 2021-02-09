@@ -16,7 +16,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: { model: 'Fabrics' }
       },
-      type:{
+      type: {
         type: Sequelize.STRING,
       },
       patternImage: {
@@ -26,7 +26,7 @@ module.exports = {
         type: Sequelize.TEXT,
       },
       price: {
-        tyoe: Sequelize.FLOAT,
+        type: Sequelize.FLOAT,
       },
       createdAt: {
         allowNull: false,
