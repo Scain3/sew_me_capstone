@@ -9,6 +9,7 @@ import SearchPage from "./components/Search/SearchPage";
 import SinglePatternPage from "./components/ProductPage/SinglePattern";
 import SingleFabricPage from "./components/ProductPage/SingleFabric";
 import HomePage from "./components/HomePage/HomePage";
+import Tailor from "./components/TailorPage/tailor";
 
 function App() {
   const dispatch = useDispatch();
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route path="/" exact={true}>
             <HomePage />
+          </Route>
+          <Route path="/tailor">
+            <Tailor />
           </Route>
         </Switch>
       )}
