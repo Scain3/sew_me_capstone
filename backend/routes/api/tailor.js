@@ -22,7 +22,7 @@ router.post('/:id(\\d+)', asyncHandler(async(req, res) => {
         //fabricId: fabrics.id,
         //fabricId: fabrics[0].id
     })
-    console.log(tailorItem);
+    
     res.json({
         tailorItem
     })
