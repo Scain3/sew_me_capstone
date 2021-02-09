@@ -3,10 +3,14 @@ import {tailorProductInfo} from "../../store/tailor";
 import './Tailor.css';
 
 function Tailor(){
-    const tailor = useSelector(state => state.tailor);
+    const tailor = useSelector(state => Object.values(state.tailor));
 
     return(
-        <h1>Hello World!</h1>
+        <div>
+            <div>{tailor[0].type}</div>
+            <div>{tailor[0].price}</div>
+            <div><img src={tailor[0].patternImage} alt={tailor[0].type} /></div>
+        </div>
     )
 }
 

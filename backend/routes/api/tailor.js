@@ -16,7 +16,7 @@ router.post('/:id(\\d+)', asyncHandler(async(req, res) => {
     const tailorItem = await TailorMade.create({
         buyerId: user.id,
         patternId: pattern.id,
-        title: pattern.title,
+        type: pattern.patternType,
         patternImage: pattern.image1,
         price: pattern.price
         //fabricId: fabrics.id,
