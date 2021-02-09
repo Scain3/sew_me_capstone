@@ -22,10 +22,20 @@ router.post('/:id(\\d+)', asyncHandler(async(req, res) => {
         //fabricId: fabrics.id,
         //fabricId: fabrics[0].id
     })
-    
+
     res.json({
         tailorItem
     })
 }))
+
+router.delete('/:id(\\d+)', asyncHandler(async(req, res) => {
+    const tailor = await TailorMade.findByPk(req.params.id);
+    await tailor.destroy();
+    res.json({
+        message: 'Success!'
+    })
+}))
+
+
 
 module.exports = router;
