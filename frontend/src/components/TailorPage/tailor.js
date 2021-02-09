@@ -6,10 +6,13 @@ function Tailor(){
     const tailor = useSelector(state => Object.values(state.tailor));
 
     return(
-        <div>
-            <div>{tailor[0].type}</div>
-            <div>{tailor[0].price}</div>
-            <div><img src={tailor[0].patternImage} alt={tailor[0].type} /></div>
+        <div>{tailor.map((tailorItem) => (
+            <div>
+                <div>{tailorItem.type}</div>
+                <div>{tailorItem.price}</div>
+                <div><img src={tailorItem.patternImage} alt={tailorItem.type} /></div>
+            </div>
+        ))}
         </div>
     )
 }
