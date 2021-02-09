@@ -1,3 +1,5 @@
+import {fetch} from './csrf.js';
+
 const TAILOR_PRODUCT = 'TAILOR_PRODUCTS';
 
 const tailorProducts = (tailors) => ({
@@ -6,17 +8,20 @@ const tailorProducts = (tailors) => ({
 })
 
 export const tailorProductInfo = (id, userId) => async(dispatch) => {
-    const res = await fetch(`api/tailor/${id}`, {
+    const res = await fetch(`/api/tailor/${id}`, {
         method: 'POST',
         body: JSON.stringify({
             userId,
+
 
         })
     })
     dispatch(tailorProducts(res.data.tailorItem))
 }
+const initialState = {
 
-const tailorReducer = (state={}, action) => {
+}
+const tailorReducer = (state=initialState, action) => {
     switch(action.type){
         case TAILOR_PRODUCT:
             return {...state, [action.payload.id]: action.payload};

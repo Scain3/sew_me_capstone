@@ -6,16 +6,29 @@ import { useParams, useHistory } from "react-router-dom";
 
 import { fetchPatterns } from "../../store/pattern";
 
+import {tailorProductInfo} from "../../store/tailor";
+
 import './Product.css';
 
 function SinglePatternPage(){
     const patterns = useSelector(state => state.patterns);
+    const user = useSelector(state => state.session.user);
     const { id } = useParams();
     const dispatch = useDispatch();
+    const history = useHistory();
 
     useEffect(()=> {
         dispatch(fetchPatterns());
     }, [dispatch])
+
+    const handleClick = () => {
+        if(!user){
+            return history.push('/login');
+        }
+        const patternId = patterns[id].id;
+        dispatch(tailorProductInfo(patternId, user.id))
+        history.push('/tailor')
+    }
 
     const singleItem = patterns[id];
 
@@ -38,7 +51,7 @@ function SinglePatternPage(){
                 <div className="pattern-company">{singleItem.patternCompany}</div>
                 <div className="price">${singleItem.price}</div>
                 <div><button>Add To Cart</button></div>
-                <div><button>Tailor This!</button></div>
+                <div><button onClick={handleClick}>Tailor This!</button></div>
             </div>
         </div>
     )

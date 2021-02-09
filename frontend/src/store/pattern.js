@@ -29,7 +29,7 @@ export const fetchPatterns = () => async(dispatch) => {
 
 //THUNK ACTION FOR GETTING ONE PRODUCT
 export const fetchSinglePattern = (id) => async(dispatch) => {
-    const response = await fetch(`api/patterns/${id}`);
+    const response = await fetch(`/api/patterns/${id}`);
     dispatch(getOnePattern(response.data.eachPattern));
 }
 

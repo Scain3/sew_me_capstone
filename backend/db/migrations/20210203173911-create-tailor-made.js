@@ -16,6 +16,18 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: { model: 'Fabrics' }
       },
+      type:{
+        type: Sequelize.STRING,
+      },
+      patternImage: {
+        type: Sequelize.TEXT,
+      },
+      fabricImage: {
+        type: Sequelize.TEXT,
+      },
+      price: {
+
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

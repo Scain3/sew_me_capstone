@@ -1,5 +1,5 @@
 import { useSelector, useDispatch} from "react-redux";
-import {tailorProducts} from "../../store/tailor";
+import {tailorProductInfo} from "../../store/tailor";
 import './Tailor.css';
 
 function Tailor(){
