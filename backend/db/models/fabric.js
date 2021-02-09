@@ -8,6 +8,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Fabric.associate = function(models) {
     // associations can be defined here
+    Fabric.hasMany(models.TailorMade, {foreignKey: 'fabricId'});
+    Fabric.hasMany(models.CartItem, {foreignKey: 'fabricId'})
   };
   return Fabric;
 };

@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Measurement.associate = function(models) {
     // associations can be defined here
+    Measurement.hasMany(models.User, {foreignKey: 'measurementId'});
   };
   return Measurement;
 };

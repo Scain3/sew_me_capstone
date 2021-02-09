@@ -12,6 +12,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Pattern.associate = function(models) {
     // associations can be defined here
+    Pattern.hasMany(models.CartItem, {foreignKey: 'patternId'});
+    Pattern.hasMany(models.TailorMade, {foreignKey: 'patternId'});
   };
   return Pattern;
 };
