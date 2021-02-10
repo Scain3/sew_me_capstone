@@ -16,7 +16,13 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: { model: 'Fabrics' }
       },
-      type: {
+      clothing: {
+        type: Sequelize.STRING,
+      },
+      fabricType:{
+        type: Sequelize.STRING,
+      },
+      fabricColor: {
         type: Sequelize.STRING,
       },
       patternImage: {
@@ -24,6 +30,9 @@ module.exports = {
       },
       fabricImage: {
         type: Sequelize.TEXT,
+      },
+      fabricQuantity: {
+        type: Sequelize.STRING,
       },
       price: {
         type: Sequelize.FLOAT,

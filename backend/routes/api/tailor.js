@@ -10,17 +10,14 @@ router.post('/:id(\\d+)', asyncHandler(async(req, res) => {
 
     console.log(pattern);
 
-    //const fabrics = await Fabric.findByPk(req.body.fabricId);
 
 
     const tailorItem = await TailorMade.create({
         buyerId: user.id,
         patternId: pattern.id,
-        type: pattern.patternType,
+        clothing: pattern.patternType,
         patternImage: pattern.image1,
         price: pattern.price
-        //fabricId: fabrics.id,
-        //fabricId: fabrics[0].id
     })
 
     res.json({
@@ -33,6 +30,14 @@ router.delete('/:id(\\d+)', asyncHandler(async(req, res) => {
     await tailor.destroy();
     res.json({
         message: 'Success!'
+    })
+}))
+
+router.put('/:id(\\d+)', asyncHandler(async(req, res) => {
+    const fabric = Fabric.findByPk(req.body.fabricId);
+    const tailor = await TailorMade.create({
+        price: fabric.price,
+        fabricImage: fabric.image
     })
 }))
 

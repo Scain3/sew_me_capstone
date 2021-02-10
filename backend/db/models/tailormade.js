@@ -3,9 +3,12 @@ module.exports = (sequelize, DataTypes) => {
   const TailorMade = sequelize.define('TailorMade', {
     patternId: DataTypes.INTEGER,
     fabricId: DataTypes.INTEGER,
-    type: DataTypes.STRING,
+    clothing: DataTypes.STRING,
+    fabricType: DataTypes.STRING,
+    fabricColor: DataTypes.STRING,
     patternImage: DataTypes.TEXT,
     fabricImage: DataTypes.TEXT,
+    fabricQuantity: DataTypes.STRING,
     price: DataTypes.FLOAT
   }, {});
   TailorMade.associate = function(models) {
