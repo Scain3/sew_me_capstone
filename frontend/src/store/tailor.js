@@ -44,15 +44,16 @@ export const removeTailoredProduct = (id) => async(dispatch) => {
     dispatch(removeProduct(id))
 }
 
-export const updateTailoredProduct = (id, userId, fabricId) => async(dispatch) => {
-    await fetch(`/api/tailor/${id}`, {
+export const updateTailoredProduct = (fabricId, userId, tailorId) => async(dispatch) => {
+
+    const res = await fetch(`/api/tailor/${tailorId}`, {
         method: 'PUT',
         body: JSON.stringify({
             userId,
-            fabricId
+            fabricId,
         })
     });
-    dispatch(updateProduct(id));
+    dispatch(updateProduct(res.data));
 }
 const initialState = {
 
@@ -60,13 +61,11 @@ const initialState = {
 const tailorReducer = (state=initialState, action) => {
     switch(action.type){
         case TAILOR_PRODUCT:
-            return {...state, [action.payload.id]: action.payload};
+            return action.payload;
         case REMOVE_PRODUCT:
-            const newState = {...state}
-            delete newState[action.payload]
-            return newState;
+            return {};
         case UPDATE_PRODUCT:
-            return {...state, [action.payload.id]: action.payload};
+            return action.payload;
         default:
             return state;
     }

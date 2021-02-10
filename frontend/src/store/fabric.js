@@ -12,6 +12,7 @@ const getFabrics = (fabrics) => {
 
 //THUNK ACTION FOR GETTING ALL OF THE FABRICS
 export const fetchFabrics = () => async(dispatch) => {
+    
     const response = await fetch(`/api/fabrics`);
     dispatch(getFabrics(response.data.allFabrics));
 }

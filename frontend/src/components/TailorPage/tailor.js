@@ -3,21 +3,20 @@ import {removeTailoredProduct} from "../../store/tailor";
 import './Tailor.css';
 
 function Tailor(){
-    const tailorItem = useSelector(state => Object.values(state.tailor));
+    const tailorItem = useSelector(state => state.tailor);
     const dispatch = useDispatch();
     console.log(tailorItem);
 
 
     return(
     <div>
-        <div>{tailorItem.map((single)=>(
-            <div>
-                <div>{single.type}</div>
-                <img src={single.patternImage} alt={single.type} />
-                <div>{single.price}</div>
-                <div><button onClick={()=>{dispatch(removeTailoredProduct(single.id))}}>Remove</button></div>
-            </div>
-        ))}</div>
+        <div>
+            <div>{tailorItem.type}</div>
+            <img src={tailorItem.patternImage} alt={tailorItem.type} />
+            <div>{tailorItem.price}</div>
+            <div><button onClick={()=>{dispatch(removeTailoredProduct(tailorItem.id))}}>Remove</button></div>
+        </div>
+
     </div>
     )
 }
