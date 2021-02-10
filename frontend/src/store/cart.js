@@ -9,11 +9,11 @@ const addToCart = (item) => {
     }
 }
 
-export const addItemToCart = (userId, fabricId, cartId, tailorId) => async(dispatch) => {
+export const addItemToCart = (patternId, fabricId, cartId, tailorId) => async(dispatch) => {
     const res = await fetch(`/api/cart/`, {
         method: 'POST',
         body: JSON.stringify({
-            userId,
+            patternId,
             fabricId,
             cartId,
             tailorId

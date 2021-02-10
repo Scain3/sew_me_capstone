@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { useParams, useHistory } from "react-router-dom";
+import { addItemToCart } from "../../store/cart";
 
 import { fetchPatterns } from "../../store/pattern";
 
@@ -30,6 +31,11 @@ function SinglePatternPage(){
         history.push('/tailor')
     }
 
+    const moveToCart = () => {
+        const patternId = patterns[id].id;
+        dispatch(addItemToCart(patternId))
+    }
+
     const singleItem = patterns[id];
 
     if(!singleItem){
@@ -50,7 +56,7 @@ function SinglePatternPage(){
                 <div className="product-header">{singleItem.patternNumber}</div>
                 <div className="pattern-company">{singleItem.patternCompany}</div>
                 <div className="price">${singleItem.price}</div>
-                <div><button>Add To Cart</button></div>
+                <div><button onClick={moveToCart}>Add To Cart</button></div>
                 <div><button onClick={handleClick}>Tailor This!</button></div>
             </div>
         </div>
