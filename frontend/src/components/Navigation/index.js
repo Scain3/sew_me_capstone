@@ -6,6 +6,7 @@ import LoginFormModal from '../LoginFormModal';
 import SignupFormModal from '../SignupFormModal';
 import './Navigation.css';
 import SearchBar from '../Search/SearchBar';
+import ShoppingCartIcon from '../ShoppingCart/ShoppingIcon';
 
 function Navigation({ isLoaded }){
   const sessionUser = useSelector(state => state.session.user);
@@ -13,11 +14,15 @@ function Navigation({ isLoaded }){
   let sessionLinks;
   if (sessionUser) {
     sessionLinks = (
-      <ProfileButton user={sessionUser} />
+      <div>
+        <ShoppingCartIcon />
+        <ProfileButton user={sessionUser} />
+      </div>
     );
   } else {
     sessionLinks = (
       <span className="auth-links">
+        <ShoppingCartIcon />
         <LoginFormModal />
         <NavLink className="signup" to="/signup">Sign Up</NavLink>
       </span>
