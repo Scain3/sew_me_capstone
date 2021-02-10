@@ -1,8 +1,10 @@
 import {fetch} from './csrf.js';
 
-const TAILOR_PRODUCT = 'TAILOR_PRODUCTS';
+const TAILOR_PRODUCT = '/TAILOR_PRODUCTS';
 
 const REMOVE_PRODUCT = '/REMOVE_PRODUCT';
+
+const UPDATE_PRODUCT = '/UPDATE_PRODUCT';
 
 const tailorProducts = (tailors) => ({
     type: TAILOR_PRODUCT,
@@ -12,6 +14,13 @@ const tailorProducts = (tailors) => ({
 const removeProduct = (id) => {
     return{
         type: REMOVE_PRODUCT,
+        payload: id
+    }
+}
+
+const updateProduct = (id) => {
+    return{
+        type: UPDATE_PRODUCT,
         payload: id
     }
 }
@@ -34,6 +43,17 @@ export const removeTailoredProduct = (id) => async(dispatch) => {
     });
     dispatch(removeProduct(id))
 }
+
+export const updateTailoredProduct = (id, userId, fabricId) => async(dispatch) => {
+    await fetch(`/api/tailor/${id}`, {
+        method: 'PUT',
+        body: JSON.stringify({
+            userId,
+            fabricId
+        })
+    });
+    dispatch(updateProduct(id));
+}
 const initialState = {
 
 }
@@ -45,6 +65,8 @@ const tailorReducer = (state=initialState, action) => {
             const newState = {...state}
             delete newState[action.payload]
             return newState;
+        case UPDATE_PRODUCT:
+            return {...state, [action.payload.id]: action.payload};
         default:
             return state;
     }

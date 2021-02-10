@@ -36,8 +36,13 @@ router.delete('/:id(\\d+)', asyncHandler(async(req, res) => {
 router.put('/:id(\\d+)', asyncHandler(async(req, res) => {
     const fabric = Fabric.findByPk(req.body.fabricId);
     const tailor = await TailorMade.create({
+        fabricId: fabric.id,
         price: fabric.price,
+        fabricColor: fabric.color,
         fabricImage: fabric.image
+    })
+    res.json({
+        tailor
     })
 }))
 
