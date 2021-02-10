@@ -16,8 +16,8 @@ router.post('/', asyncHandler(async(req, res) => {
         tailor: tailor.id
     })
 
-    res.json({
+    res.json(
         cartItem
-    })
+    )
 
 }))

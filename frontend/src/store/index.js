@@ -5,6 +5,7 @@ import patternReducer from './pattern';
 import searchReducer from './search';
 import fabricReducer from './fabric';
 import tailorReducer from './tailor';
+import cartReducer from './cart';
 
 const rootReducer = combineReducers({
   session,
@@ -12,6 +13,8 @@ const rootReducer = combineReducers({
   search: searchReducer,
   fabrics: fabricReducer,
   tailor: tailorReducer,
+  cart: cartReducer,
+
 });
 
 let enhancer;
