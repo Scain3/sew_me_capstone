@@ -39,6 +39,7 @@ router.put('/:id(\\d+)', asyncHandler(async(req, res) => {
 
     await tailorMade.update({
         fabricId: fabric.id,
+        fabricType: fabric.type,
         price: fabric.price,
         fabricColor: fabric.color,
         fabricImage: fabric.image

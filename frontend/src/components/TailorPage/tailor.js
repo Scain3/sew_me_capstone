@@ -9,12 +9,17 @@ function Tailor(){
 
 
     return(
-    <div>
-        <div>
+    <div className="tailor-container">
+        <div className="tailor-pattern">
             <div>{tailorItem.type}</div>
             <img src={tailorItem.patternImage} alt={tailorItem.type} />
             <div>{tailorItem.price}</div>
             <div><button onClick={()=>{dispatch(removeTailoredProduct(tailorItem.id))}}>Remove</button></div>
+        </div>
+
+        <div className="tailor-fabric">
+            <div>{tailorItem.fabricColor}</div>
+            <img src={tailorItem.fabricImage} alt={tailorItem.fabricType} />
         </div>
 
     </div>
