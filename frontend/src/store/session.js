@@ -3,9 +3,9 @@ import { fetch } from './csrf.js';
 const SET_USER = 'session/setUser';
 const REMOVE_USER = 'session/removeUser';
 
-const setUser = (user) => ({
+const setUser = (user, cartId) => ({
   type: SET_USER,
-  payload: user
+  payload: {user, cartId}
 });
 
 const removeUser = () => ({
@@ -17,13 +17,13 @@ export const login = ({ credential, password }) => async (dispatch) => {
     method: 'POST',
     body: JSON.stringify({ credential, password })
   });
-  dispatch(setUser(res.data.user));
+  dispatch(setUser(res.data.user, res.data.cartId));
   return res;
 };
 
 export const restoreUser = () => async (dispatch) => {
   const res = await fetch('/api/session');
-  dispatch(setUser(res.data.user));
+  dispatch(setUser(res.data.user, res.data.cartId));
   return res;
 };
 
@@ -38,7 +38,7 @@ export const signup = (user) => async (dispatch) => {
     })
   });
 
-  dispatch(setUser(response.data.user));
+  dispatch(setUser(response.data.user, response.data.cartId));
   return response;
 };
 
@@ -56,7 +56,7 @@ function reducer(state = initialState, action) {
   let newState;
   switch (action.type) {
     case SET_USER:
-      newState = Object.assign({}, state, { user: action.payload });
+      newState = Object.assign({}, state, { user: action.payload.user, cartId: action.payload.cartId });
       return newState;
     case REMOVE_USER:
       newState = Object.assign({}, state, { user: null });

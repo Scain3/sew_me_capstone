@@ -9,15 +9,14 @@ const addToCart = (item) => {
     }
 }
 
-export const addItemToCart = (patternId, fabricId, cartId, tailorId) => async(dispatch) => {
+//body must include the cartId and must be an object
+//ex. {cartId: 1, tailorId: 3}
+export const addItemToCart = (body) => async(dispatch) => {
     const res = await fetch(`/api/cart/`, {
         method: 'POST',
-        body: JSON.stringify({
-            patternId,
-            fabricId,
-            cartId,
-            tailorId
-        })
+        body: JSON.stringify(
+            body
+        )
     })
     dispatch(addToCart(res.data))
 }

@@ -10,12 +10,12 @@ module.exports = {
       },
       patternId: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: { model: "Patterns" }
       },
       tailorId: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: { model: "TailorMades" }
       },
       cartId: {
@@ -25,16 +25,16 @@ module.exports = {
       },
       fabricId: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: { model: "Fabrics" }
       },
       pattern_quantity: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
       },
       fabric_quantity: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
       },
       createdAt: {
         allowNull: false,

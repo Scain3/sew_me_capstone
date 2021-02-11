@@ -2,9 +2,10 @@ const express = require('express');
 const { check } = require('express-validator');
 const asyncHandler = require('express-async-handler');
 
+
 const { handleValidationErrors } = require('../../utils/validation');
 const { setTokenCookie, requireAuth } = require('../../utils/auth');
-const { User } = require('../../db/models');
+const { User, Cart } = require('../../db/models');
 
 const router = express.Router();
 
@@ -33,10 +34,16 @@ router.post(
     const { email, password, username } = req.body;
     const user = await User.signup({ email, username, password });
 
+    const cart = await Cart.create({
+      userId: user.id
+    }
+    )
+
     await setTokenCookie(res, user);
 
-    return res.json({
-      user
+    res.json({
+      user,
+      cartId: cart.id
     });
   })
 );
