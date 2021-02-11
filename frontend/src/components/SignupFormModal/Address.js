@@ -41,53 +41,53 @@ function MeasurementPage() {
             Address Line 1
             <input
                 type="text"
-                value={}
-                onChange={(e) => setChest(e.target.value)}
+                value={streetAddress1}
+                onChange={(e) => setStreetAddress1(e.target.value)}
                 required
             />
         </label>
         <label>
-            Shoulders
+            Address Line 2
             <input
                 type="text"
-                value={shoulders}
-                onChange={(e) => setShoulders(e.target.value)}
+                value={streetAddress2}
+                onChange={(e) => setStreetAddress2(e.target.value)}
                 required
             />
         </label>
         <label>
-          Sleeves
+          City
           <input
             type="text"
-            value={sleeves}
-            onChange={(e) => setSleeves(e.target.value)}
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
             required
           />
         </label>
         <label>
-          Biceps
+          State
           <input
             type="text"
-            value={biceps}
-            onChange={(e) => setBiceps(e.target.value)}
+            value={state}
+            onChange={(e) => setState(e.target.value)}
             required
           />
         </label>
         <label>
-          Wrist
+          Country
           <input
             type="text"
-            value={wrist}
-            onChange={(e) => setWrists(e.target.value)}
+            value={country}
+            onChange={(e) => setCountry(e.target.value)}
             required
           />
         </label>
         <label>
-          Waist
+          Postal Code
           <input
             type="text"
-            value={waist}
-            onChange={(e) => setWaists(e.target.value)}
+            value={postalCode}
+            onChange={(e) => setPostalCode(e.target.value)}
             required
           />
         </label>
