@@ -18,8 +18,8 @@ function Tailor(){
         if(!user){
             return history.push('/login');
         }
-        const tailorId = tailorItem[id].id;
-        dispatch(addItemToCart(tailorId));
+        const tailorId = tailorItem.id;
+        dispatch(addItemToCart({tailorId}));
         history.push('/cart');
     }
 

@@ -35,7 +35,7 @@ function SingleFabricPage(){
             return history.push('/login');
         }
         const fabricId = fabrics[id].id;
-        dispatch(addItemToCart(fabricId));
+        dispatch(addItemToCart({fabricId}));
         history.push('/cart');
     }
 
