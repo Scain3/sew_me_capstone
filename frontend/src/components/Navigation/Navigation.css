@@ -28,8 +28,10 @@ color: black;
 }
 
 .auth-links{
+  /* display: flex;
+  justify-self: flex-end; */
   position: absolute;
-  right: 0;
+  right: 80px;
 }
 
 
@@ -54,8 +56,9 @@ body{
 
 .profile-button{
   position: absolute;
-  margin-left: 450px;
-  margin-top: 5px;
+  /* margin-left: 450px;
+  margin-top: 5px; */
+  /* margin-left: 20px; */
   border: none;
   border-radius: 50px;
   cursor: pointer;

@@ -14,7 +14,7 @@ function Navigation({ isLoaded }){
   let sessionLinks;
   if (sessionUser) {
     sessionLinks = (
-      <div>
+      <div className="auth-links">
         <ShoppingCartIcon />
         <ProfileButton user={sessionUser} />
       </div>
@@ -22,7 +22,6 @@ function Navigation({ isLoaded }){
   } else {
     sessionLinks = (
       <span className="auth-links">
-        <ShoppingCartIcon />
         <LoginFormModal />
         <NavLink className="signup" to="/signup">Sign Up</NavLink>
       </span>
