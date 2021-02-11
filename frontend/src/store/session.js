@@ -28,10 +28,12 @@ export const restoreUser = () => async (dispatch) => {
 };
 
 export const signup = (user) => async (dispatch) => {
-  const { username, email, password } = user;
+  const { firstname, lastname, username, email, password } = user;
   const response = await fetch('/api/users', {
     method: 'POST',
     body: JSON.stringify({
+      firstname,
+      lastname,
       username,
       email,
       password

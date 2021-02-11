@@ -21,13 +21,15 @@ function SignupFormPage() {
     e.preventDefault();
     if (password === confirmPassword) {
       setErrors([]);
-      return dispatch(sessionActions.signup({ email, username, password }))
+      return dispatch(sessionActions.signup({ firstname, lastname, email, username, password }))
         .catch(res => {
           if (res.data && res.data.errors) setErrors(res.data.errors);
         });
     }
     return setErrors(['Confirm Password field must be the same as the Password field']);
   };
+
+
 
   return (
     <>
