@@ -30,16 +30,6 @@ module.exports = {
         type: Sequelize.STRING.BINARY,
         allowNull: false,
       },
-      addressId: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: { model: 'Addresses' },
-      },
-      measurementId: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: { model: 'Measurements' },
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
