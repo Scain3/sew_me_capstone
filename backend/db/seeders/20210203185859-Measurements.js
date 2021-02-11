@@ -21,6 +21,7 @@ module.exports = {
       kneeToThigh: 5,
       frontRise: 10,
       backRise: 15,
+      userId: 1,
       createdAt: new Date(),
       updatedAt: new Date(),
     },
@@ -42,6 +43,7 @@ module.exports = {
       kneeToThigh: 2,
       frontRise: 6,
       backRise: 5,
+      userId: 2,
       createdAt: new Date(),
       updatedAt: new Date(),
     },
@@ -63,6 +65,7 @@ module.exports = {
       kneeToThigh: 3,
       frontRise: 8,
       backRise: 10,
+      userId: 3,
       createdAt: new Date(),
       updatedAt: new Date(),
     }], {});

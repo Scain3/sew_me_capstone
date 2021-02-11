@@ -10,6 +10,7 @@ module.exports = {
           state: 'Georgia',
           country: 'United States',
           postalCode: 6000,
+          userId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -20,6 +21,7 @@ module.exports = {
           state: 'Florida',
           country: 'United States',
           postalCode: 9000,
+          userId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -30,6 +32,7 @@ module.exports = {
           state: 'Iowa',
           country: 'United States',
           postalCode: 3344,
+          userId: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
         }
