@@ -5,41 +5,6 @@ const { Address, Measurement } = require("../models");
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    // const address1 = await Address.findOne({
-    //   where: {
-    //     state: 'Georgia'
-    //   }
-    // })
-
-    // const address2 = await Address.findOne({
-    //   where: {
-    //     state: 'Florida'
-    //   }
-    // })
-
-    // const address3 = await Address.findOne({
-    //   where: {
-    //     state: 'Iowa'
-    //   }
-    // })
-
-    // const measure1 = await Measurement.findOne({
-    //   where: {
-    //     chest: 40.5
-    //   }
-    // })
-
-    // const measure2 = await Measurement.findOne({
-    //   where: {
-    //     chest: 32
-    //   }
-    // })
-
-    // const measure3 = await Measurement.findOne({
-    //   where: {
-    //     chest: 35
-    //   }
-    // })
 
     return queryInterface.bulkInsert('Users', [
       {
