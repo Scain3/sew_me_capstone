@@ -8,11 +8,12 @@ module.exports = (sequelize, DataTypes) => {
     wrist: DataTypes.INTEGER,
     waist: DataTypes.INTEGER,
     jacketLength: DataTypes.INTEGER,
-    height: DataTypes.INTEGER
+    height: DataTypes.INTEGER,
+    userId: DataTypes.INTEGER
   }, {});
   Measurement.associate = function(models) {
     // associations can be defined here
-    Measurement.hasMany(models.User, {foreignKey: 'measurementId'});
+    Measurement.belongsTo(models.User, {foreignKey: 'userId'});
   };
   return Measurement;
 };

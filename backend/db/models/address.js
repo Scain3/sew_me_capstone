@@ -6,11 +6,12 @@ module.exports = (sequelize, DataTypes) => {
     city: DataTypes.STRING,
     state: DataTypes.STRING,
     country: DataTypes.STRING,
-    postalCode: DataTypes.INTEGER
+    postalCode: DataTypes.INTEGER,
+    userId: DataTypes.INTEGER,
   }, {});
   Address.associate = function(models) {
     // associations can be defined here
-    Address.hasMany(models.User, { foreignKey: 'addressId'})
+    Address.belongsTo(models.User, { foreignKey: 'userId'})
   };
   return Address;
 };
