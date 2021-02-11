@@ -13,16 +13,17 @@ function MeasurementPage() {
   const [biceps, setBiceps] = useState("");
   const [wrist, setWrists] = useState("");
   const [waist, setWaists] = useState("");
-  const [height, setHeight] = useState([]);
-  const [hip, setHip] = useState([]);
-  const [thighCircumference, setThighCircumference] = useState([]);
-  const [kneeCircumference, setKneeCircumference] = useState([]);
-  const [ankleCircumference, setAnkleCircumference] = useState([]);
-  const [waistToAnkle, setWaistToAnkle] = useState([]);
-  const [ankleToKnee, setAnkleToKnee] = useState([]);
-  const [kneeToThigh, setKneeToThigh] = useState([]);
-  const [frontRise, setFrontRise] = useState([]);
-  const [backRise, setBackRise] = useState([]);
+  const [jacketLength, setJacketLength] = useState("");
+  const [height, setHeight] = useState("");
+  const [hip, setHip] = useState("");
+  const [thighCircumference, setThighCircumference] = useState("");
+  const [kneeCircumference, setKneeCircumference] = useState("");
+  const [ankleCircumference, setAnkleCircumference] = useState("");
+  const [waistToAnkle, setWaistToAnkle] = useState("");
+  const [ankleToKnee, setAnkleToKnee] = useState("");
+  const [kneeToThigh, setKneeToThigh] = useState("");
+  const [frontRise, setFrontRise] = useState("");
+  const [backRise, setBackRise] = useState("");
 
 
   if (sessionUser) return <Redirect to="/" />;
@@ -46,10 +47,11 @@ function MeasurementPage() {
   return (
     <>
       <h1>Measurements</h1>
-      <form onSubmit={handleSubmit}>
-        <ul>
+      <form >
+      {/* onSubmit={handleSubmit} */}
+        {/* <ul>
           {errors.map((error, idx) => <li key={idx}>{error}</li>)}
-        </ul>
+        </ul> */}
         <label>
             Chest
             <input
