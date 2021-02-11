@@ -37,8 +37,11 @@ router.post(
   '/',
   validateSignup,
   asyncHandler(async (req, res) => {
-    const { firstName, lastName, email, password, username } = req.body;
-    const user = await User.signup({ firstName, lastName, email, username, password });
+    const { firstName, lastName, username, email, password } = req.body;
+    const user = await User.signup({ firstName, lastName, username, email, password });
+
+    console.log(firstName);
+    console.log(lastName);
 
     const cart = await Cart.create({
       userId: user.id
