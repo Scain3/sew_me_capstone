@@ -4,7 +4,7 @@ const asyncHandler = require("express-async-handler");
 
 const { handleValidationErrors } = require("../../utils/validation");
 const { setTokenCookie, restoreUser } = require("../../utils/auth");
-const { User } = require("../../db/models");
+const { User, Cart } = require("../../db/models");
 
 const router = express.Router();
 
@@ -36,10 +36,15 @@ router.post(
       return next(err);
     }
 
+    const cart = await Cart.create({
+      userId: user.id
+    })
+
     await setTokenCookie(res, user);
 
     return res.json({
       user,
+      cartId: cart.id,
     });
   }),
 );

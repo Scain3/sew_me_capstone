@@ -40,9 +40,6 @@ router.post(
     const { firstName, lastName, username, email, password } = req.body;
     const user = await User.signup({ firstName, lastName, username, email, password });
 
-    console.log(firstName);
-    console.log(lastName);
-
     const cart = await Cart.create({
       userId: user.id
     }

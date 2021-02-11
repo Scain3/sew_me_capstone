@@ -14,6 +14,7 @@ import './Product.css';
 function SinglePatternPage(){
     const patterns = useSelector(state => state.patterns);
     const user = useSelector(state => state.session.user);
+    const cartId = useSelector(state => state.session.cartId);
     const { id } = useParams();
     const dispatch = useDispatch();
     const history = useHistory();
@@ -33,7 +34,8 @@ function SinglePatternPage(){
 
     const moveToCart = () => {
         const patternId = patterns[id].id;
-        dispatch(addItemToCart(patternId))
+        dispatch(addItemToCart(patternId));
+        history.push('/cart');
     }
 
     const singleItem = patterns[id];
