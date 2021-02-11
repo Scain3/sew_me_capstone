@@ -1,5 +1,6 @@
 import { useSelector, useDispatch} from "react-redux";
 import {removeTailoredProduct} from "../../store/tailor";
+
 import './Tailor.css';
 
 function Tailor(){

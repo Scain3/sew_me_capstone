@@ -33,6 +33,9 @@ function SinglePatternPage(){
     }
 
     const moveToCart = () => {
+        if(!user){
+            return history.push('/login');
+        }
         const patternId = patterns[id].id;
         dispatch(addItemToCart(patternId));
         history.push('/cart');

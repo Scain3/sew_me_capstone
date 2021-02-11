@@ -3,6 +3,7 @@ import {useEffect} from "react";
 import { useDispatch, useSelector} from "react-redux";
 
 import {useHistory, useParams} from "react-router-dom";
+import {addItemToCart} from "../../store/cart";
 
 import {fetchFabrics} from "../../store/fabric";
 
@@ -29,6 +30,15 @@ function SingleFabricPage(){
         history.push('/tailor')
     }
 
+    const moveToCart = () => {
+        if(!user){
+            return history.push('/login');
+        }
+        const fabricId = fabrics[id].id;
+        dispatch(addItemToCart(fabricId));
+        history.push('/cart');
+    }
+
     const singleItem = fabrics[id];
 
     if(!singleItem){
@@ -44,7 +54,7 @@ function SingleFabricPage(){
                     <span className="product-header fabric-type" >{singleItem.type}</span>
                 </div>
                 <div className="price">${singleItem.price}</div>
-                <div><button>Add To Cart</button></div>
+                <div><button onClick={moveToCart}>Add To Cart</button></div>
                 <div><button onClick={handleClick}>Tailor This!</button></div>
             </div>
         </div>

@@ -13,8 +13,10 @@ router.post('/', asyncHandler(async(req, res) => {
 
     const cartItem = await CartItem.create(req.body);
 
-    res.json(
+    res.json({
+
         cartItem
+    }
     )
 
 }))

@@ -18,7 +18,7 @@ export const addItemToCart = (body) => async(dispatch) => {
             body
         )
     })
-    dispatch(addToCart(res.data))
+    dispatch(addToCart(res.data.cartItem))
 }
 
 const cartReducer = (state={}, action) => {
