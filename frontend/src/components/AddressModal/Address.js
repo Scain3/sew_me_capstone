@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../store/session";
 import './SignupForm.css';
 
-function MeasurementPage() {
+function AddressPage() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
   const [streetAddress1, setStreetAddress1] = useState("");
@@ -98,4 +98,4 @@ function MeasurementPage() {
   );
 }
 
-export default MeasurementPage;
+export default AddressPage;
