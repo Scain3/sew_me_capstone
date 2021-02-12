@@ -25,6 +25,7 @@ function Tailor(){
         const tailorColor = tailorItem.fabricColor;
         const tailorImages = [tailorItem.patternImage, tailorItem.fabricImage]
         const price = tailorItem.price;
+        console.log(tailorItem.price);
         dispatch(addItemToCart({tailorId, tailorType, fabricType, tailorColor, tailorImages, price, cartId}));
         history.push('/cart');
     }
