@@ -38,10 +38,6 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: true
       },
-      fabricType: {
-        type: Sequelize.STRING,
-        allowNull: true,
-      },
       tailorColor: {
         type: Sequelize.STRING,
         allowNull: true
@@ -73,16 +69,16 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: true,
       },
+      price: {
+        type: Sequelize.FLOAT,
+        allowNull: true,
+      },
       pattern_quantity: {
         type: Sequelize.INTEGER,
         allowNull: true,
       },
       fabric_quantity: {
         type: Sequelize.INTEGER,
-        allowNull: true,
-      },
-      price: {
-        type: Sequelize.FLOAT,
         allowNull: true,
       },
       createdAt: {

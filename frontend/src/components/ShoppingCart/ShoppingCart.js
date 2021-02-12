@@ -11,6 +11,7 @@ function ShoppingCart(){
             <div>{cartItems.map(cartItem => (
                 <div className="whole-cart">
                     <div className="pattern-cart">
+                        <div>{cartItem.fabricColor}<span>{cartItem.fabricType}</span></div>
                         <img src={cartItem.patternImage} alt={cartItem.patternType} />
                     </div>
                     <div className="fabric-cart">

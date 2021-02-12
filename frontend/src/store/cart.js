@@ -18,6 +18,7 @@ export const addItemToCart = (body) => async(dispatch) => {
             body
         )
     })
+    console.log("this is the res", res);
     dispatch(addToCart(res.data.cartItem))
 }
 

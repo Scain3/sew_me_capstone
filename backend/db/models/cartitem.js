@@ -2,12 +2,12 @@
 module.exports = (sequelize, DataTypes) => {
   const CartItem = sequelize.define('CartItem', {
     patternId: DataTypes.INTEGER,
-    patternColor: DataTypes.STRING,
+    patternCompany: DataTypes.STRING,
+    patternNumber: DataTypes. STRING,
     patternType: DataTypes.STRING,
     patternImage: DataTypes.TEXT,
     tailorId: DataTypes.INTEGER,
     tailorType: DataTypes.STRING,
-    fabricType: DataTypes.STRING,
     tailorColor: DataTypes.STRING,
     tailorImages: DataTypes.ARRAY(DataTypes.STRING),
     cartId: DataTypes.INTEGER,
@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     fabricColor: DataTypes.STRING,
     fabricType: DataTypes.STRING,
     fabricImage: DataTypes.TEXT,
+    price: DataTypes.FLOAT,
     pattern_quantity: DataTypes.INTEGER,
     fabric_quantity: DataTypes.INTEGER
   }, {});

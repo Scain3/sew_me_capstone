@@ -9,9 +9,12 @@ router.post('/', asyncHandler(async(req, res) => {
     // const cart = await Fabric.findByPk(req.body.cartId);
     // const tailor = await Fabric.findByPk(req.body.tailorId)
 
-    //const { buyerId, fabricId, cartId, tailorId } = req.body;
-
+    const { patternId, patternCompany, patternNumber, price, cartId } = req.body;
+    console.log(price);
+    console.log(req.body);
     const cartItem = await CartItem.create(req.body);
+    console.log(cartItem);
+
 
     res.json({
 
