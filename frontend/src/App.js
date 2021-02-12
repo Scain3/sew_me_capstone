@@ -10,6 +10,7 @@ import SinglePatternPage from "./components/ProductPage/SinglePattern";
 import SingleFabricPage from "./components/ProductPage/SingleFabric";
 import HomePage from "./components/HomePage/HomePage";
 import Tailor from "./components/TailorPage/tailor";
+import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 
 function App() {
   const dispatch = useDispatch();
@@ -43,6 +44,9 @@ function App() {
           </Route>
           <Route path="/tailor">
             <Tailor />
+          </Route>
+          <Route path="/cart">
+            <ShoppingCart />
           </Route>
         </Switch>
       )}
