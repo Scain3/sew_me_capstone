@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
     tailorId: DataTypes.INTEGER,
     tailorType: DataTypes.STRING,
     tailorColor: DataTypes.STRING,
-    tailorImages: DataTypes.ARRAY(DataTypes.STRING),
+    tailorImage: DataTypes.STRING,
     cartId: DataTypes.INTEGER,
     fabricId: DataTypes.INTEGER,
     fabricColor: DataTypes.STRING,

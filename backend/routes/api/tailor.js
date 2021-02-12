@@ -34,9 +34,6 @@ router.put('/:id(\\d+)', asyncHandler(async(req, res) => {
     const fabric = await Fabric.findByPk(req.body.fabricId);
     const tailorMade = await TailorMade.findByPk(req.params.id);
 
-    console.log(fabric.id);
-    console.log(fabric.price);
-
     await tailorMade.update({
         fabricId: fabric.id,
         fabricType: fabric.type,
@@ -44,18 +41,7 @@ router.put('/:id(\\d+)', asyncHandler(async(req, res) => {
         fabricColor: fabric.color,
         fabricImage: fabric.image
     })
-    console.log(tailorMade.price);
 
-    //console.log(tailor);
-    //console.log(fabric);
-    // console.log(fabric.id);
-    // console.log(fabric.dataValues.price);
-    // console.log(fabric.dataValues.color);
-    // console.log(fabric.dataValues.image);
-    // console.log(tailor.fabricId);
-    // console.log(tailor.price);
-    // console.log(tailor.fabricColor);
-    // console.log(tailor.fabricImage);
 
     res.json(
         tailorMade

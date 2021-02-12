@@ -43,8 +43,8 @@ module.exports = {
         allowNull: true
 
       },
-      tailorImages: {
-        type: Sequelize.ARRAY(Sequelize.STRING),
+      tailorImage: {
+        type: Sequelize.STRING,
         allowNull: true,
       },
       cartId: {

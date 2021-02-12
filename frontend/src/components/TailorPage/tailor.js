@@ -22,9 +22,9 @@ function Tailor(){
         const tailorType = tailorItem.clothing;
         const fabricType = tailorItem.fabricType;
         const tailorColor = tailorItem.fabricColor;
-        const tailorImages = [tailorItem.patternImage, tailorItem.fabricImage]
+        const tailorImage = "https://images.pexels.com/photos/461035/pexels-photo-461035.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
         const tailorPrice = tailorItem.price;
-        dispatch(addItemToCart({tailorId, tailorType, fabricType, tailorColor, tailorImages, tailorPrice, cartId}));
+        dispatch(addItemToCart({tailorId, tailorType, fabricType, tailorColor, tailorImage, tailorPrice, cartId}));
         history.push('/cart');
     }
 

@@ -20,7 +20,9 @@ function ShoppingCart(){
                         <div>{cartItem.fabricPrice}</div>
                     </div>
                     <div className="tailor-cart">
-                        <div>{cartItem.tailorPice}</div>
+                        <div>{cartItem.tailorType}</div>
+                        <img src={cartItem.tailorImage} alt={cartItem.tailorType} />
+                        <div>{cartItem.tailorPrice}</div>
                     </div>
                 </div>
 
