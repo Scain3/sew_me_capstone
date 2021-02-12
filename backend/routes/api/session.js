@@ -4,7 +4,7 @@ const asyncHandler = require("express-async-handler");
 
 const { handleValidationErrors } = require("../../utils/validation");
 const { setTokenCookie, restoreUser } = require("../../utils/auth");
-const { User, Cart } = require("../../db/models");
+const { User, Cart, CartItems } = require("../../db/models");
 
 const router = express.Router();
 
@@ -68,10 +68,19 @@ router.get(
       order: [['createdAt', 'DESC']]
     })
 
+    // const cart = await Cart.findOrCreate({
+    //     where: {
+    //       userId: user.id
+    //     }
+    //   })
+
+    
+
     if (user) {
+
       return res.json({
         user: user.toSafeObject(),
-        cartId: cart.id
+        cartId: cart.id,
       });
     } else return res.json({});
   }
