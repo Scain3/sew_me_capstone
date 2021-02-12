@@ -27,7 +27,9 @@ function SingleFabricPage(){
         if(!user){
             return history.push('/login');
         }
+        console.log(fabrics[id]);
         const fabricId = fabrics[id].id;
+
         dispatch(updateTailoredProduct(fabricId, user.id, tailor.id));
         history.push('/tailor')
     }
@@ -37,7 +39,10 @@ function SingleFabricPage(){
             return history.push('/login');
         }
         const fabricId = fabrics[id].id;
-        dispatch(addItemToCart({fabricId, cartId}));
+        const fabricColor = fabrics[id].color;
+        const fabricType = fabrics[id].type;
+        const fabricImage = fabrics[id].image;
+        dispatch(addItemToCart({fabricId, fabricColor, fabricType, fabricImage, cartId}));
         history.push('/cart');
     }
 

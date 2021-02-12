@@ -13,6 +13,18 @@ module.exports = {
         allowNull: true,
         references: { model: "Patterns" }
       },
+      patternColor: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      patternType: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      patternImage: {
+        type: Sequelize.TEXT,
+        allowNull: true,
+      },
       tailorId: {
         type: Sequelize.INTEGER,
         allowNull: true,
@@ -27,6 +39,18 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: true,
         references: { model: "Fabrics" }
+      },
+      fabricColor: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      fabricType: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      fabricImage: {
+        type: Sequelize.TEXT,
+        allowNull: true,
       },
       pattern_quantity: {
         type: Sequelize.INTEGER,
