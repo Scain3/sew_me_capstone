@@ -72,14 +72,17 @@ module.exports = {
       fabricPrice: {
         type: Sequelize.FLOAT,
         allowNull: true,
+        defaultValue: 0,
       },
       patternPrice: {
         type: Sequelize.FLOAT,
         allowNull: true,
+        defaultValue: 0,
       },
       tailorPrice: {
         type: Sequelize.FLOAT,
         allowNull: true,
+        defaultValue: 0,
       },
       pattern_quantity: {
         type: Sequelize.INTEGER,
