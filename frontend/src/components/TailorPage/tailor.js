@@ -1,7 +1,7 @@
 import { useSelector, useDispatch} from "react-redux";
 import {removeTailoredProduct} from "../../store/tailor";
 
-import {useHistory, useParams} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import {addItemToCart} from "../../store/cart";
 
 import './Tailor.css';
@@ -10,7 +10,6 @@ function Tailor(){
     const tailorItem = useSelector(state => state.tailor);
     const user = useSelector(state => state.session.user);
     const cartId = useSelector(state => state.session.cartId);
-    const {id} = useParams();
     const history = useHistory();
     const dispatch = useDispatch();
     console.log(tailorItem);
