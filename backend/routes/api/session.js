@@ -68,6 +68,14 @@ router.get(
       order: [['createdAt', 'DESC']]
     })
 
+
+    // const cart = await Cart.findOrCreate({
+    //   order: [['createdAt', 'DESC']],
+    //   where: {
+    //     userId: user.id
+    //   }
+    // })
+
     if (user) {
 
       return res.json({
