@@ -30,19 +30,13 @@ function ShoppingCart(){
             ))}</div>
             <h1>Total:
                 <span>${cartItems.reduce((currentSum, cartItem) => {
-
-
                         const price = parseFloat(cartItem.patternPrice) + parseFloat(cartItem.fabricPrice) + parseFloat(cartItem.tailorPrice)
-
-
-                            console.log("pattern price", typeof cartItem.patternPrice)
-                            console.log("fabric price", typeof cartItem.fabricPrice)
-                            console.log("tailor price", typeof cartItem.tailorPrice)
 
                        return(
                         currentSum + price
                        )
-}, 0)}</span>
+                }, 0)}
+                </span>
             </h1>
         </div>
     )
