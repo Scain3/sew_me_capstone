@@ -62,14 +62,19 @@ router.delete(
 router.get(
   '/',
   restoreUser,
-  (req, res) => {
+  asyncHandler(async(req, res) => {
     const { user } = req;
+    const cart = await Cart.create({
+      userId: user.id
+    })
+
     if (user) {
       return res.json({
-        user: user.toSafeObject()
+        user: user.toSafeObject(),
+        cartId: cart.id
       });
     } else return res.json({});
   }
-);
+));
 
 module.exports = router;
