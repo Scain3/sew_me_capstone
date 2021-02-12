@@ -13,32 +13,36 @@ function ShoppingCart(){
                     <div className="pattern-cart">
                         <div>{cartItem.fabricColor}<span>{cartItem.fabricType}</span></div>
                         <img src={cartItem.patternImage} alt={cartItem.patternType} />
-                        <div>{cartItem.patternPrice}</div>
+                        {cartItem.patternPrice > 0 && <div>${cartItem.patternPrice}</div>}
                     </div>
                     <div className="fabric-cart">
                         <img src={cartItem.fabricImage} alt={cartItem.fabricColor} />
-                        <div>{cartItem.fabricPrice}</div>
+                        {cartItem.fabricPrice > 0 && <div>${cartItem.fabricPrice}</div>}
                     </div>
                     <div className="tailor-cart">
                         <div>{cartItem.tailorType}</div>
                         <img src={cartItem.tailorImage} alt={cartItem.tailorType} />
-                        <div>{cartItem.tailorPrice}</div>
+                        {cartItem.tailorPrice > 0 && <div>${cartItem.tailorPrice}</div>}
                     </div>
                 </div>
 
 
             ))}</div>
             <h1>Total:
-                <span>{cartItems.map(cartItem => (
-                    <div>
-                        {cartItem.patternPrice + cartItem.fabricPrice + cartItem.tailorPrice}
-                        <div>
-                            {console.log("pattern price", typeof cartItem.patternPrice)}
-                            {console.log("fabric price", typeof cartItem.fabricPrice)}
-                            {console.log("tailor price", typeof cartItem.tailorPrice)}
-                        </div>
-                    </div>
-                ))}</span>
+                <span>${cartItems.reduce((currentSum, cartItem) => {
+
+
+                        const price = parseFloat(cartItem.patternPrice) + parseFloat(cartItem.fabricPrice) + parseFloat(cartItem.tailorPrice)
+
+
+                            console.log("pattern price", typeof cartItem.patternPrice)
+                            console.log("fabric price", typeof cartItem.fabricPrice)
+                            console.log("tailor price", typeof cartItem.tailorPrice)
+
+                       return(
+                        currentSum + price
+                       )
+}, 0)}</span>
             </h1>
         </div>
     )
