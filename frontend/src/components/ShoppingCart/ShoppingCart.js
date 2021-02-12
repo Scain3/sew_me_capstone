@@ -28,6 +28,18 @@ function ShoppingCart(){
 
 
             ))}</div>
+            <h1>Total:
+                <span>{cartItems.map(cartItem => (
+                    <div>
+                        {cartItem.patternPrice + cartItem.fabricPrice + cartItem.tailorPrice}
+                        <div>
+                            {console.log("pattern price", typeof cartItem.patternPrice)}
+                            {console.log("fabric price", typeof cartItem.fabricPrice)}
+                            {console.log("tailor price", typeof cartItem.tailorPrice)}
+                        </div>
+                    </div>
+                ))}</span>
+            </h1>
         </div>
     )
 }
