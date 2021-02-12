@@ -12,7 +12,9 @@ import {updateTailoredProduct} from "../../store/tailor";
 function SingleFabricPage(){
     const fabrics = useSelector(state => state.fabrics);
     const user = useSelector(state => state.session.user);
+    const cartId = useSelector(state => state.session.cartId);
     const tailor = useSelector(state => state.tailor);
+
     const {id} = useParams();
     const dispatch = useDispatch();
     const history = useHistory();
@@ -35,7 +37,7 @@ function SingleFabricPage(){
             return history.push('/login');
         }
         const fabricId = fabrics[id].id;
-        dispatch(addItemToCart({fabricId}));
+        dispatch(addItemToCart({fabricId, cartId}));
         history.push('/cart');
     }
 

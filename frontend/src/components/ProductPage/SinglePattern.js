@@ -37,7 +37,7 @@ function SinglePatternPage(){
             return history.push('/login');
         }
         const patternId = patterns[id].id;
-        dispatch(addItemToCart({patternId}));
+        dispatch(addItemToCart({patternId, cartId}));
         history.push('/cart');
     }
 

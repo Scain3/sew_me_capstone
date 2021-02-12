@@ -9,6 +9,7 @@ import './Tailor.css';
 function Tailor(){
     const tailorItem = useSelector(state => state.tailor);
     const user = useSelector(state => state.session.user);
+    const cartId = useSelector(state => state.session.cartId);
     const {id} = useParams();
     const history = useHistory();
     const dispatch = useDispatch();
@@ -19,7 +20,7 @@ function Tailor(){
             return history.push('/login');
         }
         const tailorId = tailorItem.id;
-        dispatch(addItemToCart({tailorId}));
+        dispatch(addItemToCart({tailorId, cartId}));
         history.push('/cart');
     }
 
