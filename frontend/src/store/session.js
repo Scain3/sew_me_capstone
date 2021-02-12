@@ -52,7 +52,7 @@ export const logout = () => async (dispatch) => {
   return response;
 };
 
-const initialState = { user: null, cartId: null };
+const initialState = { user: null };
 
 function reducer(state = initialState, action) {
   let newState;
@@ -61,7 +61,7 @@ function reducer(state = initialState, action) {
       newState = Object.assign({}, state, { user: action.payload.user, cartId: action.payload.cartId });
       return newState;
     case REMOVE_USER:
-      newState = Object.assign({}, state, { user: null, cartId: null });
+      newState = Object.assign({}, state, { user: null });
       return newState;
     default:
       return state;

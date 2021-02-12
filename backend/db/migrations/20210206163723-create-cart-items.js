@@ -13,7 +13,11 @@ module.exports = {
         allowNull: true,
         references: { model: "Patterns" }
       },
-      patternColor: {
+      patternCompany: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      patternNumber: {
         type: Sequelize.STRING,
         allowNull: true,
       },
@@ -29,6 +33,23 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: true,
         references: { model: "TailorMades" }
+      },
+      tailorType: {
+        type: Sequelize.STRING,
+        allowNull: true
+      },
+      fabricType: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      tailorColor: {
+        type: Sequelize.STRING,
+        allowNull: true
+
+      },
+      tailorImages: {
+        type: Sequelize.ARRAY(DataTypes.STRING),
+        allowNull: true,
       },
       cartId: {
         type: Sequelize.INTEGER,
@@ -58,6 +79,10 @@ module.exports = {
       },
       fabric_quantity: {
         type: Sequelize.INTEGER,
+        allowNull: true,
+      },
+      price: {
+        type: Sequelize.FLOAT,
         allowNull: true,
       },
       createdAt: {

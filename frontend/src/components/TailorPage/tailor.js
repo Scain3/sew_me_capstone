@@ -20,7 +20,12 @@ function Tailor(){
             return history.push('/login');
         }
         const tailorId = tailorItem.id;
-        dispatch(addItemToCart({tailorId, cartId}));
+        const tailorType = tailorItem.clothing;
+        const fabricType = tailorItem.fabricType;
+        const tailorColor = tailorItem.fabricColor;
+        const tailorImages = [tailorItem.patternImage, tailorItem.fabricImage]
+        const price = tailorItem.price;
+        dispatch(addItemToCart({tailorId, tailorType, fabricType, tailorColor, tailorImages, price, cartId}));
         history.push('/cart');
     }
 

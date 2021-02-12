@@ -37,7 +37,12 @@ function SinglePatternPage(){
             return history.push('/login');
         }
         const patternId = patterns[id].id;
-        dispatch(addItemToCart({patternId, cartId}));
+        const patternCompany = patterns[id].patternCompany;
+        const patternNumber = patterns[id].patternNumber;
+        const patternType = patterns[id].type;
+        const patternImage = patterns[id].image1;
+        const price = patterns[id].price;
+        dispatch(addItemToCart({patternId, patternCompany, patternNumber, patternType, patternImage, price, cartId}));
         history.push('/cart');
     }
 
