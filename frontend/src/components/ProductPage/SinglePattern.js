@@ -41,12 +41,9 @@ function SinglePatternPage(){
         const patternNumber = patterns[id].patternNumber;
         const patternType = patterns[id].type;
         const patternImage = patterns[id].image1;
-        const price = patterns[id].price;
-        console.log(price);
-        console.log(patternCompany);
-        console.log(patternNumber);
-        console.log(patternType);
-        dispatch(addItemToCart({patternId, patternCompany, patternNumber, patternType, patternImage, price, cartId}));
+        const patternPrice = patterns[id].price;
+
+        dispatch(addItemToCart({patternId, patternCompany, patternNumber, patternType, patternImage, patternPrice, cartId}));
         history.push('/cart');
     }
 

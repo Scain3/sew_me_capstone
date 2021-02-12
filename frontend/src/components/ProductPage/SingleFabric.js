@@ -42,8 +42,8 @@ function SingleFabricPage(){
         const fabricColor = fabrics[id].color;
         const fabricType = fabrics[id].type;
         const fabricImage = fabrics[id].image;
-        const price = fabrics[id].price;
-        dispatch(addItemToCart({fabricId, fabricColor, fabricType, fabricImage, price, cartId}));
+        const fabricPrice = fabrics[id].price;
+        dispatch(addItemToCart({fabricId, fabricColor, fabricType, fabricImage, fabricPrice, cartId}));
         history.push('/cart');
     }
 
