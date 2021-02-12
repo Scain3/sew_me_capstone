@@ -13,9 +13,14 @@ function ShoppingCart(){
                     <div className="pattern-cart">
                         <div>{cartItem.fabricColor}<span>{cartItem.fabricType}</span></div>
                         <img src={cartItem.patternImage} alt={cartItem.patternType} />
+                        <div>{cartItem.price}</div>
                     </div>
                     <div className="fabric-cart">
                         <img src={cartItem.fabricImage} alt={cartItem.fabricColor} />
+                        <div>{cartItem.price}</div>
+                    </div>
+                    <div className="tailor-cart">
+                        <div>{cartItem.price}</div>
                     </div>
                 </div>
 

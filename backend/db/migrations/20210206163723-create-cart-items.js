@@ -69,7 +69,15 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: true,
       },
-      price: {
+      fabricPrice: {
+        type: Sequelize.FLOAT,
+        allowNull: true,
+      },
+      patternPrice: {
+        type: Sequelize.FLOAT,
+        allowNull: true,
+      },
+      tailorPrice: {
         type: Sequelize.FLOAT,
         allowNull: true,
       },

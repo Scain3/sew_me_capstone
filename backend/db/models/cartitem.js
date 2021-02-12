@@ -15,7 +15,9 @@ module.exports = (sequelize, DataTypes) => {
     fabricColor: DataTypes.STRING,
     fabricType: DataTypes.STRING,
     fabricImage: DataTypes.TEXT,
-    price: DataTypes.FLOAT,
+    fabricPrice: DataTypes.FLOAT,
+    patternPrice: DataTypes.FLOAT,
+    tailorPrice: DataTypes.FLOAT,
     pattern_quantity: DataTypes.INTEGER,
     fabric_quantity: DataTypes.INTEGER
   }, {});
