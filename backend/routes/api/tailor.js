@@ -40,10 +40,11 @@ router.put('/:id(\\d+)', asyncHandler(async(req, res) => {
     await tailorMade.update({
         fabricId: fabric.id,
         fabricType: fabric.type,
-        price: fabric.price,
+        price: tailorMade.price += fabric.price + 50,
         fabricColor: fabric.color,
         fabricImage: fabric.image
     })
+    console.log(tailorMade.price);
 
     //console.log(tailor);
     //console.log(fabric);
