@@ -14,5 +14,10 @@
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 3;
+}
 
+.tailored-image{
+    height: 500px;
+    width: 500px;
+    margin-left: 200px;
 }
