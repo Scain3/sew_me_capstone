@@ -62,8 +62,8 @@ function SingleFabricPage(){
                     <span className="product-header fabric-type" >{singleItem.type}</span>
                 </div>
                 <div className="price">${singleItem.price}</div>
-                <div><button onClick={moveToCart}>Add To Cart</button></div>
-                <div><button onClick={handleClick}>Tailor This!</button></div>
+                <div><button className= "button" onClick={moveToCart}>Add To Cart</button></div>
+                <div><button className= "button" onClick={handleClick}>Tailor This!</button></div>
             </div>
         </div>
     )

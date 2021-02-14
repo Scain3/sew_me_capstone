@@ -6,24 +6,25 @@ function ShoppingCart(){
 
 
     return(
-        <div>
-            <h1> Shopping Cart </h1>
+        <div className="cart-container">
+            <h1 className="header"> Shopping Cart </h1>
             <div>{cartItems.map(cartItem => (
                 <div className="whole-cart">
                     <div className="pattern-cart">
-                        <div>{cartItem.fabricColor}<span>{cartItem.fabricType}</span></div>
-                        <img src={cartItem.patternImage} alt={cartItem.patternType} />
+                        <h3>{cartItem.patternCompany + " " + cartItem.patternNumber}</h3>
+                        <img className="images" src={cartItem.patternImage} alt={cartItem.patternType} />
                         {cartItem.patternPrice > 0 && <div>${cartItem.patternPrice}</div>}
                     </div>
-                    <div className="fabric-cart">
-                        <img src={cartItem.fabricImage} alt={cartItem.fabricColor} />
+                    {cartItem.fabricId && <div className="fabric-cart">
+                        <h3>{cartItem.fabricColor + " " + cartItem.fabricType}</h3>
+                        <img className="images" src={cartItem.fabricImage} alt={cartItem.fabricColor} />
                         {cartItem.fabricPrice > 0 && <div>${cartItem.fabricPrice}</div>}
-                    </div>
-                    <div className="tailor-cart">
-                        <div>{cartItem.tailorType}</div>
-                        <img src={cartItem.tailorImage} alt={cartItem.tailorType} />
+                    </div>}
+                    {cartItem.tailorId && <div className="tailor-cart">
+                        <h3>{cartItem.tailorType}</h3>
+                        <img className="images" src={cartItem.tailorImage} alt={cartItem.tailorType} />
                         {cartItem.tailorPrice > 0 && <div>${cartItem.tailorPrice}</div>}
-                    </div>
+                    </div>}
                 </div>
 
 

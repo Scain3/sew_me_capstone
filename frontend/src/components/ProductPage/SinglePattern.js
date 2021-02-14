@@ -67,8 +67,8 @@ function SinglePatternPage(){
                 <div className="product-header">{singleItem.patternNumber}</div>
                 <div className="pattern-company">{singleItem.patternCompany}</div>
                 <div className="price">${singleItem.price}</div>
-                <div><button onClick={moveToCart}>Add To Cart</button></div>
-                <div><button onClick={handleClick}>Tailor This!</button></div>
+                <div><button className="button" onClick={moveToCart}>Add To Cart</button></div>
+                <div><button className="button" onClick={handleClick}>Tailor This!</button></div>
             </div>
         </div>
     )

@@ -1,0 +1,13 @@
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 700px;
+}
+/* .header{
+    margin: 0 auto;
+} */
+
+.images{
+    width: 300px;
+    height: 300px;
+}
