@@ -1,5 +1,6 @@
 .tailor-container{
     display: grid;
+    margin-left: 125px;
 }
 
 .tailor-pattern{
@@ -12,12 +13,35 @@
 .tailor-fabric{
     grid-row-start: 1;
     grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
 }
 
 .tailored-image{
     height: 500px;
     width: 500px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
+}
+
+.headers{
+    margin-left: 400px;
+}
+
+.price_and_buttons{
+    grid-row-start: 1;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+}
+
+.div_button{
+    padding-left: 50px;
+    padding-top: 5px;
 }

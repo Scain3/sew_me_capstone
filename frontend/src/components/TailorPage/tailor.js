@@ -31,18 +31,26 @@ function Tailor(){
 
     return(
     <div className="tailor-container">
-        <div className="tailor-pattern">
-            <div>{tailorItem.type}</div>
+        {console.log(tailorItem)}
+        {tailorItem.id && <div className="tailor-pattern">
+            <h3 className="headers">{ tailorItem.clothing}</h3>
             <img className="tailored-image" src={tailorItem.patternImage} alt={tailorItem.type} />
-            <div>{tailorItem.price}</div>
-            <div><button onClick={()=>{dispatch(removeTailoredProduct(tailorItem.id))}}>Remove</button></div>
-        </div>
+        </div>}
 
-        <div className="tailor-fabric">
-            <div>{tailorItem.fabricColor}</div>
+        {tailorItem.fabricId && <div className="tailor-fabric">
+            <h3 className="headers">{tailorItem.fabricId && tailorItem.fabricColor + " " + tailorItem.fabricType}</h3>
             <img className="tailored-image" src={tailorItem.fabricImage} alt={tailorItem.fabricType} />
-            <div><button onClick={moveToCart}>Add To Cart</button></div>
-        </div>
+
+        </div>}
+        {
+            tailorItem.id && <div className="price_and_buttons">
+                <h3 className="div_button">Price</h3>
+                <div className="div_button">${tailorItem.price}</div>
+                <div className="div_button"><button onClick={moveToCart}>Add To Cart</button></div>
+                <div className="div_button"><button onClick={()=>{dispatch(removeTailoredProduct(tailorItem.id))}}>Remove</button></div>
+            </div>
+        }
+
 
     </div>
     )
