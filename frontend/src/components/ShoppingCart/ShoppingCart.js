@@ -16,19 +16,19 @@ function ShoppingCart(){
                         <h3>{cartItem.patternCompany + " " + cartItem.patternNumber}</h3>
                         <img className="images" src={cartItem.patternImage} alt={cartItem.patternType} />
                         {cartItem.patternPrice > 0 && <div>${cartItem.patternPrice}</div>}
-                        <button onClick={()=>{dispatch(removeItemFromCart(cartItem.patternId))}}>Remove</button>
+                        <button onClick={()=>{dispatch(removeItemFromCart(cartItem.id))}}>Remove</button>
                     </div>}
                     {cartItem.fabricId && <div className="fabric-cart">
                         <h3>{cartItem.fabricColor + " " + cartItem.fabricType}</h3>
                         <img className="images" src={cartItem.fabricImage} alt={cartItem.fabricColor} />
                         {cartItem.fabricPrice > 0 && <div>${cartItem.fabricPrice}</div>}
-                        <button onClick={()=>{dispatch(removeItemFromCart(cartItem.fabricId))}}>Remove</button>
+                        <button onClick={()=>{dispatch(removeItemFromCart(cartItem.id))}}>Remove</button>
                     </div>}
                     {cartItem.tailorId && <div className="tailor-cart">
                         <h3>{cartItem.tailorType}</h3>
                         <img className="images" src={cartItem.tailorImage} alt={cartItem.tailorType} />
                         {cartItem.tailorPrice > 0 && <div>${cartItem.tailorPrice}</div>}
-                        <button onClick={()=>{dispatch(removeItemFromCart(cartItem.tailorId))}}>Remove</button>
+                        <button onClick={()=>{dispatch(removeItemFromCart(cartItem.id))}}>Remove</button>
                     </div>}
                 </div>
 

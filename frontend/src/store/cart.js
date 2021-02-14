@@ -30,11 +30,12 @@ export const addItemToCart = (body) => async(dispatch) => {
     dispatch(addToCart(res.data.cartItem))
 }
 
-export const removeItemFromCart = (cartId) => async(dispatch) => {
-    await fetch(`/api/cart/${cartId}`, {
+export const removeItemFromCart = (id) => async(dispatch) => {
+    await fetch(`/api/cart/${id}`, {
         method: 'DELETE'
+
     })
-    dispatch(removeFromCart(cartId))
+    dispatch(removeFromCart(id))
 }
 
 const cartReducer = (state={}, action) => {

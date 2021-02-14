@@ -5,7 +5,7 @@ const { CartItem  } = require("../../db/models");
 
 router.post('/', asyncHandler(async(req, res) => {
     const cartItem = await CartItem.create(req.body);
-    console.log(cartItem);
+    
 
 
     res.json({
@@ -16,9 +16,10 @@ router.post('/', asyncHandler(async(req, res) => {
 
 }))
 
-router.delete('/:cartId(\\d+)', asyncHandler(async(req, res, next) => {
-    console.log(req.params.cartId);
-    const cartItem = await CartItem.findByPk(req.params.cartId);
+router.delete('/:id(\\d+)', asyncHandler(async(req, res, next) => {
+    //const {cartItem.tailorId } = req.body;
+    console.log(req.params.id);
+    const cartItem = await CartItem.findByPk(req.params.id);
     console.log(cartItem);
     await cartItem.destroy();
     res.json({
