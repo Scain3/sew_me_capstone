@@ -28,12 +28,33 @@ color: black;
 }
 
 .auth-links{
-  /* display: flex;
-  justify-self: flex-end; */
   position: absolute;
   right: 80px;
 }
 
+.icons{
+  position: absolute;
+  right: 80px;
+}
+
+.shopping-cart__icon{
+  padding-right: 200px;
+}
+
+.icon-holder{
+  
+}
+
+/* .cart-icon{
+  padding-left: 300px;
+} */
+
+.profile{
+  text-decoration: none;
+  margin-right: 30px;
+  margin-left: 30px;
+  color: black;
+}
 
 
 ul{
@@ -56,9 +77,6 @@ body{
 
 .profile-button{
   position: absolute;
-  /* margin-left: 450px;
-  margin-top: 5px; */
-  /* margin-left: 20px; */
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -79,7 +97,6 @@ body{
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
-  /* center: 0; */
   right: -90px;
   top: 120px;
 }

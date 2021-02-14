@@ -14,9 +14,13 @@ function Navigation({ isLoaded }){
   let sessionLinks;
   if (sessionUser) {
     sessionLinks = (
-      <div className="auth-links">
-        <ShoppingCartIcon />
-        <ProfileButton user={sessionUser} />
+      <div className="icon-holder">
+        <div className="cart-icon">
+          <ShoppingCartIcon />
+        </div>
+      <div className="icons">
+        <ProfileButton  user={sessionUser} />
+      </div>
       </div>
     );
   } else {
