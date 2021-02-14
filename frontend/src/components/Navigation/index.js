@@ -15,9 +15,9 @@ function Navigation({ isLoaded }){
   if (sessionUser) {
     sessionLinks = (
       <div className="icon-holder">
-        <div className="cart-icon">
+        {/* <div className="cart-icon">
           <ShoppingCartIcon />
-        </div>
+        </div> */}
         <div className="icons">
           <ProfileButton  user={sessionUser} />
         </div>

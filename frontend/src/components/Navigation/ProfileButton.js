@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from 'react-redux';
 import * as sessionActions from '../../store/session';
+import ShoppingCartIcon from '../ShoppingCart/ShoppingIcon';
+import './Navigation.css';
 
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
@@ -30,6 +32,9 @@ function ProfileButton({ user }) {
 
   return (
     <div className="profile-button__container">
+      <div className="shopping-cart-icon">
+        <ShoppingCartIcon />
+      </div>
       <button className="profile-button" onClick={openMenu}>
         <img className="profile-photo" src="https://images.pexels.com/photos/6389355/pexels-photo-6389355.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="profile-photo" />
       </button>

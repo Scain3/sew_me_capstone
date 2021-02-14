@@ -82,8 +82,8 @@ body{
   border-radius: 50px;
   cursor: pointer;
   outline: none;
-  margin-bottom: 80px;
   right: 80px;
+  margin-top: 10px;
 
 }
 
@@ -103,4 +103,15 @@ body{
   z-index: 1;
   right: 20px;
   top: 120px;
+}
+
+.profile-button__container{
+  display: flex;
+  padding-left: 1000px;
+  /* padding-top: 15px; */
+}
+
+.shopping-cart-icon{
+  justify-self: flex-end;
+  padding-top: 30px;
 }
