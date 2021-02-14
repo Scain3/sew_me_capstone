@@ -18,9 +18,9 @@ function Navigation({ isLoaded }){
         <div className="cart-icon">
           <ShoppingCartIcon />
         </div>
-      <div className="icons">
-        <ProfileButton  user={sessionUser} />
-      </div>
+        <div className="icons">
+          <ProfileButton  user={sessionUser} />
+        </div>
       </div>
     );
   } else {
