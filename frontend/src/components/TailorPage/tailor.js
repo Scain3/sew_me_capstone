@@ -46,8 +46,8 @@ function Tailor(){
             tailorItem.id && <div className="price_and_buttons">
                 <h3 className="div_button">Price</h3>
                 <div className="div_button">${tailorItem.price}</div>
-                <div className="div_button"><button onClick={moveToCart}>Add To Cart</button></div>
-                <div className="div_button"><button onClick={()=>{dispatch(removeTailoredProduct(tailorItem.id))}}>Remove</button></div>
+                <div className="div_button"><button className="button" onClick={moveToCart}>Add To Cart</button></div>
+                <div className="div_button"><button className="button" onClick={()=>{dispatch(removeTailoredProduct(tailorItem.id))}}>Remove</button></div>
             </div>
         }
 
