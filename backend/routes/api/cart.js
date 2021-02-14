@@ -16,4 +16,14 @@ router.post('/', asyncHandler(async(req, res) => {
 
 }))
 
+router.delete('/:cartId(\\d+)', asyncHandler(async(req, res, next) => {
+    console.log(req.params.cartId);
+    const cartItem = await CartItem.findByPk(req.params.cartId);
+    console.log(cartItem);
+    await cartItem.destroy();
+    res.json({
+        message: 'Success!'
+    })
+}))
+
 module.exports = router;
