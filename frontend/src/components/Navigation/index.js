@@ -7,6 +7,7 @@ import SignupFormModal from '../SignupFormModal';
 import './Navigation.css';
 import SearchBar from '../Search/SearchBar';
 import ShoppingCartIcon from '../ShoppingCart/ShoppingIcon';
+import SecondNav from '../SecondNav/SecondNav';
 
 function Navigation({ isLoaded }){
   const sessionUser = useSelector(state => state.session.user);
@@ -33,6 +34,7 @@ function Navigation({ isLoaded }){
   }
 
   return (
+    <div>
       <ul className='nav-container'>
         <li className='link-container'>
           <span className='search-container'>
@@ -42,6 +44,8 @@ function Navigation({ isLoaded }){
           {isLoaded && sessionLinks}
         </li>
       </ul>
+      <SecondNav />
+    </div>
   );
 }
 
