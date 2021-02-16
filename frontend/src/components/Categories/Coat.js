@@ -1,29 +1,27 @@
 import { useEffect, useDispatch } from "react";
 import {useSelector} from "react-redux";
-import {useParams} from "react-router-dom";
+import {useParams, useHistory} from "react-router-dom";
+import '../Search/Search.css';
 
 
 function Coats(){
+    const history = useHistory();
     const patterns = useSelector(state => Object.values(state.patterns));
-    console.log("patterns", patterns);
-    console.log("patterns", Object.values(patterns));
-    const {id} = useParams();
-
-
-    // if( patterns.patternType !== "coat"){
-    //     return null;
-    // }
-
     const coats = patterns.filter((pattern) => pattern.patternType === "coat" )
-    console.log(coats)
-    //console.log("id", patterns[id].id);
+
+
 
     return(
-      <div>
-          {coats.map((coat)=> (
-              <div>{coat.patternCompany}</div>
-          ))}
-      </div>
+        <div className="search-page__container">
+            <div className="search-page__divs">{coats && coats.map((coat, index)=> (
+                <div className="product-container" key={index} onClick={()=>history.push(`patterns/${coat.id}`)}>
+                    <div><img className="search-page__img" src={coat.image1} alt={coat.patternNumber} /></div>
+                    <div className="patternCompany">{coat.patternCompany}</div>
+                    <div className="patternNumber">{coat.patternNumber}</div>
+                    <div className="search-price">${coat.price}</div>
+                </div>
+            ))}</div>
+        </div>
     )
 
 

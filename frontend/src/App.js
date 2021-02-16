@@ -12,6 +12,7 @@ import HomePage from "./components/HomePage/HomePage";
 import Tailor from "./components/TailorPage/tailor";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Coats from "./components/Categories/Coat";
+import Dress from "./components/Categories/Dress";
 
 function App() {
   const dispatch = useDispatch();
@@ -52,6 +53,24 @@ function App() {
           <Route path="/coat">
             <Coats />
           </Route>
+          <Route path="/dress">
+            <Dress />
+          </Route>
+          {/* <Route path="/jacket">
+            <Jacket />
+          </Route>
+          <Route path="/pants">
+            <Pants />
+          </Route>
+          <Route path="/shirt">
+            <Shirt />
+          </Route>
+          <Route path="/skirt">
+            <Skirt />
+          </Route>
+          <Route path="/suit">
+            <Suit />
+          </Route> */}
         </Switch>
       )}
     </>
