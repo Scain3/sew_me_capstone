@@ -11,7 +11,15 @@ const HomePage = () => {
                 <div className="signup-container"><SignupFormModal /></div>
             </div>
             <div className="paragraph-container">
-                <p className="home-paragrah__text">This is where I put all of the information about what this application is all about.</p>
+                <h1>Interested in your own customized outfit</h1>
+                <p className="home-paragrah__text">It's as easy as 1-2-3.</p>
+                <p className="home-paragrah__text">First provide your measurements.</p>
+                <p className="home-paragrah__text">Then, pick a pattern.</p>
+                <p className="home-paragrah__text">Last pick your desired fabric.</p>
+                <p className="home-paragrah__text">That's it. Your customized clothing will arrive in no time.</p>
+                <div>
+                    <img src="https://thumbs.dreamstime.com/b/woman-body-measurement-chart-scheme-measurement-human-body-sewing-clothes-female-figure-front-back-views-template-186093385.jpg" alt="measurements-chart" />
+                </div>
             </div>
         </div>
     )
