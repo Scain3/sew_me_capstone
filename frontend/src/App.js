@@ -18,6 +18,7 @@ import Pants from "./components/Categories/Pants";
 import Jumper from "./components/Categories/Jumper";
 import Skirt from "./components/Categories/Skirt";
 import Shirt from "./components/Categories/Shirt";
+import Suit from "./components/Categories/Suit";
 
 function App() {
   const dispatch = useDispatch();
@@ -76,9 +77,9 @@ function App() {
           <Route path="/skirt">
             <Skirt />
           </Route>
-          {/* <Route path="/suit">
+          <Route path="/suit">
             <Suit />
-          </Route> */}
+          </Route>
         </Switch>
       )}
     </>
