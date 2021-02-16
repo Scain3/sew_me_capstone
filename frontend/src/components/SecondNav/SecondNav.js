@@ -1,16 +1,19 @@
 import {NavLink} from 'react-router-dom';
 import React from 'react';
+import {useDispatch} from "react-redux";
+import {fetchPatterns} from "../../store/pattern";
 import './SecondNav.css';
 
 
 function SecondNav(){
+    const dispatch = useDispatch();
 
     return(
         <div className="clothes-links-container">
 
                 <span className="clothes-links">
 
-                    <NavLink className="clothes coat" to="/coat">Coat</NavLink>
+                    <NavLink className="clothes coat" to="/coat" onClick={()=>{dispatch(fetchPatterns())}}>Coat</NavLink>
 
                     <NavLink className="clothes dress" to="/dress">Dress</NavLink>
 

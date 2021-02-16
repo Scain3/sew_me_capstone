@@ -1,32 +1,45 @@
 import { useEffect, useDispatch } from "react";
 import {useSelector} from "react-redux";
 import {useParams} from "react-router-dom";
-import {fetchPatterns} from "../../store/pattern";
+
 
 function Coats(){
     const patterns = useSelector(state => state.patterns);
-    const dispatch = useDispatch();
-    const { id } = useParams();
 
-    useEffect(() => {
-        dispatch(fetchPatterns())
-    }, [dispatch])
 
-    const coats = patterns[id].patternType === "coat";
+    if( patterns.patternType !== "coat"){
+        return null;
+    }
 
-    const coat = Object.values(coats);
-        return(
+    const coats = patterns;
+
+    return(
+        <h1>
             <div>
+                <div>
+                    {console.log(coats)}
+                </div>
                 {
-                    coat.map((eachCoat, index) => (
+
+                    coats.map((coat, index) => (
                         <div>
-                            
+                            <h1>Hello World</h1>
+
+
+                        <div>
+                            {coat.patternCompany}
                         </div>
+
+                        </div>
+
 
                     ))
                 }
             </div>
-        )
+        </h1>
+    )
+
+
 
 
 }
