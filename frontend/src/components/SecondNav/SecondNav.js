@@ -1,6 +1,6 @@
 import {NavLink} from 'react-router-dom';
 import React from 'react';
-import './SecondNav';
+import './SecondNav.css';
 
 
 function SecondNav(){
@@ -9,6 +9,7 @@ function SecondNav(){
         <div className="clothes-links-container">
 
                 <span className="clothes-links">
+
                     <NavLink className="clothes coat" to="/coat">Coat</NavLink>
 
                     <NavLink className="clothes dress" to="/dress">Dress</NavLink>

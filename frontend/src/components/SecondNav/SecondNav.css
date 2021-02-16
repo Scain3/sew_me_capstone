@@ -1,11 +1,19 @@
-.clothes-links{
-    margin-left: 20px;
+.clothes-links-container{
+    display: flex;
+    justify-content: space-evenly;
+
 }
+.clothes-links{
+    justify-content: center;
+
+
+}
+
+
 
 .clothes{
-    margin: 20px;
-}
-
-.dress{
-    margin-left: 20px;
+    margin-left: 200px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
 }
