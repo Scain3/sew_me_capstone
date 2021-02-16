@@ -8,6 +8,7 @@ const tailorRouter = require('./tailor.js');
 const cartRouter = require('./cart.js');
 
 
+
 // GET /api/set-token-cookie
 const asyncHandler = require('express-async-handler');
 const { setTokenCookie } = require('../../utils/auth.js');
@@ -58,6 +59,7 @@ router.use('/search', searchRouter);
 router.use('/tailor', tailorRouter);
 
 router.use('/cart', cartRouter);
+
 
 
 module.exports = router;
