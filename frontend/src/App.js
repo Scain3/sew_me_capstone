@@ -13,6 +13,7 @@ import Tailor from "./components/TailorPage/tailor";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Coats from "./components/Categories/Coat";
 import Dress from "./components/Categories/Dress";
+import Jacket from "./components/Categories/Jacket";
 
 function App() {
   const dispatch = useDispatch();
@@ -56,10 +57,10 @@ function App() {
           <Route path="/dress">
             <Dress />
           </Route>
-          {/* <Route path="/jacket">
+          <Route path="/jacket">
             <Jacket />
           </Route>
-          <Route path="/pants">
+          {/* <Route path="/pants">
             <Pants />
           </Route>
           <Route path="/shirt">

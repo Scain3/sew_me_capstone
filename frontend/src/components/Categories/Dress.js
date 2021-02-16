@@ -1,6 +1,5 @@
-import { useEffect, useDispatch } from "react";
 import {useSelector} from "react-redux";
-import {useParams, useHistory} from "react-router-dom";
+import { useHistory} from "react-router-dom";
 import '../Search/Search.css';
 
 
