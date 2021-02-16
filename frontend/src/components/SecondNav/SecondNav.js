@@ -19,6 +19,8 @@ function SecondNav(){
 
                     <NavLink className="clothes jacket" to="/jacket" onClick={()=>{dispatch(fetchPatterns())}}>Jacket</NavLink>
 
+                    <NavLink className="clothes jumper" to="/jumper" onClick={()=>{dispatch(fetchPatterns())}}>Jumper</NavLink>
+
                     <NavLink className="clothes pants" to="/pants" onClick={()=>{dispatch(fetchPatterns())}}>Pants</NavLink>
 
                     <NavLink className="clothes shirt" to="/shirt" onClick={()=>{dispatch(fetchPatterns())}}>Shirt</NavLink>

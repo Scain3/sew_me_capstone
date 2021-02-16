@@ -15,6 +15,9 @@ import Coats from "./components/Categories/Coat";
 import Dress from "./components/Categories/Dress";
 import Jacket from "./components/Categories/Jacket";
 import Pants from "./components/Categories/Pants";
+import Jumper from "./components/Categories/Jumper";
+import Skirt from "./components/Categories/Skirt";
+import Shirt from "./components/Categories/Shirt";
 
 function App() {
   const dispatch = useDispatch();
@@ -61,16 +64,19 @@ function App() {
           <Route path="/jacket">
             <Jacket />
           </Route>
+          <Route path="/jumper">
+            <Jumper />
+          </Route>
           <Route path="/pants">
             <Pants />
           </Route>
-          {/* <Route path="/shirt">
+          <Route path="/shirt">
             <Shirt />
           </Route>
           <Route path="/skirt">
             <Skirt />
           </Route>
-          <Route path="/suit">
+          {/* <Route path="/suit">
             <Suit />
           </Route> */}
         </Switch>
