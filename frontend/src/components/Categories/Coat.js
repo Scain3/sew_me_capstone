@@ -4,39 +4,26 @@ import {useParams} from "react-router-dom";
 
 
 function Coats(){
-    const patterns = useSelector(state => state.patterns);
+    const patterns = useSelector(state => Object.values(state.patterns));
+    console.log("patterns", patterns);
+    console.log("patterns", Object.values(patterns));
+    const {id} = useParams();
 
 
-    if( patterns.patternType !== "coat"){
-        return null;
-    }
+    // if( patterns.patternType !== "coat"){
+    //     return null;
+    // }
 
-    const coats = patterns;
+    const coats = patterns.filter((pattern) => pattern.patternType === "coat" )
+    console.log(coats)
+    //console.log("id", patterns[id].id);
 
     return(
-        <h1>
-            <div>
-                <div>
-                    {console.log(coats)}
-                </div>
-                {
-
-                    coats.map((coat, index) => (
-                        <div>
-                            <h1>Hello World</h1>
-
-
-                        <div>
-                            {coat.patternCompany}
-                        </div>
-
-                        </div>
-
-
-                    ))
-                }
-            </div>
-        </h1>
+      <div>
+          {coats.map((coat)=> (
+              <div>{coat.patternCompany}</div>
+          ))}
+      </div>
     )
 
 
