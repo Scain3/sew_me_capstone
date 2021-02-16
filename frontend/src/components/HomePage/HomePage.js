@@ -18,7 +18,9 @@ const HomePage = () => {
                 <p className="home-paragrah__text">Last pick your desired fabric.</p>
                 <p className="home-paragrah__text">That's it. Your customized clothing will arrive in no time.</p>
                 <div>
-                    <img src="https://thumbs.dreamstime.com/b/woman-body-measurement-chart-scheme-measurement-human-body-sewing-clothes-female-figure-front-back-views-template-186093385.jpg" alt="measurements-chart" />
+                    <img src="https://images.pexels.com/photos/4620621/pexels-photo-4620621.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="measurements-chart" />
+                    <img src="https://images.pexels.com/photos/4622401/pexels-photo-4622401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="pick-a-pattern" />
+                    <img src="https://images.pexels.com/photos/4614231/pexels-photo-4614231.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="pick-a-fabric" />
                 </div>
             </div>
         </div>
