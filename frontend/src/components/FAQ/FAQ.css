@@ -1,0 +1,59 @@
+.about-me_container{
+    display: flex;
+    flex-direction: column;
+    margin:  0 425px;
+    width: 800px;
+}
+
+.career-links{
+    display: flex;
+    margin: 0 160px;
+}
+
+.my-photo__container{
+    margin: 0 200px;
+}
+
+h1, p{
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+.gh-link{
+
+
+}
+.gh, .ln, .al{
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.ln-link{
+
+
+
+}
+.ln{
+    height: 150px;
+    width: 150px;
+
+
+}
+
+.al-link{
+
+
+
+}
+.al{
+    height: 150px;
+    width: 150px;
+
+
+}
