@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const asyncHandler = (handler) => (req, res, next) => handler(req, res, next).catch(next);
-const { CartItem  } = require("../../db/models");
+const { CartItem, Cart  } = require("../../db/models");
 
+//Add To Cart
 router.post('/', asyncHandler(async(req, res) => {
     const cartItem = await CartItem.create(req.body);
-    
+
 
 
     res.json({
@@ -16,6 +17,7 @@ router.post('/', asyncHandler(async(req, res) => {
 
 }))
 
+//Delete from Cart
 router.delete('/:id(\\d+)', asyncHandler(async(req, res, next) => {
     //const {cartItem.tailorId } = req.body;
     console.log(req.params.id);
@@ -24,6 +26,17 @@ router.delete('/:id(\\d+)', asyncHandler(async(req, res, next) => {
     await cartItem.destroy();
     res.json({
         message: 'Success!'
+    })
+}))
+
+//Purchase an Item
+router.post('/', asyncHandler(async(req, res) => {
+    const cart = await Cart.create({
+        userId: user.id
+    })
+
+    res.json({
+        cart
     })
 }))
 

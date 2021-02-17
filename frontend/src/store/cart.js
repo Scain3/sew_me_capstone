@@ -4,6 +4,8 @@ const ADD_TO_CART = '/ADD_TO_CART';
 
 const REMOVE_FROM_CART = '/REMOVE_FROM_CART';
 
+const PURCHASE_ITEMS = '/PURCHASE_ITEMS';
+
 const addToCart = (item) => {
     return {
         type: ADD_TO_CART,
@@ -18,6 +20,15 @@ const removeFromCart = (id) => {
     }
 }
 
+const purchaseItems = (id) => {
+    return{
+        type: PURCHASE_ITEMS,
+        payload: id
+    }
+}
+
+
+
 //body must include the cartId and must be an object
 //ex. {cartId: 1, tailorId: 3}
 export const addItemToCart = (body) => async(dispatch) => {
@@ -30,12 +41,22 @@ export const addItemToCart = (body) => async(dispatch) => {
     dispatch(addToCart(res.data.cartItem))
 }
 
+//Thunk action to remove items from cart
 export const removeItemFromCart = (id) => async(dispatch) => {
     await fetch(`/api/cart/${id}`, {
         method: 'DELETE'
 
     })
     dispatch(removeFromCart(id))
+}
+
+//Thunk action for purchasing items
+export const purchaseItemsFromCart = () => async(dispatch) => {
+    await fetch(`/api/cart/`, {
+        method: 'DELETE'
+    })
+
+    dispatch(purchaseItems())
 }
 
 const cartReducer = (state={}, action) => {
@@ -46,6 +67,8 @@ const cartReducer = (state={}, action) => {
             const newState = {...state}
             delete newState[action.payload]
             return newState;
+        case PURCHASE_ITEMS:
+            return {};
         default:
             return state;
     }
