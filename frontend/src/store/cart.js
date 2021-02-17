@@ -52,11 +52,11 @@ export const removeItemFromCart = (id) => async(dispatch) => {
 
 //Thunk action for purchasing items
 export const purchaseItemsFromCart = (id) => async(dispatch) => {
-    await fetch(`/api/cart/${id}`, {
-        method: 'DELETE'
+    const response = await fetch(`/api/cart/${id}`, {
+        method: 'POST'
     })
 
-    dispatch(purchaseItems())
+    dispatch(purchaseItems(response.data.user, response.data.cart))
 }
 
 const cartReducer = (state={}, action) => {

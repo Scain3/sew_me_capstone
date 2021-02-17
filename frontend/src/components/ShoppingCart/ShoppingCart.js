@@ -1,6 +1,6 @@
 import { useSelector, useDispatch} from "react-redux";
 import './ShoppingCart.css';
-import {removeItemFromCart} from "../../store/cart";
+import {removeItemFromCart, purchaseItemsFromCart} from "../../store/cart";
 
 function ShoppingCart(){
     const cartItems = useSelector(state => Object.values(state.cart));
@@ -44,6 +44,7 @@ function ShoppingCart(){
                 }, 0)}
                 </span>
             </h1>
+            <button onClick={()=>dispatch(purchaseItemsFromCart(cartItems))}>Purchase</button>
         </div>
     )
 }
