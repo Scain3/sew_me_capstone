@@ -16,3 +16,7 @@
     background-color: #C89F9C;
     border: none;
 }
+
+.fa-shopping-cart{
+    cursor: pointer;
+}

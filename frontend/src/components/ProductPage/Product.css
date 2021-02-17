@@ -60,4 +60,5 @@
 .button{
     background-color: #C89F9C;
     border: none;
+    cursor: pointer;
 }

@@ -45,4 +45,9 @@ font-weight: bold;
 
 .product-container{
     margin: 10px;
+    cursor: pointer;
+}
+
+.nav-search__submit{
+    cursor: pointer;
 }
