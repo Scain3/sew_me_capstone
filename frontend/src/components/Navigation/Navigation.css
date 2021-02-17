@@ -135,4 +135,15 @@ body{
   height: 20px;
 }
 
+.demo-container{
+  /* padding-right: 10px; */
+}
 
+.Demo-login{
+  /* margin-left: 10rem; */
+  background-color: #C89F9C;
+  border: none;
+  font-size: 20px;
+  font-family: 'Big Shoulders Display', cursive;
+  cursor: pointer;
+}
