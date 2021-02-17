@@ -51,8 +51,8 @@ export const removeItemFromCart = (id) => async(dispatch) => {
 }
 
 //Thunk action for purchasing items
-export const purchaseItemsFromCart = () => async(dispatch) => {
-    await fetch(`/api/cart/`, {
+export const purchaseItemsFromCart = (id) => async(dispatch) => {
+    await fetch(`/api/cart/${id}`, {
         method: 'DELETE'
     })
 
