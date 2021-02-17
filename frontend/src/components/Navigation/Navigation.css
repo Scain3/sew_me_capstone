@@ -14,8 +14,9 @@ text-decoration: none;
 font-weight: 100;
 font-size: 80px;
 color: black;
+margin: 0 auto;
  /* margin: 0 -200px; */
-margin-right: 175px;
+/* margin-right: 175rem; */
 }
 
 .nav-container{
@@ -122,12 +123,16 @@ body{
 }
 
 .faq-link{
-  color: black;
+  margin-left: 12rem;
+  margin-top: 10px;
   text-decoration: none;
+  color: black;
 }
 
 .faq-div{
-  margin-left: 200px;
   margin-top: 10px;
-
+  width: 20px;
+  height: 20px;
 }
+
+
