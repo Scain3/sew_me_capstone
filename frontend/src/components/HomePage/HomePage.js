@@ -2,7 +2,7 @@ import './Home.css';
 import { NavLink } from 'react-router-dom';
 import SignupFormModal from '../SignupFormModal';
 import React from 'react';
-import SecondNav from '../SecondNav/SecondNav';
+
 
 
 const HomePage = () => {
