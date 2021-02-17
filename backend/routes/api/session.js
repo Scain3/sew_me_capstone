@@ -37,7 +37,10 @@ router.post(
     }
 
     const cart = await Cart.findOne({
-      order: [['createdAt', 'DESC']]
+      where: {
+        userId: user.id
+      },
+      order: [['id', 'DESC']],
     })
 
     await setTokenCookie(res, user);
@@ -65,7 +68,10 @@ router.get(
   asyncHandler(async(req, res) => {
     const { user } = req;
     const cart = await Cart.findOne({
-      order: [['createdAt', 'DESC']]
+      order: [['id', 'DESC']],
+      where:{
+        userId: user.id
+      }
     })
 
 
