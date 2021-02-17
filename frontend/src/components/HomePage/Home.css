@@ -29,3 +29,8 @@
 .home-paragraph__text{
 
 }
+
+.measurement-img, .pattern-img{
+    margin: 0 5px;
+    margin-bottom: 5px;
+}
