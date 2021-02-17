@@ -12,7 +12,6 @@ function Tailor(){
     const cartId = useSelector(state => state.session.cartId);
     const history = useHistory();
     const dispatch = useDispatch();
-    console.log(tailorItem);
 
     const moveToCart = () => {
         if(!user){
@@ -31,7 +30,6 @@ function Tailor(){
 
     return(
     <div className="tailor-container">
-        {console.log(tailorItem)}
         {tailorItem.id && <div className="tailor-pattern">
             <h3 className="headers">{ tailorItem.clothing}</h3>
             <img className="tailored-image" src={tailorItem.patternImage} alt={tailorItem.type} />

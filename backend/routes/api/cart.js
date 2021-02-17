@@ -19,10 +19,7 @@ router.post('/', asyncHandler(async(req, res) => {
 
 //Delete from Cart
 router.delete('/:id(\\d+)', asyncHandler(async(req, res, next) => {
-    //const {cartItem.tailorId } = req.body;
-    console.log(req.params.id);
     const cartItem = await CartItem.findByPk(req.params.id);
-    console.log(cartItem);
     await cartItem.destroy();
     res.json({
         message: 'Success!'
@@ -30,7 +27,7 @@ router.delete('/:id(\\d+)', asyncHandler(async(req, res, next) => {
 }))
 
 //Purchase an Item
-router.post('/purchase/:id(\\d+)', asyncHandler(async(req, res) => {
+router.post('/', asyncHandler(async(req, res) => {
     const {user} = req;
     const cart = await Cart.create({
         userId: user.id

@@ -27,7 +27,6 @@ function SingleFabricPage(){
         if(!user){
             return history.push('/login');
         }
-        console.log(fabrics[id]);
         const fabricId = fabrics[id].id;
 
         dispatch(updateTailoredProduct(fabricId, user.id, tailor.id));

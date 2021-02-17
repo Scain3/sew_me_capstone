@@ -44,7 +44,7 @@ function ShoppingCart(){
                 }, 0)}
                 </span>
             </h1>
-            <button onClick={()=>dispatch(purchaseItemsFromCart(cartItems))}>Purchase</button>
+            {/* <button onClick={()=>dispatch(purchaseItemsFromCart(cartItems))}>Purchase</button> */}
         </div>
     )
 }
