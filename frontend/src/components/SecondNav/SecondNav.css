@@ -1,15 +1,18 @@
 .clothes-links-container{
+    position: relative;
     display: flex;
     /* justify-content: space-between; */
     padding-top: 10px;
     /* margin-left: 0; */
     margin-bottom: 10px;
     border-bottom: black;
+    /* width: 96px; */
 
 }
 .clothes-links{
     display: flex;
     justify-content: space-evenly;
+    /* width: 900px; */
 
 
 }
@@ -17,8 +20,8 @@
 
 
 .clothes{
-    justify-content: space-evenly;
-    margin: 0 90px;
+    justify-content: center;
+    margin: 0 5rem;
     color: black;
     font-size: 20px;
     text-decoration: none;
