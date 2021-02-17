@@ -40,7 +40,7 @@ router.post(
       where: {
         userId: user.id
       },
-      order: [['id', 'DESC']],
+      order: [['createdAt', 'DESC']],
     })
 
     await setTokenCookie(res, user);
@@ -65,14 +65,10 @@ router.delete(
 router.get(
   '/',
   restoreUser,
-  asyncHandler(async(req, res) => {
+  asyncHandler(async(req, res, next) => {
     const { user } = req;
-    const cart = await Cart.findOne({
-      order: [['id', 'DESC']],
-      where:{
-        userId: user.id
-      }
-    })
+
+
 
 
     // const cart = await Cart.findOrCreate({
@@ -83,6 +79,14 @@ router.get(
     // })
 
     if (user) {
+
+      const cart = await Cart.findOne({
+        order: [['createdAt', 'DESC']],
+        where:{
+          userId: user.id
+        }
+      })
+
 
       return res.json({
         user: user.toSafeObject(),

@@ -27,16 +27,16 @@ router.delete('/:id(\\d+)', asyncHandler(async(req, res, next) => {
 }))
 
 //Purchase an Item
-router.post('/', asyncHandler(async(req, res) => {
-    const {user} = req;
-    const cart = await Cart.create({
-        userId: user.id
-    })
+// router.post('/', asyncHandler(async(req, res) => {
+//     const {user} = req;
+//     const cart = await Cart.create({
+//         userId: user.id
+//     })
 
-    res.json({
-        user,
-        cart
-    })
-}))
+//     res.json({
+//         user,
+//         cart
+//     })
+// }))
 
 module.exports = router;

@@ -23,37 +23,10 @@ p{
 }
 
 
-.gh-link{
 
-
-}
 .gh, .ln, .al{
     height: 150px;
     width: 150px;
     margin: 5px;
     border-radius: 50%;
-}
-
-.ln-link{
-
-
-
-}
-.ln{
-    height: 150px;
-    width: 150px;
-
-
-}
-
-.al-link{
-
-
-
-}
-.al{
-    height: 150px;
-    width: 150px;
-
-
 }
