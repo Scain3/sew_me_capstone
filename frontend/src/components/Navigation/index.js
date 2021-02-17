@@ -40,6 +40,7 @@ function Navigation({ isLoaded }){
           <span className='search-container'>
             <SearchBar />
           </span>
+          <div className="faq-div"><NavLink className="faq-link" to='/FAQ'>FAQ</NavLink></div>
           <NavLink className="home" exact to="/">Sew Me</NavLink>
           {isLoaded && sessionLinks}
         </li>

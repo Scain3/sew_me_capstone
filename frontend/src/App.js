@@ -19,6 +19,7 @@ import Jumper from "./components/Categories/Jumper";
 import Skirt from "./components/Categories/Skirt";
 import Shirt from "./components/Categories/Shirt";
 import Suit from "./components/Categories/Suit";
+import FAQ from "./components/FAQ/FAQ";
 
 function App() {
   const dispatch = useDispatch();
@@ -79,6 +80,9 @@ function App() {
           </Route>
           <Route path="/suit">
             <Suit />
+          </Route>
+          <Route path="/FAQ">
+            <FAQ />
           </Route>
         </Switch>
       )}

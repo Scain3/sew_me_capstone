@@ -120,3 +120,14 @@ body{
   justify-self: flex-end;
   padding-top: 30px;
 }
+
+.faq-link{
+  color: black;
+  text-decoration: none;
+}
+
+.faq-div{
+  margin-left: 200px;
+  margin-top: 10px;
+
+}
