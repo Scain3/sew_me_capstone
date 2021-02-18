@@ -10,7 +10,7 @@ function ShoppingCart(){
     return(
         <div className="cart-container">
             <h1 className="header"> Shopping Cart </h1>
-            <div>{cartItems.map(cartItem => (
+            <div className="cart-item">{cartItems.map(cartItem => (
                 <div className="whole-cart">
                     {cartItem.patternId && <div className="pattern-cart">
                         <h3>{cartItem.patternCompany + " " + cartItem.patternNumber}</h3>
@@ -34,7 +34,7 @@ function ShoppingCart(){
 
 
             ))}</div>
-            <h1>{"Total:" + " " }
+            <h1 className="total">{"Total:" + " " }
                 <span>${cartItems.reduce((currentSum, cartItem) => {
                         const price = parseFloat(cartItem.patternPrice) + parseFloat(cartItem.fabricPrice) + parseFloat(cartItem.tailorPrice)
 
