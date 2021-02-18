@@ -1,4 +1,5 @@
-#Sew_Me
+#Sew-Me
+
 Sew me is an application that allows users to feel a part of the creation process when purchasing customized clothing. 
 The customer can pick out a pattern that has fabric type and length recommendations based on the type of garment or the size of the garment the user requires. 
 After selecting the clothing pattern, the user is then prompted to pick out the fabric that they would like each part of their garment to be sewn with. 
@@ -61,20 +62,50 @@ corner of the nav bar.
 **Database Schema**
 **Frontend Routes** 
   - "/"
+    This is the link to the Home Landing Page. This page has instructions about the steps to create a 
+    tailor made item. First add a pattern to tailor made state then second the fabric.
+    
   - "/search"
+    This is the link that displays after clicking the search button.
+
   - "/patterns/:id"
+    This is the link to the pattern description for a single pattern.
+
   - "/fabrics/:id"
+    This is the link to the fabric description for a single fabric.
+    
   - "/tailor"
+    This is the link to create a tailored outfit. It is reached when first clicking on the tailor this        button for a pattern and then searching and clicking the tailor this button for a fabric.
+    
   - "/cart"
+    This is the link to the Shopping Cart Landing page.
+  
   - "/coat"
+    This is the link to the coat category query.
+    
   - "/dress"
+    This is the link to the dress category query.
+    
   - "/jacket"
+    This is the link to the jacket category query.
+    
   - "/jumper"
+    This is the link to the jumper category query.
+    
   - "/pants"
+    This is the link to the pants category query.
+  
   - "/shirt"
+    This is the link to the shirt category query.
+  
   - "/skirt"
+    This is the link to the skirt category query.
+  
   - "/suit"
+    This is the link to the suit category query.
+    
   - "/FAQ"
+    This is the link to my About Me FAQ page. Please look to learn a little about me as a developer and link to my linked-in, github, and angellist.
   
 **API Routes** 
 **Redux store**
