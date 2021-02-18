@@ -8,10 +8,12 @@ After making the selections, the user can add the clothes to the cart and purcha
 Stretch Goal: I would like a drag and drop feature where the user can interact with the application like playing with a paper doll where the user can put the clothes on an avatar and change the color to the fabric color that they picked out so they can visualize what the clothes may look like on them.
 
 **Demo User**
+
 In order to explore features that are granted to logged-in users. Please click on the Demo Login button in the top right-hand 
 corner of the nav bar.
 
 **Feature list**
+
   - Users
     1. A user can create an account.
     2. A previous user can log in.
@@ -46,6 +48,7 @@ corner of the nav bar.
     4. A logged-in user should be able to view the total for all of the items in the cart.
   
 **React Components**
+
   - Categories
   - Home Page
   - Login Form Page
@@ -60,7 +63,9 @@ corner of the nav bar.
   - Tailor Page
   
 **Database Schema**
+
 **Frontend Routes** 
+
   - "/"
  
     This is the link to the Home Landing Page. This page has instructions about the steps to create a 
@@ -80,7 +85,7 @@ corner of the nav bar.
     
   - "/tailor"
 
-    This is the link to create a tailored outfit. It is reached when first clicking on the tailor this        button for a pattern and then searching and clicking the tailor this button for a fabric.
+    This is the link to create a tailored outfit. It is reached when first clicking on the tailor this button for a pattern and then searching and clicking the tailor this button for a fabric.
     
   - "/cart"
 
@@ -123,4 +128,5 @@ corner of the nav bar.
     This is the link to my About Me FAQ page. Please look to learn a little about me as a developer and link to my linked-in, github, and angellist.
   
 **API Routes** 
+
 **Redux store**
