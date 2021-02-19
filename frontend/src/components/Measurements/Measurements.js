@@ -9,6 +9,7 @@ function Measurements(){
     const measurements = useSelector(state => state.measurements.byId);
     const user = useSelector(state => state.session.user);
     const dispatch = useDispatch();
+    const history = useHistory();
 
     console.log("user", user);
     //console.log("userId", user.id);
@@ -26,12 +27,18 @@ function Measurements(){
 
     //console.log("measurements", measurements);
 
-    // if(!user.id){
-    //     <MeasurementPage />
-    // }
 
+    // if (measurements === undefined){
+    //     return <MeasurementPage />
+    // }
+    if(!measurements){
+        return null;
+    }
+    
     const myMeasurements = measurements.filter((measurement) => measurement.userId === userId)
+
     console.log("myMeasurements", myMeasurements);
+
 
 
 

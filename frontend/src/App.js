@@ -21,6 +21,7 @@ import Shirt from "./components/Categories/Shirt";
 import Suit from "./components/Categories/Suit";
 import FAQ from "./components/FAQ/FAQ";
 import Measurement from "./components/Measurements/Measurements";
+import MeasurementPage from "./components/MeasurementsModal/Measurement";
 
 function App() {
   const dispatch = useDispatch();
@@ -84,6 +85,9 @@ function App() {
           </Route>
           <Route path="/FAQ">
             <FAQ />
+          </Route>
+          <Route path="/add-measurements" exact={true}>
+            <MeasurementPage />
           </Route>
           <Route path="/measurements">
             <Measurement />
