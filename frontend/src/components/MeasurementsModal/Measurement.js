@@ -5,8 +5,6 @@ import * as sessionActions from "../../store/session";
 
 
 function MeasurementPage() {
-  const dispatch = useDispatch();
-  const sessionUser = useSelector((state) => state.session.user);
   const [chest, setChest] = useState("");
   const [shoulders, setShoulders] = useState("");
   const [sleeves, setSleeves] = useState("");
@@ -24,21 +22,6 @@ function MeasurementPage() {
   const [kneeToThigh, setKneeToThigh] = useState("");
   const [frontRise, setFrontRise] = useState("");
   const [backRise, setBackRise] = useState("");
-
-
-  if (sessionUser) return <Redirect to="/" />;
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   if (password === confirmPassword) {
-  //     setErrors([]);
-  //     return dispatch(sessionActions.signup({ email, username, password }))
-  //       .catch(res => {
-  //         if (res.data && res.data.errors) setErrors(res.data.errors);
-  //       });
-  //   }
-  //   return setErrors(['Confirm Password field must be the same as the Password field']);
-  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
