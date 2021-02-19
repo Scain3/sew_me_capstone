@@ -21,11 +21,7 @@ const initialState = {};
 const measurementReducer = (state=initialState, action) => {
     switch(action.type){
         case GET_MEASUREMENTS:
-            const allMeasurements = {};
-            action.payload.forEach((measurement) => {
-                allMeasurements[measurement.id] = measurement
-            })
-            return allMeasurements
+            return {...state, ["byId"]: action.payload};
         default:
             return state;
     }
