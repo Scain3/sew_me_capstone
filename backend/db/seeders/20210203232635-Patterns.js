@@ -164,6 +164,42 @@ module.exports = {
         image2: 'https://images-na.ssl-images-amazon.com/images/I/81SmLfeW3IL._AC_SY879_.jpg',
         image3: 'https://images-na.ssl-images-amazon.com/images/I/81wILhVOGAL._AC_SY879_.jpg',
         image4: 'https://images-na.ssl-images-amazon.com/images/I/81weGKVVjnL._AC_SY879_.jpg'
+      },
+      {
+        patternCompany: 'Butterick',
+        patternNumber: 'B4790',
+        patternType: 'dress',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/51d2hy-jKQL._AC_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/71BCQizDXLL._AC_SY879_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/51d2hy-jKQL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/71BCQizDXLL._AC_SY879_.jpg',
+      },
+      {
+        patternCompany: 'Butterick',
+        patternNumber: 'B6108',
+        patternType: 'jacket',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/71jRBi2blsL._AC_SX679_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/41K%2BhzWOffL._AC_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/41B9flAXW7L._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/41-ek7aFS2L._AC_.jpg'
+      },
+      {
+        patternCompany: 'Butterick',
+        patternNumber: 'B6522',
+        patternType: 'jumper',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81YddaRP9qL._AC_SX679_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/81Xl0lSMKFL._AC_SY879_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/81pBBXx0EYL._AC_SY879_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/91YYRgDbyAL._AC_SY879_.jpg'
+      },
+      {
+        patternCompany: 'Butterick',
+        patternNumber: 'B4292',
+        patternType: 'pants',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/51JuSNFmZEL._AC_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/71oqHgyvFWL._AC_SY879_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/41LHh9lP9JL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/51JuSNFmZEL._AC_.jpg'
       }
 ], {});
 
