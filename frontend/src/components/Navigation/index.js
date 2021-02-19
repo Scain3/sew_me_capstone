@@ -44,7 +44,8 @@ function Navigation({ isLoaded }){
           <button className="Demo-login" onClick={demoLogin}>Demo Login</button>
         </span>
         <LoginFormModal />
-        <NavLink className="signup" to="/signup">Sign Up</NavLink>
+        <SignupFormModal />
+        {/* <NavLink className="signup" to="/signup">Sign Up</NavLink> */}
       </span>
     );
   }
