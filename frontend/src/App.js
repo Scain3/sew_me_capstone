@@ -20,7 +20,7 @@ import Skirt from "./components/Categories/Skirt";
 import Shirt from "./components/Categories/Shirt";
 import Suit from "./components/Categories/Suit";
 import FAQ from "./components/FAQ/FAQ";
-import Measurement from "./components/MeasurementsModal/Measurement";
+import Measurement from "./components/Measurements/Measurements";
 
 function App() {
   const dispatch = useDispatch();
