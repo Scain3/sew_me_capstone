@@ -154,7 +154,10 @@ module.exports = {
         image1: 'https://images-na.ssl-images-amazon.com/images/I/71uwsC5sk0L._AC_SX679_.jpg',
         image2: 'https://images-na.ssl-images-amazon.com/images/I/810TmsX7MZL._AC_SY879_.jpg',
         image3: 'https://images-na.ssl-images-amazon.com/images/I/41r%2B5NEa40L._AC_SX679_.jpg',
-        image4: 'https://images-na.ssl-images-amazon.com/images/I/41ap36e5zCL._AC_SX679_.jpg'
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/41ap36e5zCL._AC_SX679_.jpg',
+        price: 12.25,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         patternCompany: 'Butterick',
@@ -163,7 +166,10 @@ module.exports = {
         image1: 'https://images-na.ssl-images-amazon.com/images/I/818ZByhba0L._AC_SX679_.jpg',
         image2: 'https://images-na.ssl-images-amazon.com/images/I/81SmLfeW3IL._AC_SY879_.jpg',
         image3: 'https://images-na.ssl-images-amazon.com/images/I/81wILhVOGAL._AC_SY879_.jpg',
-        image4: 'https://images-na.ssl-images-amazon.com/images/I/81weGKVVjnL._AC_SY879_.jpg'
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81weGKVVjnL._AC_SY879_.jpg',
+        price: 13.52,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         patternCompany: 'Butterick',
@@ -173,6 +179,9 @@ module.exports = {
         image2: 'https://images-na.ssl-images-amazon.com/images/I/71BCQizDXLL._AC_SY879_.jpg',
         image3: 'https://images-na.ssl-images-amazon.com/images/I/51d2hy-jKQL._AC_.jpg',
         image4: 'https://images-na.ssl-images-amazon.com/images/I/71BCQizDXLL._AC_SY879_.jpg',
+        price: 10.15,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         patternCompany: 'Butterick',
@@ -181,7 +190,10 @@ module.exports = {
         image1: 'https://images-na.ssl-images-amazon.com/images/I/71jRBi2blsL._AC_SX679_.jpg',
         image2: 'https://images-na.ssl-images-amazon.com/images/I/41K%2BhzWOffL._AC_.jpg',
         image3: 'https://images-na.ssl-images-amazon.com/images/I/41B9flAXW7L._AC_.jpg',
-        image4: 'https://images-na.ssl-images-amazon.com/images/I/41-ek7aFS2L._AC_.jpg'
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/41-ek7aFS2L._AC_.jpg',
+        price: 12.15,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         patternCompany: 'Butterick',
@@ -190,7 +202,10 @@ module.exports = {
         image1: 'https://images-na.ssl-images-amazon.com/images/I/81YddaRP9qL._AC_SX679_.jpg',
         image2: 'https://images-na.ssl-images-amazon.com/images/I/81Xl0lSMKFL._AC_SY879_.jpg',
         image3: 'https://images-na.ssl-images-amazon.com/images/I/81pBBXx0EYL._AC_SY879_.jpg',
-        image4: 'https://images-na.ssl-images-amazon.com/images/I/91YYRgDbyAL._AC_SY879_.jpg'
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/91YYRgDbyAL._AC_SY879_.jpg',
+        price: 13.54,
+        createdAt: new Date(),
+        updateAt: new Date()
       },
       {
         patternCompany: 'Butterick',
@@ -199,7 +214,34 @@ module.exports = {
         image1: 'https://images-na.ssl-images-amazon.com/images/I/51JuSNFmZEL._AC_.jpg',
         image2: 'https://images-na.ssl-images-amazon.com/images/I/71oqHgyvFWL._AC_SY879_.jpg',
         image3: 'https://images-na.ssl-images-amazon.com/images/I/41LHh9lP9JL._AC_.jpg',
-        image4: 'https://images-na.ssl-images-amazon.com/images/I/51JuSNFmZEL._AC_.jpg'
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/51JuSNFmZEL._AC_.jpg',
+        price: 14.54,
+        createAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Butterick',
+        patternNumber: 'B5526',
+        patternType: 'shirt',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/51vaYulqxBL._AC_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/813HnZlbO0L._AC_SY879_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/417H3L96%2BNL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/51vaYulqxBL._AC_.jpg',
+        price: 10.45,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Butterick',
+        patternNumber: '6318',
+        patternType: 'dress',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/51CmKwHoTKL._AC_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/51CmKwHoTKL._AC_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/51CmKwHoTKL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/51CmKwHoTKL._AC_.jpg',
+        price: 12.95,
+        createdAt: new Date(),
+        updateAt: new Date()
       }
 ], {});
 
