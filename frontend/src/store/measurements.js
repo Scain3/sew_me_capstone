@@ -13,7 +13,7 @@ const getMeasurements = (measurements) => {
 //THUNK ACTION FOR GETTING ALL MEASUREMENTS
 export const fetchMeasurements = () => async(dispatch) => {
     const response = await fetch(`/api/measurements`);
-    dispatch(getMeasurements(response.data.measurements))
+    dispatch(getMeasurements(response.data))
 }
 
 const initialState = {};

@@ -1,28 +1,41 @@
-import './Home.css';
 import { NavLink } from 'react-router-dom';
-import SignupFormModal from '../SignupFormModal';
-import React from 'react';
-import {useSelector} from "react-redux";
+import React, {useEffect} from 'react';
+import {useDispatch, useSelector} from "react-redux";
 import {useHistory} from 'react-router-dom';
-import MeasurementPage from "../MeasurementsModal/Measurement";
+import SignupFormModal from '../SignupFormModal';
+import {fetchMeasurements} from "../../store/measurements";
+import './Home.css';
+
 
 
 
 const HomePage = () => {
+    const dispatch = useDispatch();
     const history = useHistory();
     const measurements = useSelector(state => state.measurements.byId);
     const user = useSelector(state => state.session.user);
 
+    useEffect(()=> {
+        dispatch(fetchMeasurements());
+    }, [dispatch])
+
     const handleClick = () => {
-        //const myMeasurements = measurements.filter((measurement) => measurement.userId === user.id);
         if(!user){
             return history.push('/login');
         }
+        const myMeasurements = measurements.filter((measurement) => measurement.userId === user.id);
+        if(!myMeasurements){
+            return history.push('/add-measurements');
+         }
+         //else{
+        //     return history.push('/measurements');
+        // }
         // if(!measurements) {
         //     return history.push('/add-measurements');
         // }
 
-        history.push('/measurements');
+        dispatch(fetchMeasurements);
+        return history.push('/measurements');
     }
 
     return(
