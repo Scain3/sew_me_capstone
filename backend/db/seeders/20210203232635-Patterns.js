@@ -122,6 +122,18 @@ module.exports = {
         price: 11.71,
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '8508',
+        patternType: 'suit',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/611pApwbpQL._AC_SX679_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/71Kz15CeH6L._AC_SX679_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/51ox8BVsC3L._AC_SX679_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/611pApwbpQL._AC_SX679_.jpg'
+      },
+      {
+        
       }
 ], {});
 
