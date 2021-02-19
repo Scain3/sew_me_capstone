@@ -6,6 +6,7 @@ const fabricRouter = require('./fabrics.js');
 const searchRouter = require('./search.js');
 const tailorRouter = require('./tailor.js');
 const cartRouter = require('./cart.js');
+const measurementRouter = require('./measurements.js');
 
 
 
@@ -59,6 +60,8 @@ router.use('/search', searchRouter);
 router.use('/tailor', tailorRouter);
 
 router.use('/cart', cartRouter);
+
+router.use('/measurements', measurementRouter);
 
 
 

@@ -25,16 +25,6 @@ router.get('/:id(\\d+)', asyncHandler(async(req, res, next) => {
     })
 }))
 
-//Query all of the coats
-// router.get('/coat', asyncHandler(async(req,res) => {
-//     const allCoats = await Pattern.findAll({
-//         where: {
-//             patternType: req.params.coat,
-//         }
-//     })
-//     res.json({
-//         allCoats
-//     })
-// }))
+
 
 module.exports = router;
