@@ -36,7 +36,20 @@ function Measurements(){
 
 
     return(
-        <h1>Hello World!</h1>
+        <div>
+            {myMeasurements && myMeasurements.map((measurements, index) => (
+                <div>
+                    <div>{` chest: ${measurements.chest}`}</div>
+                    <div>{` shoulders: ${measurements.shoulders}`}</div>
+                    <div>{` sleeves: ${measurements.sleeves}`}</div>
+                    <div>{` biceps: ${measurements.biceps}`}</div>
+                    <div>{` wrist: ${measurements.wrist}`}</div>
+                    <div>{` waist: ${measurements.waist}`}</div>
+                    <div>{` jacketLength: ${measurements.jacketLength}`}</div>
+                    <div>{` height: ${measurements.height}`}</div>
+                </div>
+            ))}
+        </div>
     )
 
 }
