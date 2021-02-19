@@ -205,7 +205,7 @@ module.exports = {
         image4: 'https://images-na.ssl-images-amazon.com/images/I/91YYRgDbyAL._AC_SY879_.jpg',
         price: 13.54,
         createdAt: new Date(),
-        updateAt: new Date()
+        updatedAt: new Date()
       },
       {
         patternCompany: 'Butterick',
@@ -216,7 +216,7 @@ module.exports = {
         image3: 'https://images-na.ssl-images-amazon.com/images/I/41LHh9lP9JL._AC_.jpg',
         image4: 'https://images-na.ssl-images-amazon.com/images/I/51JuSNFmZEL._AC_.jpg',
         price: 14.54,
-        createAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date()
       },
       {
@@ -241,7 +241,7 @@ module.exports = {
         image4: 'https://images-na.ssl-images-amazon.com/images/I/51CmKwHoTKL._AC_.jpg',
         price: 12.95,
         createdAt: new Date(),
-        updateAt: new Date()
+        updatedAt: new Date()
       }
 ], {});
 

@@ -6,7 +6,7 @@ import '../Search/Search.css';
 function Shirt(){
     const history = useHistory();
     const patterns = useSelector(state => Object.values(state.patterns));
-    const shirts = patterns.filter((pattern) => pattern.patternType === "shirts" )
+    const shirts = patterns.filter((pattern) => pattern.patternType === "shirt" )
 
 
 

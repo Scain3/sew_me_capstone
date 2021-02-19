@@ -6,7 +6,7 @@ import '../Search/Search.css';
 function Suit(){
     const history = useHistory();
     const patterns = useSelector(state => Object.values(state.patterns));
-    const suits = patterns.filter((pattern) => pattern.patternType === "suits" )
+    const suits = patterns.filter((pattern) => pattern.patternType === "suit" )
 
 
 
