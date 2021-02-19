@@ -45,14 +45,14 @@ function Measurements(){
     const myMeasurements = measurements.filter((measurement) => measurement.userId === userId);
     console.log("myMeasurements", myMeasurements);
 
-    if(myMeasurements.length === 0){
-        return history.push('/add-measurements');
-    }
+    // if(myMeasurements.length === 0){
+    //     return history.push('/add-measurements');
+    // }
 
         return(
             <div>
                 {myMeasurements && myMeasurements.map((measurements, index) => (
-                    <div>
+                    <div key={index}>
                         <div>{` chest: ${measurements.chest}`}</div>
                         <div>{` shoulders: ${measurements.shoulders}`}</div>
                         <div>{` sleeves: ${measurements.sleeves}`}</div>

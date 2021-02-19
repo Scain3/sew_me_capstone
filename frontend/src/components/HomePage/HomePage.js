@@ -24,15 +24,9 @@ const HomePage = () => {
             return history.push('/login');
         }
         const myMeasurements = measurements.filter((measurement) => measurement.userId === user.id);
-        if(!myMeasurements){
+        if(myMeasurements.length === 0){
             return history.push('/add-measurements');
          }
-         //else{
-        //     return history.push('/measurements');
-        // }
-        // if(!measurements) {
-        //     return history.push('/add-measurements');
-        // }
 
         dispatch(fetchMeasurements);
         return history.push('/measurements');
