@@ -56,7 +56,7 @@ function LoginForm() {
             />
         </div>
         <button type="submit" className="login-form_submit">Log In</button>
-        <Link to="/sign-up" className="login-form_redirect">CREATE AN ACCOUNT</Link>
+        <Link to="/signup" className="login-form_redirect">CREATE AN ACCOUNT</Link>
       </form>
     </>
   );
