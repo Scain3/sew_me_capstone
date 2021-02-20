@@ -11,18 +11,6 @@ function Measurements(){
     const dispatch = useDispatch();
     const history = useHistory();
 
-
-
-    console.log("user", user);
-    //console.log("userId", user.id);
-    //console.log("userId", userId);
-    console.log("measurements", measurements);
-
-
-    // useEffect(()=> {
-    //     dispatch(fetchMeasurements());
-    // }, [dispatch])
-
     if(!user){
         return null;
     }
@@ -31,23 +19,16 @@ function Measurements(){
     console.log("user", user);
 
 
-    //console.log("measurements", measurements);
 
-
-    // if (measurements === undefined){
-    //     return <MeasurementPage />
-    // }
 
     if(!measurements){
         return null;
     }
 
     const myMeasurements = measurements.filter((measurement) => measurement.userId === userId);
-    console.log("myMeasurements", myMeasurements);
 
-    // if(myMeasurements.length === 0){
-    //     return history.push('/add-measurements');
-    // }
+
+
 
         return(
             <div>

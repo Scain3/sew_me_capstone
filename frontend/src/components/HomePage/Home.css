@@ -30,7 +30,34 @@
 
 }
 
+.measurement-div{
+    position: relative;
+    padding-top: 20px;
+    height: 780px;
+    width: 520px;
+}
+
+.measurement_description{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
 .measurement-img, .pattern-img{
     margin: 0 5px;
     margin-bottom: 5px;
+    height: 750px;
+    width: 500px;
+}
+
+.measurement-div:hover .measurement_description{
+    visibility: visible;
+    opacity: 1;
 }

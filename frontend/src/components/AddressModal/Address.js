@@ -18,26 +18,12 @@ function AddressPage() {
 
   if (sessionUser) return <Redirect to="/" />;
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   if (password === confirmPassword) {
-  //     setErrors([]);
-  //     return dispatch(sessionActions.signup({ email, username, password }))
-  //       .catch(res => {
-  //         if (res.data && res.data.errors) setErrors(res.data.errors);
-  //       });
-  //   }
-  //   return setErrors(['Confirm Password field must be the same as the Password field']);
-  // };
 
   return (
     <>
       <h1>Address</h1>
       <form >
-      {/* onSubmit={handleSubmit} */}
-        {/* <ul>
-          {errors.map((error, idx) => <li key={idx}>{error}</li>)}
-        </ul> */}
+      
         <label>
             Address Line 1
             <input

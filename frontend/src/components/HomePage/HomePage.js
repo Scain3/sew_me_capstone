@@ -46,7 +46,13 @@ const HomePage = () => {
                 <p className="home-paragrah__text">Last pick your desired fabric.</p>
                 <p className="home-paragrah__text">That's it. Your customized clothing will arrive in no time.</p>
                 <div className="top-images">
-                    <img className="measurement-img" onClick={handleClick} src="https://images.pexels.com/photos/4620621/pexels-photo-4620621.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="measurements-chart" />
+                    <div className="measurement-div">
+                        <img className="measurement-img" onClick={handleClick} src="https://images.pexels.com/photos/4620621/pexels-photo-4620621.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="measurements-chart" />
+                        <div className="measurement_description">
+                            <h1>1</h1>
+                            <p>Click to add Measurements</p>
+                        </div>
+                    </div>
                     <img className="pattern-img" src="https://images.pexels.com/photos/4622401/pexels-photo-4622401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="pick-a-pattern" />
                 </div>
                 <div className="bottom-img">

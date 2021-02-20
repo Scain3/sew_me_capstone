@@ -31,10 +31,6 @@ function MeasurementPage() {
     <>
       <h1>Measurements</h1>
       <form >
-      {/* onSubmit={handleSubmit} */}
-        {/* <ul>
-          {errors.map((error, idx) => <li key={idx}>{error}</li>)}
-        </ul> */}
         <label>
             Chest
             <input
