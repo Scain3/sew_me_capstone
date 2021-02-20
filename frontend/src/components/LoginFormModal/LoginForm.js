@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import "./LoginForm.css";
+import "./LoginFormModal.css";
 
 function LoginForm() {
   const dispatch = useDispatch();
@@ -29,12 +29,12 @@ function LoginForm() {
             <li key={idx}>{error}</li>
           ))}
         </ul>
-        <div className="login-form_input-container">
-          <label className="login-form_input-label">
+        <div className="login-form-modal_input-container">
+          <label className="login-form-modal_input-label">
             Email
             </label>
             <input
-              className="login-form_input-box"
+              className="login-form-modal_input-box"
               name="email"
               type="text"
               value={email}
@@ -42,12 +42,12 @@ function LoginForm() {
               required
             />
         </div>
-        <div className="login-form_input-container">
-          <label className="login-form_input-label">
+        <div className="login-form-modal_input-container">
+          <label className="login-form-modal_input-label">
             Password
             </label>
             <input
-              className="login-form_input-box"
+              className="login-form-modal_input-box"
               name="password"
               type="password"
               value={password}
@@ -55,7 +55,7 @@ function LoginForm() {
               required
             />
         </div>
-        <button type="submit" className="login-form_submit">Log In</button>
+        <button type="submit" className="login-form-modal_submit">Log In</button>
         <Link to="/signup" className="login-form_redirect">CREATE AN ACCOUNT</Link>
       </form>
     </>

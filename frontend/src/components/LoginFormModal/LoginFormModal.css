@@ -7,7 +7,7 @@
 }
 
 .login-form{
-    height: 250px;
+    height: 300px;
     width: 400px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 /* --------- container --------- */
-.login-form_input-container {
+.login-form-modal_input-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -27,24 +27,28 @@
 
 
 /* --------- input --------- */
-.login-form_input-label {
+.login-form-modal_input-label {
     margin-bottom: 5px;
     font-size: 20px;
+    margin-left: 40px;
 }
 
-.login-form_input-box {
+.login-form-modal_input-box {
     width: 300px;
     height: 20px;
     padding: 2px 5px;
+    margin-left: 40px;
 }
 
 /* --------- buttons --------- */
-.login-form_submit {
+.login-form-modal_submit {
     background-color: white;
     border-style: none;
     border: 2.4px black solid;
     padding: 4px 16px;
-    margin-right: 5px;
+    /* margin-right: 5px; */
+    margin-left: 150px;
+    width: 100px;
     margin-bottom: 35px;
     font-size: 16px;
 
