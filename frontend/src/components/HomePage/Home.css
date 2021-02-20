@@ -30,14 +30,19 @@
 
 }
 
-.measurement-div{
+.top-images{
+    display: flex;
+    justify-content: center;
+}
+
+.img-div{
     position: relative;
     padding-top: 20px;
     height: 780px;
     width: 520px;
 }
 
-.measurement_description{
+.img_description{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -50,14 +55,19 @@
 }
 
 
-.measurement-img, .pattern-img{
+.measurement-img, .pattern-img, .fabric-img{
     margin: 0 5px;
     margin-bottom: 5px;
-    height: 750px;
-    width: 500px;
+    height: 700px;
+    width: 450px;
 }
 
-.measurement-div:hover .measurement_description{
+.img-div:hover .img_description{
     visibility: visible;
     opacity: 1;
+}
+
+.number{
+    margin-top: 150px;
+    font-size: 150px;
 }
