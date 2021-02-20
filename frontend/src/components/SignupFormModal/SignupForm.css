@@ -31,10 +31,12 @@ button:focus {outline:0;}
 /* --------- input --------- */
 .signup-form_input-label {
     margin-bottom: 5px;
+    margin-left: 40px;
     font-size: 20px;
 }
 
 .signup-form_input-box {
+    margin-left: 40px;
     width: 300px;
     height: 20px;
     padding: 2px 5px;
@@ -46,7 +48,8 @@ button:focus {outline:0;}
     border-style: none;
     border: 2.4px black solid;
     padding: 4px 16px;
-    margin-right: 5px;
+    /* margin-right: 5px; */
+    margin-left: 150px;
     margin-bottom: 35px;
     font-size: 16px;
 
