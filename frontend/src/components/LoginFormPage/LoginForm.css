@@ -1,0 +1,47 @@
+/* --------- heading --------- */
+.login-form_heading {
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px #999 solid;
+}
+
+/* --------- container --------- */
+.login-form_input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+/* --------- input --------- */
+.login-form_input-label {
+    margin-bottom: 5px;
+}
+
+.login-form_input-box {
+    width: 400px;
+    height: 20px;
+    padding: 2px 5px;
+}
+
+/* --------- buttons --------- */
+.login-form_submit {
+    background-color: white;
+    border-style: none;
+    border: 2.4px black solid;
+    padding: 4px 16px;
+    margin-right: 5px;
+    margin-bottom: 35px;
+    font-size: 16px;
+
+}
+
+.login-form_redirect {
+    display: block;
+    width: 33%;
+    font-size: 12px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px #666 solid;
+    color: #666;
+}

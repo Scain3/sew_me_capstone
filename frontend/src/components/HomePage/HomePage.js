@@ -36,7 +36,6 @@ const HomePage = () => {
         <div>
             <div className="top-main__div">
                 <div className="top-main__header">Discover a New Shopping Experience</div>
-                <div className="signup-container"><SignupFormModal /></div>
             </div>
             <div className="paragraph-container">
                 <h1>Interested in your own customized outfit</h1>

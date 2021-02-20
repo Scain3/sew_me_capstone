@@ -38,8 +38,9 @@
 .img-div{
     position: relative;
     padding-top: 20px;
-    height: 780px;
+    height: 720px;
     width: 520px;
+    cursor: pointer;
 }
 
 .img_description{
