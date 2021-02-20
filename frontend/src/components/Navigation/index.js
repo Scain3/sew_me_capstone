@@ -17,9 +17,9 @@ function Navigation({ isLoaded }){
   const [errors, setErrors] = useState([]);
 
   const demoLogin = () => {
-    const credential = 'Demo-lition';
+    const email = 'demo@user.io';
     const password = 'password';
-    return dispatch(login({credential, password}))
+    return dispatch(login({email, password}))
         .catch((res) => {
             if (res.data && res.data.errors) setErrors(res.data.errors);
         });
