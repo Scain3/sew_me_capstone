@@ -19,9 +19,9 @@ function SinglePatternPage(){
     const dispatch = useDispatch();
     const history = useHistory();
 
-    useEffect(()=> {
-        dispatch(fetchPatterns());
-    }, [dispatch])
+    // useEffect(()=> {
+    //     dispatch(fetchPatterns());
+    // }, [dispatch])
 
     const handleClick = () => {
         if(!user){

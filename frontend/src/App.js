@@ -22,6 +22,7 @@ import Suit from "./components/Categories/Suit";
 import FAQ from "./components/FAQ/FAQ";
 import Measurement from "./components/Measurements/Measurements";
 import MeasurementPage from "./components/MeasurementsModal/Measurement";
+import Patterns from "./components/ProductPage/Patterns";
 
 function App() {
   const dispatch = useDispatch();
@@ -91,6 +92,9 @@ function App() {
           </Route>
           <Route path="/measurements">
             <Measurement />
+          </Route>
+          <Route path="/patterns" exact={true}>
+            <Patterns />
           </Route>
         </Switch>
       )}
