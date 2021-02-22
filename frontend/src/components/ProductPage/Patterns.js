@@ -1,11 +1,18 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import {useEffect} from "react";
 import {useHistory} from "react-router-dom";
+import {fetchPatterns} from "../../store/pattern";
 
 import "./Product.css";
 
 function Patterns(){
     const patterns = useSelector(state => Object.values(state.patterns));
     const history = useHistory();
+    const dispatch = useDispatch();
+
+    useEffect(()=> {
+        dispatch(fetchPatterns());
+    }, [dispatch])
 
 
 

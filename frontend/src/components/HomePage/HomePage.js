@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {useHistory} from 'react-router-dom';
 import SignupFormModal from '../SignupFormModal';
 import {fetchMeasurements} from "../../store/measurements";
-import {fetchPatterns} from "../../store/pattern";
+//import {fetchPatterns} from "../../store/pattern";
 import './Home.css';
 
 
@@ -19,7 +19,6 @@ const HomePage = () => {
 
     useEffect(()=> {
         dispatch(fetchMeasurements());
-        dispatch(fetchPatterns());
     }, [dispatch])
 
 
@@ -37,10 +36,7 @@ const HomePage = () => {
         return history.push('/measurements');
     }
 
-    const patternClick = () => {
-        dispatch(fetchPatterns);
-        return history.push('/patterns');
-    }
+
 
     return(
         <div>
@@ -62,7 +58,7 @@ const HomePage = () => {
                             <p>Click to add Measurements</p>
                         </div>
                     </div>
-                    <div className="img-div" onClick={patternClick}>
+                    <div className="img-div" onClick={()=>{history.push('/patterns')}}>
                         <div className="img_description">
                             <h1 className="number">2</h1>
                             <p>Click to view available Patterns</p>
