@@ -10,6 +10,23 @@
     margin: 15px;
 }
 
+.header{
+    text-align: center;
+}
+
+.price{
+    text-align: center;
+}
+
+.pattern-block{
+    display: block;
+    flex-direction: vertical;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .single-product__container{
     display: flex;
     justify-content: center;

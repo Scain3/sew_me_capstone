@@ -14,9 +14,9 @@ function Patterns(){
             {patterns.map((pattern, index) => (
                 <div key={index} >
                     <div className="pattern-block" onClick={()=>history.push(`/patterns/${pattern.id}`)}>
-                        <div>{`${pattern.patternCompany} ${pattern.patternNumber}`}</div>
-                        <img className="images" src={pattern.image1} alt={ `${pattern.patternCompany} ${pattern.patternNumber}`} />
-                        <div>${pattern.price}</div>
+                        <div className="header">{`${pattern.patternCompany} ${pattern.patternNumber}`}</div>
+                        <div><img className="images" src={pattern.image1} alt={ `${pattern.patternCompany} ${pattern.patternNumber}`} /></div>
+                        <div className="price">${pattern.price}</div>
                     </div>
                 </div>
             ))}
