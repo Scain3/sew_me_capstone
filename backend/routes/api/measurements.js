@@ -1,5 +1,4 @@
 const express = require('express');
-const { default: Measurements } = require('../../../frontend/src/components/Measurements/Measurements');
 const router = express.Router();
 const asyncHandler = (handler) => (req, res, next) => handler(req, res, next).catch(next);
 const { Measurement } = require("../../db/models");

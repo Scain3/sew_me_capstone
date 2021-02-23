@@ -47,7 +47,7 @@ const measurementReducer = (state=initialState, action) => {
         case GET_MEASUREMENTS:
             return {...state, ["byId"]: action.payload};
         case ADD_MEASUREMENTS:
-            return {...state, [action.payload.id]: action.payload};
+            return {...state, ["byId"]: action.payload};
         default:
             return state;
     }
