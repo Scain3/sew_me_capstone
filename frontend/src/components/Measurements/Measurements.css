@@ -1,0 +1,22 @@
+.measurements-header{
+    text-align: center;
+}
+
+.measure-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.measure{
+    margin: 10px 800px;
+    font-size: 20px;
+}
+.measurements-chest{}
+.measurements-shoulder{}
+.measurements-sleeves{}
+.measurements-biceps{}
+.measurements-wrist{}
+.measurements-waist{}
+.measurements-jacket{}
+.measurements-height{}

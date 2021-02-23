@@ -1,6 +1,7 @@
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import { useHistory } from "react-router-dom";
+import './Measurements.css';
 import { fetchMeasurements } from "../../store/measurements";
 import MeasurementPage from "../MeasurementsModal/Measurement";
 
@@ -32,16 +33,17 @@ function Measurements(){
 
         return(
             <div>
+                <h1 className="measurements-header">Measurements</h1>
                 {myMeasurements && myMeasurements.map((measurements, index) => (
-                    <div key={index}>
-                        <div>{` chest: ${measurements.chest}`}</div>
-                        <div>{` shoulders: ${measurements.shoulders}`}</div>
-                        <div>{` sleeves: ${measurements.sleeves}`}</div>
-                        <div>{` biceps: ${measurements.biceps}`}</div>
-                        <div>{` wrist: ${measurements.wrist}`}</div>
-                        <div>{` waist: ${measurements.waist}`}</div>
-                        <div>{` jacketLength: ${measurements.jacketLength}`}</div>
-                        <div>{` height: ${measurements.height}`}</div>
+                    <div key={index} className="measure-div">
+                        <div className="measure measurements-chest">{` chest: ${measurements.chest}`}</div>
+                        <div className="measure measurements-shoulder">{` shoulders: ${measurements.shoulders}`}</div>
+                        <div className="measure measurements-sleeves">{` sleeves: ${measurements.sleeves}`}</div>
+                        <div className="measure measurements-biceps">{` biceps: ${measurements.biceps}`}</div>
+                        <div className="measure measurements-wrist">{` wrist: ${measurements.wrist}`}</div>
+                        <div className="measure measurements-waist">{` waist: ${measurements.waist}`}</div>
+                        <div className="measure measurements-jacket">{` jacketLength: ${measurements.jacketLength}`}</div>
+                        <div className="measure measurements-height">{` height: ${measurements.height}`}</div>
                     </div>
                 ))}
             </div>
