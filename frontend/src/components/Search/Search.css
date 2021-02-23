@@ -13,6 +13,7 @@
     width: 291px;
     height: 415px;
     margin: 10px;
+    cursor: pointer;
 }
 
 .search-price{
