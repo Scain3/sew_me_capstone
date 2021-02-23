@@ -252,7 +252,7 @@ function MeasurementPage() {
               required
             />
         </div>
-        <button className="measurement-form__submit" type="submit">Sign Up</button>
+        <button className="measurement-form__submit" type="submit">Add Measurements</button>
       </form>
     </div>
   );
