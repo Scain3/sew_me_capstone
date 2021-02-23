@@ -30,7 +30,7 @@ function SignupFormPage() {
   };
 
   return (
-    <>
+    <div className="top-signup-form-div">
     <h1 className="signup-form_heading">Sign Up</h1>
     <form className="signup-form" onSubmit={handleSubmit}>
       <ul>
@@ -114,9 +114,9 @@ function SignupFormPage() {
             required
           />
       </div>
-      <button className="signup-form_submit" type="submit">Sign Up</button>
+      <button className="signup-form_submit signup-button" type="submit">Sign Up</button>
     </form>
-  </>
+  </div>
   );
 }
 

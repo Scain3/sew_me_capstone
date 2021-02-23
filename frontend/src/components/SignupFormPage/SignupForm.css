@@ -1,0 +1,16 @@
+.top-signup-form-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.signup-button{
+    width: 100px;
+}
