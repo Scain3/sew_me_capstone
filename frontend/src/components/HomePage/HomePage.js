@@ -65,7 +65,7 @@ const HomePage = () => {
                         </div>
                         <img className="pattern-img" src="https://images.pexels.com/photos/4622401/pexels-photo-4622401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="pick-a-pattern" />
                     </div>
-                    <div className="img-div">
+                    <div className="img-div" onClick={()=>{history.push('/fabrics')}}>
                         <div className="img_description">
                             <h1 className="number">3</h1>
                             <p>Click to view available Fabrics</p>
