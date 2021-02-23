@@ -25,6 +25,11 @@ corner of the nav bar.
   
   - Product Listings
     1. All users should be able to view pattern and fabric listings
+
+  - Measurements
+    1. An unauthenticated user will be prompted to log in before adding or viewing measurements.
+    2. An authenticated user who has not added their measurements yet will be asked to add measurements and then will be able to view their measurements.
+    3. An authenticated user will be able to view measurements.
     
   - Tailor Made
     1. A logged in user should be able to create a tailor made object by first selecting a Single Pattern Listing, 
@@ -55,6 +60,8 @@ corner of the nav bar.
   - Login Form Modal
   - Navigation
   - Product Page
+  - Measurements
+  - Measurements Modal
   - Search
   - Second Nav
   - Shopping Cart
@@ -74,6 +81,22 @@ corner of the nav bar.
   - "/search"
 
     This is the link that displays after clicking the search button.
+    
+  - "/measurements"
+
+    This is the link that renders all of the users measurements.
+    
+  - "/add-measurements"
+
+    This is the link for a user to add their own measurements.
+    
+  - "/patterns"
+
+    This is the link to view all of the patterns.
+    
+  - "/fabrics"
+    
+    This is the link to view all of the fabrics.
 
   - "/patterns/:id"
 
@@ -129,4 +152,56 @@ corner of the nav bar.
   
 **API Routes** 
 
+  - "/cart"
+
+    Get Cart
+    
+  - "/cart/:id(\\d+)"
+
+    Delete Cart
+    
+  - "/fabrics"
+
+    Get Fabrics
+    
+ - "/fabrics/:id(\\d+)"
+
+    Get One Fabric
+    
+- "/measurements"
+
+    Get Measurements
+    
+- "/measurements/add-measurements"
+  
+    Create Measurements
+    
+- "/patterns"
+
+  Get Patterns
+  
+- "/patterns/:id(\\d+)"
+
+   Get One Pattern
+   
+- "/search"
+    Query data for patterns and fabrics
+    
+- "/users"
+
+    Login
+    Logout
+    Register An Account
+    
+
+    
+
 **Redux store**
+
+- Cart
+- Fabric
+- Measurements
+- Pattern
+- Search
+- Session
+- Tailor
