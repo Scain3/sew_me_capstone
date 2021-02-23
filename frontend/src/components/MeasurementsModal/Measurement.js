@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
-import * as sessionActions from "../../store/session";
+import './Measurements.css';
 
 
 function MeasurementPage() {
@@ -28,7 +28,7 @@ function MeasurementPage() {
   }
 
   return (
-    <>
+    <div className="measurement-div">
       <h1 className="measurement-form__heading">Measurements</h1>
       <form className="measurement-form">
         <div className="measurement-form_input-container">
@@ -123,7 +123,7 @@ function MeasurementPage() {
             />
         </div>
         <div className="measurement-form_input-container">
-          <label>
+          <label className="measurement-form_input-label">
             Height
           </label>
             <input
@@ -252,9 +252,9 @@ function MeasurementPage() {
               required
             />
         </div>
-        <button type="submit">Sign Up</button>
+        <button className="measurement-form__submit" type="submit">Sign Up</button>
       </form>
-    </>
+    </div>
   );
 }
 
