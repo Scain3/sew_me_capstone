@@ -5,7 +5,7 @@ import { useDispatch, useSelector} from "react-redux";
 import {useHistory, useParams} from "react-router-dom";
 import {addItemToCart} from "../../store/cart";
 
-import {fetchFabrics} from "../../store/fabric";
+
 
 import {updateTailoredProduct} from "../../store/tailor";
 
@@ -19,9 +19,6 @@ function SingleFabricPage(){
     const dispatch = useDispatch();
     const history = useHistory();
 
-    useEffect(()=> {
-        dispatch(fetchFabrics());
-    }, [dispatch])
 
     const handleClick = () => {
         if(!user){
