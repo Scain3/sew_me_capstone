@@ -29,161 +29,229 @@ function MeasurementPage() {
 
   return (
     <>
-      <h1>Measurements</h1>
-      <form >
-        <label>
-            Chest
+      <h1 className="measurement-form__heading">Measurements</h1>
+      <form className="measurement-form">
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+              Chest
+          </label>
+              <input
+                  className="measurement-form_input-box"
+                  name="chest"
+                  type="number"
+                  value={chest}
+                  onChange={(e) => setChest(e.target.value)}
+                  required
+              />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+              Shoulders
+          </label>
+              <input
+                  className="measurement-form_input-box"
+                  name="shoulders"
+                  type="number"
+                  value={shoulders}
+                  onChange={(e) => setShoulders(e.target.value)}
+                  required
+              />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Sleeves
+          </label>
             <input
-                type="number"
-                value={chest}
-                onChange={(e) => setChest(e.target.value)}
-                required
+              className="measurement-form_input-box"
+              name="sleeves"
+              type="number"
+              value={sleeves}
+              onChange={(e) => setSleeves(e.target.value)}
+              required
             />
-        </label>
-        <label>
-            Shoulders
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Biceps
+          </label>
             <input
-                type="number"
-                value={shoulders}
-                onChange={(e) => setShoulders(e.target.value)}
-                required
+              className="measurement-form_input-box"
+              name="biceps"
+              type="number"
+              value={biceps}
+              onChange={(e) => setBiceps(e.target.value)}
+              required
             />
-        </label>
-        <label>
-          Sleeves
-          <input
-            type="number"
-            value={sleeves}
-            onChange={(e) => setSleeves(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Biceps
-          <input
-            type="number"
-            value={biceps}
-            onChange={(e) => setBiceps(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Wrist
-          <input
-            type="number"
-            value={wrist}
-            onChange={(e) => setWrists(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Waist
-          <input
-            type="number"
-            value={waist}
-            onChange={(e) => setWaists(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Jacket Length
-          <input
-            type="number"
-            value={jacketLength}
-            onChange={(e) => setJacketLength(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Height
-          <input
-            type="number"
-            value={height}
-            onChange={(e) => setHeight(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Hip
-          <input
-            type="number"
-            value={hip}
-            onChange={(e) => setHip(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Thigh Circumference
-          <input
-            type="number"
-            value={thighCircumference}
-            onChange={(e) => setThighCircumference(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Knee Circumference
-          <input
-            type="number"
-            value={kneeCircumference}
-            onChange={(e) => setKneeCircumference(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Ankle Circumference
-          <input
-            type="number"
-            value={ankleCircumference}
-            onChange={(e) => setAnkleCircumference(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Waist To Ankle
-          <input
-            type="number"
-            value={waistToAnkle}
-            onChange={(e) => setWaistToAnkle(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Ankle To Knee
-          <input
-            type="number"
-            value={ankleToKnee}
-            onChange={(e) => setAnkleToKnee(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Knee To Thigh
-          <input
-            type="number"
-            value={kneeToThigh}
-            onChange={(e) => setKneeToThigh(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Front Rise
-          <input
-            type="number"
-            value={frontRise}
-            onChange={(e) => setFrontRise(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Back Rise
-          <input
-            type="number"
-            value={backRise}
-            onChange={(e) => setBackRise(e.target.value)}
-            required
-          />
-        </label>
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Wrist
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="wrist"
+              type="number"
+              value={wrist}
+              onChange={(e) => setWrists(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Waist
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="waist"
+              type="number"
+              value={waist}
+              onChange={(e) => setWaists(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Jacket Length
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="jacketLength"
+              type="number"
+              value={jacketLength}
+              onChange={(e) => setJacketLength(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label>
+            Height
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="height"
+              type="number"
+              value={height}
+              onChange={(e) => setHeight(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Hip
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="hip"
+              type="number"
+              value={hip}
+              onChange={(e) => setHip(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Thigh Circumference
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="thighCircumference"
+              type="number"
+              value={thighCircumference}
+              onChange={(e) => setThighCircumference(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Knee Circumference
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="kneeCircumference"
+              type="number"
+              value={kneeCircumference}
+              onChange={(e) => setKneeCircumference(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Ankle Circumference
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="ankleCircumference"
+              type="number"
+              value={ankleCircumference}
+              onChange={(e) => setAnkleCircumference(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Waist To Ankle
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="waistToAnkle"
+              type="number"
+              value={waistToAnkle}
+              onChange={(e) => setWaistToAnkle(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Ankle To Knee
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="ankleToKnee"
+              type="number"
+              value={ankleToKnee}
+              onChange={(e) => setAnkleToKnee(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Knee To Thigh
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="kneeToThigh"
+              type="number"
+              value={kneeToThigh}
+              onChange={(e) => setKneeToThigh(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Front Rise
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="frontRise"
+              type="number"
+              value={frontRise}
+              onChange={(e) => setFrontRise(e.target.value)}
+              required
+            />
+        </div>
+        <div className="measurement-form_input-container">
+          <label className="measurement-form_input-label">
+            Back Rise
+          </label>
+            <input
+              className="measurement-form_input-box"
+              name="backRise"
+              type="number"
+              value={backRise}
+              onChange={(e) => setBackRise(e.target.value)}
+              required
+            />
+        </div>
         <button type="submit">Sign Up</button>
       </form>
     </>
