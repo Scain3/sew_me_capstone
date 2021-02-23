@@ -42,8 +42,17 @@ function Measurements(){
                         <div className="measure measurements-biceps">{` biceps: ${measurements.biceps}`}</div>
                         <div className="measure measurements-wrist">{` wrist: ${measurements.wrist}`}</div>
                         <div className="measure measurements-waist">{` waist: ${measurements.waist}`}</div>
-                        <div className="measure measurements-jacket">{` jacketLength: ${measurements.jacketLength}`}</div>
+                        <div className="measure measurements-jacket">{` jacket length: ${measurements.jacketLength}`}</div>
                         <div className="measure measurements-height">{` height: ${measurements.height}`}</div>
+                        <div className="measure measurements-hip">{` hip: ${measurements.hip}`}</div>
+                        <div className="measure measurements-thigh-circumference">{` thigh circumference: ${measurements.thighCircumference}`}</div>
+                        <div className="measure measurements-knee-circumference">{` knee circumference: ${measurements.kneeCircumference}`}</div>
+                        <div className="measure measurements-ankle-circumference">{` ankle circumference: ${measurements.ankleCircumference}`}</div>
+                        <div className="measure measurements-waist-to-ankle">{` waist to ankle: ${measurements.waistToAnkle}`}</div>
+                        <div className="measure measurements-ankleToKnee">{` ankle to knee: ${measurements.ankleToKnee}`}</div>
+                        <div className="measure measurements-knee-To-Thigh">{` knee to thigh: ${measurements.kneeToThigh}`}</div>
+                        <div className="measure measurements-backrise">{` backrise: ${measurements.backRise}`}</div>
+                        <div className="measure measurements-frontrise">{` frontrise: ${measurements.frontRise}`}</div>
                     </div>
                 ))}
             </div>
