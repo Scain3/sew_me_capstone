@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Redirect } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
+import {fetchAddMeasurements} from "../../store/measurements";
 import './Measurements.css';
 
 
@@ -22,15 +23,23 @@ function MeasurementPage() {
   const [kneeToThigh, setKneeToThigh] = useState("");
   const [frontRise, setFrontRise] = useState("");
   const [backRise, setBackRise] = useState("");
+  const userId = useSelector(state => state.session.user.id);
+  const dispatch = useDispatch();
+  const history = useHistory();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
+    const measurements = {userId, chest, shoulders, sleeves, biceps, wrist, waist, jacketLength,
+      height, hip, thighCircumference, kneeCircumference, ankleCircumference, waistToAnkle, ankleToKnee,
+      kneeToThigh, backRise, frontRise}
+      await dispatch(fetchAddMeasurements(measurements));
+      history.push('/measurements')
   }
 
   return (
     <div className="measurement-div">
       <h1 className="measurement-form__heading">Measurements</h1>
-      <form className="measurement-form">
+      <form className="measurement-form" onSubmit={handleSubmit}>
         <div className="measurement-form_input-container">
           <label className="measurement-form_input-label">
               Chest

@@ -14,7 +14,8 @@ router.get('/', asyncHandler(async(req, res) => {
 //Add your measurements
 router.post('/add-measurements', asyncHandler(async(req, res, next) => {
 
-    const measurements = await Measurements.create({
+    const measurements = await Measurement.create({
+        userId: req.body.userId,
         chest: req.body.chest,
         shoulders: req.body.shoulders,
         sleeves: req.body.sleeves,
@@ -26,6 +27,7 @@ router.post('/add-measurements', asyncHandler(async(req, res, next) => {
         hip: req.body.hip,
         thighCircumference: req.body.thighCircumference,
         kneeCircumference: req.body.kneeCircumference,
+        ankleCircumference: req.body.ankleCircumference,
         waistToAnkle: req.body.waistToAnkle,
         ankleToKnee: req.body.ankleToKnee,
         kneeToThigh: req.body.kneeToThigh,
