@@ -9,6 +9,15 @@ module.exports = (sequelize, DataTypes) => {
     waist: DataTypes.INTEGER,
     jacketLength: DataTypes.INTEGER,
     height: DataTypes.INTEGER,
+    hip: DataTypes.INTEGER,
+    thighCircumference: DataTypes.INTEGER,
+    kneeCircumference: DataTypes.INTEGER,
+    ankleCircumference: DataTypes.INTEGER,
+    waistToAnkle: DataTypes.INTEGER,
+    ankleToKnee: DataTypes.INTEGER,
+    kneeToThigh: DataTypes.INTEGER,
+    backRise: DataTypes.INTEGER,
+    frontRise: DataTypes.INTEGER,
     userId: DataTypes.INTEGER
   }, {});
   Measurement.associate = function(models) {
