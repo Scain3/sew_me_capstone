@@ -33,7 +33,7 @@ function MeasurementPage() {
       height, hip, thighCircumference, kneeCircumference, ankleCircumference, waistToAnkle, ankleToKnee,
       kneeToThigh, backRise, frontRise}
       await dispatch(fetchAddMeasurements(measurements));
-      history.push('/measurements')
+      history.push('/')
   }
 
   return (
