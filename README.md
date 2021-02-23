@@ -70,6 +70,7 @@ corner of the nav bar.
   - Tailor Page
   
 **Database Schema**
+![Database Schema](https://github.com/Scain3/sew_me_capstone/blob/main/sew-me-db.png)
 
 **Frontend Routes** 
 
