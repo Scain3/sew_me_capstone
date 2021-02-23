@@ -17,7 +17,7 @@ function Patterns(){
 
 
     return(
-        <div className="product-container" >
+        <div className="all-product-container" >
             {patterns.map((pattern, index) => (
                 <div key={index} >
                     <div className="pattern-block" onClick={()=>history.push(`/patterns/${pattern.id}`)}>

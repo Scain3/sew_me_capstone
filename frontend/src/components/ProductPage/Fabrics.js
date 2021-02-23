@@ -15,7 +15,7 @@ function Fabrics(){
     }, [dispatch])
 
     return(
-        <div className="product-container" >
+        <div className="all-product-container" >
             {fabrics.map((fabric, index) => (
                 <div key={index} >
                     <div className="pattern-block" onClick={()=>history.push(`/fabrics/${fabric.id}`)}>

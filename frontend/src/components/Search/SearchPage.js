@@ -23,7 +23,7 @@ function SearchPage(){
             ))}</div>
 
             <div className="search-page__divs">{fabricInfo && fabricInfo.map((fabric, index)=> (
-                <div className="product-container" key={index} onClick={()=>history.push(`fabrics/${fabric.id}`)}>
+                <div className="search-product-container" key={index} onClick={()=>history.push(`fabrics/${fabric.id}`)}>
                     <div><img className="search-page__img" src={fabric.image} alt={fabric.type} /></div>
                     <div className="fabric-details">
                         <span className="fabric-color">{fabric.color}</span>
