@@ -44,7 +44,7 @@ module.exports = {
 
       },
       tailorImage: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: true,
       },
       cartId: {

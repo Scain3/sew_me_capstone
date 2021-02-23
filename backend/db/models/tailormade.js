@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
     fabricColor: DataTypes.STRING,
     patternImage: DataTypes.TEXT,
     fabricImage: DataTypes.TEXT,
-    fabricQuantity: DataTypes.STRING,
+    fabricQuantity: DataTypes.INTEGER,
     price: DataTypes.FLOAT
   }, {});
   TailorMade.associate = function(models) {

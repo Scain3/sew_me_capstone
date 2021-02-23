@@ -32,7 +32,7 @@ module.exports = {
         type: Sequelize.TEXT,
       },
       fabricQuantity: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
       },
       price: {
         type: Sequelize.FLOAT,
