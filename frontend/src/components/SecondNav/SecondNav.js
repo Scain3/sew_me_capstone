@@ -11,24 +11,38 @@ function SecondNav(){
     return(
         <div className="clothes-links-container">
 
-                <span className="clothes-links">
+                {/* <span className="clothes-links"> */}
 
-                    <NavLink className="clothes coat" to="/coat" onClick={()=>{dispatch(fetchPatterns())}}>Coat</NavLink>
+                    <div><NavLink className="clothes coat" to="/coat" onClick={()=>{dispatch(fetchPatterns())}}>Coat</NavLink></div>
 
-                    <NavLink className="clothes dress" to="/dress" onClick={()=>{dispatch(fetchPatterns())}}>Dress</NavLink>
+                    <div>
+                        <NavLink className="clothes dress" to="/dress" onClick={()=>{dispatch(fetchPatterns())}}>Dress</NavLink>
+                    </div>
 
-                    <NavLink className="clothes jacket" to="/jacket" onClick={()=>{dispatch(fetchPatterns())}}>Jacket</NavLink>
+                    <div>
+                        <NavLink className="clothes jacket" to="/jacket" onClick={()=>{dispatch(fetchPatterns())}}>Jacket</NavLink>
+                    </div>
 
-                    <NavLink className="clothes jumper" to="/jumper" onClick={()=>{dispatch(fetchPatterns())}}>Jumper</NavLink>
+                    <div>
+                        <NavLink className="clothes jumper" to="/jumper" onClick={()=>{dispatch(fetchPatterns())}}>Jumper</NavLink>
+                    </div>
 
-                    <NavLink className="clothes pants" to="/pants" onClick={()=>{dispatch(fetchPatterns())}}>Pants</NavLink>
+                    <div>
+                        <NavLink className="clothes pants" to="/pants" onClick={()=>{dispatch(fetchPatterns())}}>Pants</NavLink>
+                    </div>
 
-                    <NavLink className="clothes shirt" to="/shirt" onClick={()=>{dispatch(fetchPatterns())}}>Shirt</NavLink>
+                    <div>
+                        <NavLink className="clothes shirt" to="/shirt" onClick={()=>{dispatch(fetchPatterns())}}>Shirt</NavLink>
+                    </div>
 
-                    <NavLink className="clothes skirt" to="/skirt" onClick={()=>{dispatch(fetchPatterns())}}>Skirt</NavLink>
+                    <div>
+                        <NavLink className="clothes skirt" to="/skirt" onClick={()=>{dispatch(fetchPatterns())}}>Skirt</NavLink>
+                    </div>
 
-                    <NavLink className="clothes suit" to="/suit" onClick={()=>{dispatch(fetchPatterns())}}>Suit</NavLink>
-                </span>
+                    <div>
+                        <NavLink className="clothes suit" to="/suit" onClick={()=>{dispatch(fetchPatterns())}}>Suit</NavLink>
+                    </div>
+                {/* </span> */}
 
 
         </div>

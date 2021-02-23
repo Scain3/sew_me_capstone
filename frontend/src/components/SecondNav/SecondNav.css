@@ -1,6 +1,7 @@
 .clothes-links-container{
     position: relative;
     display: flex;
+    justify-content: center;
     /* justify-content: space-between; */
     padding-top: 10px;
     /* margin-left: 0; */
@@ -11,7 +12,7 @@
 }
 .clothes-links{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     /* width: 900px; */
 
 
@@ -20,9 +21,10 @@
 
 
 .clothes{
-    justify-content: center;
-    margin: 0 5.5rem;
+    /* justify-content: center; */
+    /* margin: 0 4rem; */
     color: black;
     font-size: 20px;
     text-decoration: none;
+    margin: 0 80px;
 }
