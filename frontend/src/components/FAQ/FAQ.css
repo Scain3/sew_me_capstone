@@ -19,6 +19,7 @@
 
 .about-me_paragraph{
     background-color: #C89F9C;
+    padding: 20px;
 }
 
 .career-links{
@@ -54,5 +55,3 @@ p{
     margin: 10px;
     border-radius: 50%;
 }
-
-

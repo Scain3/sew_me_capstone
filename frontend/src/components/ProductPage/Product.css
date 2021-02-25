@@ -6,6 +6,13 @@
 
 }
 
+.all-pattern-images{
+    width: 291px;
+    height: 415px;
+    margin: 15px;
+    cursor: pointer;
+}
+
 .images{
     height: 200px;
     width: 200px;
