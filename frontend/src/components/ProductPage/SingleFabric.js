@@ -4,6 +4,7 @@ import { useDispatch, useSelector} from "react-redux";
 
 import {useHistory, useParams} from "react-router-dom";
 import {addItemToCart} from "../../store/cart";
+import {fetchSingleFabric} from "../../store/fabric";
 
 
 
@@ -14,10 +15,15 @@ function SingleFabricPage(){
     const user = useSelector(state => state.session.user);
     const cartId = useSelector(state => state.session.cartId);
     const tailor = useSelector(state => state.tailor);
-
     const {id} = useParams();
+    const singleItem = fabrics[id];
     const dispatch = useDispatch();
     const history = useHistory();
+
+    useEffect(()=> {
+        if(singleItem) return
+        dispatch(fetchSingleFabric(id));
+    }, [id, dispatch, singleItem])
 
 
     const handleClick = () => {
@@ -43,7 +49,7 @@ function SingleFabricPage(){
         history.push('/cart');
     }
 
-    const singleItem = fabrics[id];
+
 
     if(!singleItem){
         return null;
