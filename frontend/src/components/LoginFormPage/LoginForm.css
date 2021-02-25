@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
 }
 .login-form{
     display: flex;
@@ -10,20 +11,27 @@
 }
 
 /* --------- heading --------- */
-.login-form_heading {
+.login-formpage_heading {
     padding-bottom: 10px;
     margin-bottom: 25px;
     border-bottom: 1px #999 solid;
     margin-left: 50px;
 }
 
-/* --------- container --------- */
-.login-form_input-container {
+.login-div{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
+}
+
+/* --------- container --------- */
+.login-formpage_input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
     margin-bottom: 20px;
-    margin-left: 550px;
 }
 
 
@@ -40,15 +48,16 @@
 }
 
 /* --------- buttons --------- */
-.login-form_submit {
+.form-submit_login {
     background-color: white;
     border-style: none;
     border: 2.4px black solid;
     padding: 4px 16px;
-    margin-right: 5px;
-    margin-bottom: 35px;
+    margin: 20px auto;
+    /* margin-right: 5px; */
+    /* margin-bottom: 35px; */
     font-size: 16px;
-    margin-left: 700px;
+    /* margin-left: 700px; */
     width: 100px;
 
 }
