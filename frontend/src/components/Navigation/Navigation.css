@@ -150,5 +150,6 @@ body{
 
 .logout{
   background-color: #C89F9C;
-    border: none;
+  border: none;
+  cursor: ponter;
 }
