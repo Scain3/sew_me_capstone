@@ -43,13 +43,15 @@ button:focus {outline:0;}
 }
 
 /* --------- buttons --------- */
-.signup-form_submit {
+.form_submit {
     background-color: white;
     border-style: none;
     border: 2.4px black solid;
     padding: 4px 16px;
-    margin-left: 150px;
-    margin-bottom: 35px;
+    /* margin-left: 150px; */
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 100px;
     font-size: 16px;
 
 }
