@@ -1,17 +1,27 @@
 .about-me_container{
     display: flex;
     flex-direction: column;
-    margin:  0 425px;
+    justify-content: center;
+    margin: 0 auto;
+    /* margin:  0 425px; */
     width: 800px;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .career-links{
     display: flex;
-    margin: 0 160px;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .my-photo__container{
-    margin: 0 200px;
+    margin: 0 auto;
 }
 
 h1, p{
@@ -25,8 +35,8 @@ p{
 
 
 .gh, .ln, .al{
-    height: 150px;
-    width: 150px;
-    margin: 5px;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
     border-radius: 50%;
 }

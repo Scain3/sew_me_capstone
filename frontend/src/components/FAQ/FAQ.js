@@ -5,11 +5,13 @@ function FAQ(){
 
     return(
         <div className="about-me_container">
-            <h1>Meet the Developer</h1>
-            <p>Hi! My name is Safiya Cain and I created this application as a resource for hobby/craft sewers interested in purchasing sewing patterns, fabrics, and even a tailor made outfit.</p>
-            <p>Please check out my Career Links and contact me for any questions.</p>
-            <div className="my-photo__container">
-                <img src="https://avatars.githubusercontent.com/u/64106105?s=400&u=f537834802f6cc9966c0a3e8d62d3b44434710fd&v=4" alt="my-photo" />
+            <div className="about-me">
+                <h1>Meet the Developer</h1>
+                <div className="my-photo__container">
+                    <img src="https://avatars.githubusercontent.com/u/64106105?s=400&u=f537834802f6cc9966c0a3e8d62d3b44434710fd&v=4" alt="my-photo" />
+                </div>
+                <p>Hi! My name is Safiya Cain and I created this application as a resource for hobby/craft sewers interested in purchasing sewing patterns, fabrics, and even a tailor made outfit.</p>
+                <p>Please check out my Career Links and contact me for any questions.</p>
             </div>
             <div className="career-links">
                 <a className="gh-link" href="https://github.com/Scain3">
