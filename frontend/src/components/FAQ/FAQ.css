@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    /* margin:  0 425px; */
     width: 800px;
 }
 
@@ -12,6 +11,14 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+}
+
+.about-me_header{
+
+}
+
+.about-me_paragraph{
+    background-color: #C89F9C;
 }
 
 .career-links{
@@ -34,9 +41,18 @@ p{
 
 
 
-.gh, .ln, .al{
+/* .gh, .ln, .al{
     height: 80px;
     width: 80px;
     margin: 10px;
     border-radius: 50%;
+} */
+
+.fab{
+    height: 100px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
 }
+
+
