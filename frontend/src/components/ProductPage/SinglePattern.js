@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams, useHistory } from "react-router-dom";
 import { addItemToCart } from "../../store/cart";
 
-import { fetchPatterns } from "../../store/pattern";
+import { fetchSinglePattern } from "../../store/pattern";
 
 import {tailorProductInfo} from "../../store/tailor";
 
@@ -18,10 +18,12 @@ function SinglePatternPage(){
     const { id } = useParams();
     const dispatch = useDispatch();
     const history = useHistory();
+    const singleItem = patterns[id];
 
-    // useEffect(()=> {
-    //     dispatch(fetchPatterns());
-    // }, [dispatch])
+    useEffect(()=> {
+        if(singleItem) return
+        dispatch(fetchSinglePattern(id));
+    }, [id, dispatch, singleItem])
 
     const handleClick = () => {
         if(!user){
@@ -47,7 +49,7 @@ function SinglePatternPage(){
         history.push('/cart');
     }
 
-    const singleItem = patterns[id];
+
 
     if(!singleItem){
         return null;
