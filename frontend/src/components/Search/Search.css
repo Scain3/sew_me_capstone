@@ -1,3 +1,7 @@
+.nav-search__form{
+    background-color: white;
+}
+
 .search-page__container{
 
 }
@@ -51,6 +55,12 @@ font-weight: bold;
     cursor: pointer;
 }
 
+.nav-search__input{
+    border: none;
+}
+
 .nav-search__submit{
     cursor: pointer;
+    background: none;
+    border: none;
 }
