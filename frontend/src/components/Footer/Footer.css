@@ -2,7 +2,7 @@
 .footer-container {
     display: flex;
     width: 100%;
-    background-color: #111;
+    background-color: #C89F9C;
     color: white;
 }
 
@@ -87,4 +87,8 @@
     to {
         -webkit-mask-position: -50%;
     }
+}
+
+.fab{
+    margin-bottom: -70px;
 }
