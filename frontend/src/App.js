@@ -101,9 +101,9 @@ function App() {
           <Route path="/fabrics" exact={true}>
             <Fabrics />
           </Route>
-          <Footer />
         </Switch>
       )}
+      <Footer />
     </BrowserRouter>
   );
 }
