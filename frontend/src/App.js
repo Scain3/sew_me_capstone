@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import SignupFormPage from "./components/SignupFormPage";
 import LoginFormPage from "./components/LoginFormPage/index";
 import * as sessionActions from "./store/session";
@@ -24,6 +24,7 @@ import Measurement from "./components/Measurements/Measurements";
 import MeasurementPage from "./components/MeasurementsModal/Measurement";
 import Patterns from "./components/ProductPage/Patterns";
 import Fabrics from "./components/ProductPage/Fabrics";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const dispatch = useDispatch();
@@ -33,7 +34,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <>
+    <BrowserRouter>
       <Navigation isLoaded={isLoaded} />
       {isLoaded && (
         <Switch>
@@ -100,9 +101,10 @@ function App() {
           <Route path="/fabrics" exact={true}>
             <Fabrics />
           </Route>
+          <Footer />
         </Switch>
       )}
-    </>
+    </BrowserRouter>
   );
 }
 
