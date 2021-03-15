@@ -5,13 +5,7 @@ import {removeItemFromCart, purchaseItemsFromCart} from "../../store/cart";
 
 function ShoppingCart(){
     const history = useHistory();
-    const user = useSelector(state => state.session.user);
-    //const userId = user.id;
-    //console.log('userId:', user.id)
     const cartItems = useSelector(state => Object.values(state.cart));
-    const cart = useSelector(state => state.cart);
-    console.log('cartItems', cartItems);
-    console.log('cart', cart);
     const dispatch = useDispatch();
 
     const purchase = () => {
