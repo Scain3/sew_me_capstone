@@ -302,6 +302,66 @@ module.exports = {
         price: 18.99,
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Vogue',
+        patternNumber: 'V9278',
+        patternType: 'dress',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81we8Y9qwjL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/81wIpbWIGgL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/91TuzzYGOhL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/71feLmyV54L._AC_SX522_.jpg',
+        price: 13.35,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M7745',
+        patternType: 'dress',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/91PLdmrufmL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/91PLdmrufmL._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/916zI9ef%2BwL._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/916zI9ef%2BwL._AC_SX522_.jpg',
+        price: 7.20,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M7719',
+        patternType: 'dress',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81I45xor3ML._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/81QA-nHWcIL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/8169mqGzMpL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81i2fRzm-rL._AC_SX522_.jpg',
+        price: 18.99,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M7352',
+        patternType: 'dress',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81jQndn4bQL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/41qMgaxKGTL._AC_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/41cMAxJ4mcL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/41xmD49FqtL._AC_.jpg',
+        price: 12.50,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '8014',
+        patternType: 'dress',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/91GIBa2YzEL._AC_SY741_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/91ajPnRyhdL._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/61gSBOGDacL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/61vzTOzpi%2BL._AC_.jpg',
+        price: 6.09,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
 ], {});
 
