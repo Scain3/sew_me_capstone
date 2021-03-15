@@ -25,6 +25,7 @@ import MeasurementPage from "./components/MeasurementsModal/Measurement";
 import Patterns from "./components/ProductPage/Patterns";
 import Fabrics from "./components/ProductPage/Fabrics";
 import Footer from "./components/Footer/Footer";
+import ConfirmPurchase from "./components/ShoppingCart/ConfirmPurchase";
 
 function App() {
   const dispatch = useDispatch();
@@ -100,6 +101,9 @@ function App() {
           </Route>
           <Route path="/fabrics" exact={true}>
             <Fabrics />
+          </Route>
+          <Route path="/confirm-purchase">
+            <ConfirmPurchase />
           </Route>
         </Switch>
       )}

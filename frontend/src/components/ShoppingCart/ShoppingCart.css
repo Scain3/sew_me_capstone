@@ -30,3 +30,22 @@
 .fa-shopping-cart{
     cursor: pointer;
 }
+
+.confirm-purchase-div{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.confirm-purchase-greeting{
+    margin: 0 auto;
+}
+
+.confirm-purchase-heading{
+
+}
+
+.confirm-purchase-paragraph{
+
+}
