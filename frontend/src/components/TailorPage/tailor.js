@@ -44,6 +44,7 @@ function Tailor(){
             tailorItem.id && <div className="price_and_buttons">
                 <h3 className="div_button">Price</h3>
                 <div className="div_button">${tailorItem.price}</div>
+                {tailorItem.id && !tailorItem.fabricId && <div className="div_button"><button className="button" onClick={()=>history.push(`fabrics`)}>Add Fabric</button></div>}
                 <div className="div_button"><button className="button" onClick={moveToCart}>Add To Cart</button></div>
                 <div className="div_button"><button className="button" onClick={()=>{dispatch(removeTailoredProduct(tailorItem.id))}}>Remove</button></div>
             </div>
