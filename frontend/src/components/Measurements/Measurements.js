@@ -12,7 +12,6 @@ function Measurements(){
     }
 
     const userId = user.id;
-    console.log("user", user);
 
 
 
