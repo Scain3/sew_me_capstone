@@ -3,6 +3,9 @@ import {useSelector} from "react-redux";
 function ConfirmPurchase(){
     const user = useSelector(state => state.session.user);
     console.log('user', user);
+    if(!user){
+        return null
+    }
     return(
         <div className='confirm-purchase-div'>
             <div className='confirm-purchase-greeting'>{`Hey ${user.username}`}</div>
