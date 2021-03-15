@@ -242,6 +242,66 @@ module.exports = {
         price: 12.95,
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Vogue',
+        patternNumber: 'V9340',
+        patternType: 'coat',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81J3su-w%2BqL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/717Z2QSle7L._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/71ZI6TK9Z3L._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81xiFypZOkL._AC_SY741_.jpg',
+        price: 15.29,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Vogue',
+        patternNumber: 'V9043',
+        patternType: 'coat',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/613G7X%2BRoiL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/81DcynZ-D5L._AC_SY679_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/416x7FU-PPL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/51uIA2yd1ZL._AC_.jpg',
+        price: 16.95,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M7373',
+        patternType: 'coat',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/91Oh8uwdVzL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/61hYYwRyowL._AC_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/61INhpcPxeL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81WrGIpX9UL._AC_SX522_.jpg',
+        price: 4.75,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '8482',
+        patternType: 'coat',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81%2BtZ79ofqL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/8142U7nQY8L._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/81TU6IinrGL._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/91IRRHEj1XL._AC_SX522_.jpg',
+        price: 12.79,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M7374',
+        patternType: 'coat',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/8101zffsseL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/51Gmn3E90CL._AC_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/41jhqzv0SOL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81gfdax6HJL._AC_SX522_.jpg',
+        price: 18.99,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
 ], {});
 
