@@ -54,7 +54,7 @@ function ShoppingCart(){
                 }, 0)}
                 </span>
             </h1>
-            <button onClick={purchase}>Purchase</button>
+            <button className="button" onClick={purchase}>Purchase</button>
         </div>
     )
 }

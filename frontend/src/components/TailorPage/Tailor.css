@@ -47,6 +47,8 @@
 }
 
 .button{
-    background-color: #C89F9C;
+    background-color: #C97C5D;
     border: none;
+    width: 80px;
+    margin: 10px auto;
 }
