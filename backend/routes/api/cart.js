@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const asyncHandler = (handler) => (req, res, next) => handler(req, res, next).catch(next);
-const { CartItem, Cart  } = require("../../db/models");
+const { User, CartItem, Cart  } = require("../../db/models");
 
 //Add To Cart
 router.post('/', asyncHandler(async(req, res) => {
@@ -27,6 +27,13 @@ router.delete('/:id(\\d+)', asyncHandler(async(req, res, next) => {
 }))
 
 //Purchase an Item
+router.delete('/:id(\\d+)', asyncHandler(async(req, res, next) => {
+    const cart = await CartItem.findAll();
+    await cart.destroy();
+    res.json({
+        cart,
+    })
+}))
 // router.post('/', asyncHandler(async(req, res) => {
 //     const {user} = req;
 //     const cart = await Cart.create({

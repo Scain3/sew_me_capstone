@@ -1,11 +1,24 @@
 import { useSelector, useDispatch} from "react-redux";
+import { useHistory } from "react-router-dom";
 import './ShoppingCart.css';
 import {removeItemFromCart, purchaseItemsFromCart} from "../../store/cart";
 
 function ShoppingCart(){
+    const history = useHistory();
+    const user = useSelector(state => state.session.user);
+    //const userId = user.id;
+    //console.log('userId:', user.id)
     const cartItems = useSelector(state => Object.values(state.cart));
+    const cart = useSelector(state => state.cart);
+    console.log('cartItems', cartItems);
+    console.log('cart', cart);
     const dispatch = useDispatch();
 
+    const purchase = () => {
+        dispatch(purchaseItemsFromCart({cart}));
+        //console.log('userId:', user.id);
+        //return history.push('/confirm-purchase');
+    }
 
     return(
         <div className="cart-container">
@@ -44,7 +57,7 @@ function ShoppingCart(){
                 }, 0)}
                 </span>
             </h1>
-            {/* <button onClick={()=>dispatch(purchaseItemsFromCart(cartItems))}>Purchase</button> */}
+            <button onClick={purchase}>Purchase</button>
         </div>
     )
 }
