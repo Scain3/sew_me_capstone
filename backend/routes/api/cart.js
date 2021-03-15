@@ -28,10 +28,10 @@ router.delete('/:id(\\d+)', asyncHandler(async(req, res, next) => {
 
 //Purchase an Item
 router.delete('/:id(\\d+)', asyncHandler(async(req, res, next) => {
-    const cart = await CartItem.findAll();
-    await cart.destroy();
+    const cartItem = await CartItem.findByPk(req.params.id);
+    await cartItem.destroy();
     res.json({
-        cart,
+        message: 'Success!'
     })
 }))
 // router.post('/', asyncHandler(async(req, res) => {

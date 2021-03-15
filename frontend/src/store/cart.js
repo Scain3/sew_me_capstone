@@ -20,10 +20,10 @@ const removeFromCart = (id) => {
     }
 }
 
-const purchaseItems = (cart) => {
+const purchaseItems = (id) => {
     return{
         type: PURCHASE_ITEMS,
-        payload: cart
+        payload: id
     }
 }
 
@@ -52,11 +52,13 @@ export const removeItemFromCart = (id) => async(dispatch) => {
 }
 
 //Thunk action for purchasing items
-export const purchaseItemsFromCart = () => async(dispatch) => {
-    const response = await fetch(`/api/cart/`, {
-        method: 'DELETE',
+export const purchaseItemsFromCart = (id) => async(dispatch) => {
+    await fetch(`/api/cart/${id}`, {
+        method: 'DELETE'
+
+
     })
-    dispatch(purchaseItems(response.data.cart))
+    dispatch(removeFromCart(id))
 }
 
 const cartReducer = (state={}, action) => {

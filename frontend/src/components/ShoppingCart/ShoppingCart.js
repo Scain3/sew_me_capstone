@@ -15,9 +15,12 @@ function ShoppingCart(){
     const dispatch = useDispatch();
 
     const purchase = () => {
-        dispatch(purchaseItemsFromCart({cart}));
-        //console.log('userId:', user.id);
-        //return history.push('/confirm-purchase');
+        cartItems.map(cartItem => (
+            <div>
+                {dispatch(purchaseItemsFromCart(cartItem.id))}
+            </div>
+        ))
+        return history.push('/confirm-purchase');
     }
 
     return(
