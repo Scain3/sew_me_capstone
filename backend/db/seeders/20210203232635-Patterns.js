@@ -542,6 +542,66 @@ module.exports = {
         price: 12.12,
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M79585',
+        patternType: 'shirt',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81SvAhSs5xL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/71-XQue4esL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/91NNvtvzH5L._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/816xKrseFKL._AC_SX522_.jpg',
+        price,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '1544',
+        patternType: 'shirt',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/919BDmM33XL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/81a7VHpfejL._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/71rDwuxH80L._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/911V261zlCL._AC_SX522_.jpg',
+        price: 10.27,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '8180',
+        patternType: 'shirt',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/71%2B1EqLd-6L._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/81s3oijFIlL._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/61yeYHp2PoL._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/71%2BREKtHbSL._AC_SX522_.jpg',
+        price: 10.95,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Butterick',
+        patternNumber: 'B4486',
+        patternType: 'shirt',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/51s712riVkL._AC_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/81qxIgfLBNL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/81qxIgfLBNL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/51s712riVkL._AC_.jpg',
+        price: 7.35,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M6548',
+        patternType: 'shirt',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/71h2zeO3upL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/41tUsX9B7ML._AC_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/51jx94vU-ML._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/51jx94vU-ML._AC_.jpg',
+        price: 10.03,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
 ], {});
 
