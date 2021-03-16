@@ -662,6 +662,66 @@ module.exports = {
         price: 11.59,
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: 'S8899',
+        patternType: 'suit',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81yOFZaI3oL._AC_SY741_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/713POwc-vqL._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/81LWI8flQUL._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/910gjlE%2BHYL._AC_SX522_.jpg',
+        price: 11.99,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: '8256',
+        patternType: 'suit',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/51WFVGE9EzL._AC_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/51WFVGE9EzL._AC_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/51WFVGE9EzL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/51WFVGE9EzL._AC_.jpg',
+        price: 9.99,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: '5335',
+        patternType: 'suit',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/71xlWbyShlL._AC_SY679_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/51RrtjO4tSL._AC_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/51RrtjO4tSL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/512zkwDt4NL._AC_.jpg',
+        price: 14.99,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Butterick',
+        patternNumber: '3628',
+        patternType: 'suit',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/71jB5yzDQvL._AC_SY879_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/71jB5yzDQvL._AC_SY879_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/71pYVBfVZ2L._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/71pYVBfVZ2L._AC_SX522_.jpg',
+        price: 10.95,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '1324',
+        patternType: 'suit',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/7138WYFCfQL._AC_SY741_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/81sUN5X1UUL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/61UgwgXnRzL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/71iCpjkFMkL._AC_SX522_.jpg',
+        price: 17.16,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
 ], {});
 
