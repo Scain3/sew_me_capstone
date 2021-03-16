@@ -362,7 +362,67 @@ module.exports = {
         price: 6.09,
         createdAt: new Date(),
         updatedAt: new Date()
-      }
+      },
+      {
+        patternCompany: 'Vogue',
+        patternNumber: 'V9212',
+        patternType: 'jacket',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/811JIEtWOQL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/A1WXkOj0GzL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/81zzge609oL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/712JlyY1QPL._AC_SX522_.jpg',
+        price: 14.33,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M7637',
+        patternType: 'jacket',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/911jxfSjGoL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/817gsA-bH%2BL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/919GzPoae5L._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81MyFxwFqwL._AC_SX522_.jpg',
+        price: 14.05,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: 'S8845',
+        patternType: 'jacket',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/71GtEXTW36L._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/61W56NNmrWL._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/71cL-lJUWLL._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/71PVZSjLb8L._AC_SX522_.jpg',
+        price: 12.07,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M7513',
+        patternType: 'jacket',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81FOC9rZZ-L._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/91T3%2BDihQcL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/81W3p-k-FDL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81YxJqLoIJL._AC_SX522_.jpg',
+        price: 12.44,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Vogue',
+        patternNumber: 'V9097',
+        patternType: 'jacket',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/71b%2BQ8X30NL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/41yNTvW-mdL._AC_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/41ZbAGKfnoL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81TNVfJhfcL._AC_SY679_.jpg',
+        price: 15.09,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
 ], {});
 
   },
