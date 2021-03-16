@@ -423,6 +423,66 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M7831',
+        patternType: 'jumper',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81qr%2BjDvEtL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/81eiT1OlerL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/811cPDN%2BrpL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81r6hBjZSBL._AC_SX522_.jpg',
+        price: 11.77,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '2539',
+        patternType: 'jumper',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/61cJQ9gn6yL._AC_SY741_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/61272HdnhlL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/61272HdnhlL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/91vydR7y6HL._AC_SX522_.jpg',
+        price: 14.90,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M7459',
+        patternType: 'jumper',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81-RUbF7KVL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/51oYrZaK-CL._AC_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/51Wgdb4BFuL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81nY9rDKGiL._AC_SX522_.jpg',
+        price: 10.95,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '8142',
+        patternType: 'jumper',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/71h0OyzAHuL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/610UmSNVVYL._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/610UmSNVVYL._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/715H5BGsRcL._AC_SX522_.jpg',
+        price: 12.95,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '1075',
+        patternType: 'jumper',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81W%2BnBNBvPL._AC_SY741_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/716NKyr5MAL._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/716NKyr5MAL._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/716NKyr5MAL._AC_SX522_.jpg',
+        price: 9.33,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
 ], {});
 
   },
