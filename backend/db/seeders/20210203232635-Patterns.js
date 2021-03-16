@@ -602,6 +602,66 @@ module.exports = {
         price: 10.03,
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '1369',
+        patternType: 'skirt',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/61rieRyxDVL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/61P%2B8TExFLL._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/61P%2B8TExFLL._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81ohzT745eL._AC_SX522_.jpg',
+        price: 12.59,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '1110',
+        patternType: 'skirt',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/71JSvsdKbaL._AC_SY741_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/61ry52TxbjL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/61ry52TxbjL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/51B0eNmYBaL._AC_.jpg',
+        price: 10.54,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '6346',
+        patternType: 'skirt',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/61z60LhPKdL._AC_SY741_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/61Ckm1%2BWqJL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/61Ckm1%2BWqJL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/71nMSY-GzCL._AC_SX522_.jpg',
+        price: 10.19,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '6843',
+        patternType: 'skirt',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/61mrRI1jXXL._AC_SY741_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/91o6FkA3EEL._AC_SY679_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/61qNgpbYPEL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/81mN0ukYTqL._AC_SX522_.jpg',
+        price: 12.24,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '2314',
+        patternType: 'skirt',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/7142Ui-Jo%2BL._AC_SY741_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/61wDGzxjiNL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/61wDGzxjiNL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/91Pcf5xVetL._AC_SX522_.jpg',
+        price: 11.59,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
 ], {});
 
