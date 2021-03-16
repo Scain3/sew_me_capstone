@@ -551,7 +551,7 @@ module.exports = {
         image2: 'https://images-na.ssl-images-amazon.com/images/I/71-XQue4esL._AC_SY741_.jpg',
         image3: 'https://images-na.ssl-images-amazon.com/images/I/91NNvtvzH5L._AC_SY741_.jpg',
         image4: 'https://images-na.ssl-images-amazon.com/images/I/816xKrseFKL._AC_SX522_.jpg',
-        price,
+        price: 9.95,
         createdAt: new Date(),
         updatedAt: new Date()
       },
