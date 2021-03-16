@@ -482,6 +482,66 @@ module.exports = {
         price: 9.33,
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '8134',
+        patternType: 'pants',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/713iG4WHTwL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/61GWk6j5u1L._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/61GWk6j5u1L._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/719PK7mzfEL._AC_SX522_.jpg',
+        price: 12.67,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M6901',
+        patternType: 'pants',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/710jyOlgRyL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/711mFbd6BfL._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/711mFbd6BfL._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/711mFbd6BfL._AC_SX522_.jpg',
+        price: 11.86,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '8056',
+        patternType: 'pants',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/618WnTS00dL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/51K3ICzKvBL._AC_SY741_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/51K3ICzKvBL._AC_SY741_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/71AWcjVWE4L._AC_SX522_.jpg',
+        price: 10.04,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'Simplicity',
+        patternNumber: '8268',
+        patternType: 'pants',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/81RQC%2BNUOIL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/71ZQM2ATBFL._AC_SX522_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/71gYnZufpiL._AC_SX522_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/91ZJlXiBu2L._AC_SX522_.jpg',
+        price: 12.40,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        patternCompany: 'McCall',
+        patternNumber: 'M7757',
+        patternType: 'pants',
+        image1: 'https://images-na.ssl-images-amazon.com/images/I/91YX%2BIsU%2BzL._AC_SX522_.jpg',
+        image2: 'https://images-na.ssl-images-amazon.com/images/I/314iP-4M8hL._AC_.jpg',
+        image3: 'https://images-na.ssl-images-amazon.com/images/I/314iP-4M8hL._AC_.jpg',
+        image4: 'https://images-na.ssl-images-amazon.com/images/I/91gGF7k1J%2BL._AC_SX522_.jpg',
+        price: 12.12,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
 ], {});
 
