@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         type: 'wool',
-        color: 'black',
+        color: 'black plaid',
         price: 7.38,
         image: 'https://images-na.ssl-images-amazon.com/images/I/A1DzIxVtazL._AC_SY450_.jpg',
         createdAt: new Date(),
@@ -282,7 +282,48 @@ module.exports = {
         image: 'https://images-na.ssl-images-amazon.com/images/I/81NXYQ-nXQL._AC_SX425_.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
-      }
+      },
+      {
+        type: 'wool',
+        color,
+        price,
+        image,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'wool',
+        color: 'green plaid',
+        price: 22.67,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/61MMzZ0z-9L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'wool',
+        color: 'red plaid',
+        price: 18.65,
+        image: 'https://m.media-amazon.com/images/I/81smc6yTumL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'wool',
+        color: 'hunter green',
+        price: 18.99,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/51qVchVyNEL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'wool',
+        color: 'blue plaid',
+        price: 13.04,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/710P8CmzaeL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      
 
 ], {});
 
