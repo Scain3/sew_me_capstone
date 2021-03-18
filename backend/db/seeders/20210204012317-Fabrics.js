@@ -242,6 +242,46 @@ module.exports = {
         image: 'https://m.media-amazon.com/images/I/91KkwEJdbyL._AC_SX425_.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        type: 'velvet',
+        color: 'wine',
+        price: 7.59,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/71Qj9Ajrq4L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'velvet',
+        color: 'burgundy',
+        price: 10.13,
+        image: 'https://m.media-amazon.com/images/I/7131nU8P0XL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'velvet',
+        color: 'royal',
+        price: 8.63,
+        image: 'https://m.media-amazon.com/images/I/A1xI9bQZr2L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'velvet',
+        color: 'hunter green',
+        price: 8.18,
+        image: 'https://m.media-amazon.com/images/I/818YJLgURvL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'velvet',
+        color: 'olive green',
+        price: 16.95,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/81NXYQ-nXQL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
 
 ], {});
