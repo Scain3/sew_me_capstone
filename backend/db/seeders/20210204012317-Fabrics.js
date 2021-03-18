@@ -82,7 +82,12 @@ module.exports = {
         image: 'https://images-na.ssl-images-amazon.com/images/I/81mXuf1hmRL._AC_SY450_.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-      }
+      },
+      {},
+      {},
+      {},
+      {},
+      {}
 
 ], {});
 
