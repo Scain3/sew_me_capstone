@@ -323,7 +323,103 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
-      
+      {
+        type: 'twill',
+        color: 'navy arrow',
+        price: 10.33,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/71PLXFGyYwL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'twill',
+        color: 'mint',
+        price: 12.05,
+        image: 'https://m.media-amazon.com/images/I/51Lrv-5FDXL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'twill',
+        color: 'white ecru',
+        price: 12.04,
+        image: 'https://m.media-amazon.com/images/I/71BQ1olr-3L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'twill',
+        color: 'storm',
+        price: 8.97,
+        image: 'https://m.media-amazon.com/images/I/91fZJRdm53L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'twill',
+        color: 'black',
+        price: 16.00,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/51pURs9uqJL._AC_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'denim',
+        color: 'navy',
+        price: 8.03,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/B1-M7CZdCYS._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'denim',
+        color,
+        price,
+        image,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'denim',
+        color,
+        price,
+        image,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'denim',
+        color: 'light',
+        price: 12.00,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/A1CLhbxFYUL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'tweed',
+        color: 'spa',
+        price: 12.55,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/A1Ok1NmbNaL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'tweed',
+        color: 'coral pink',
+        price: 18.15,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/91jUmklVyML._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'tweed',
+        color: 'ivory bush',
+        price: 16.81,
+        image: 'https://m.media-amazon.com/images/I/91gXhntAuRL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
+
 
 ], {});
 
