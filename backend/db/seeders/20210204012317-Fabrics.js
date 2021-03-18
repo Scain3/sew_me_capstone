@@ -122,6 +122,86 @@ module.exports = {
         image: 'https://images-na.ssl-images-amazon.com/images/I/71oyL-TqlqL._AC_SX425_.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        type: 'silk',
+        color: 'dark violet',
+        price: 24.99,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/51-vbdjHaNL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'silk',
+        color: 'white',
+        price: 23.99,
+        image: 'https://m.media-amazon.com/images/I/51l5S64sF4L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'silk',
+        color: 'cream',
+        price: 24.99,
+        image: 'https://m.media-amazon.com/images/I/61780OL57NL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'silk',
+        color: 'icy morn',
+        price: 24.99,
+        image: 'https://m.media-amazon.com/images/I/61x7Vk44WrL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'silk',
+        color: 'tango red',
+        price: 24.99,
+        image: 'https://m.media-amazon.com/images/I/61DAjmiA38L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'chiffon',
+        color: 'pink blush',
+        price: 39.90,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/51HCqat-Q5L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'chiffon',
+        color: 'black',
+        price: 39.90,
+        image: 'https://m.media-amazon.com/images/I/51ej-X16OlL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'chiffon',
+        color: 'dark coral',
+        price: 37.47,
+        image: 'https://m.media-amazon.com/images/I/517fGvP361L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'chiffon',
+        color: 'lilac',
+        price: 39.90,
+        image: 'https://m.media-amazon.com/images/I/51YAb8Yrc9L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'chiffon',
+        color: 'light grey',
+        price: 39.90,
+        image: 'https://m.media-amazon.com/images/I/51YAb8Yrc9L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
 
 ], {});
