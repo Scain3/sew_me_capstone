@@ -83,11 +83,46 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
       },
-      {},
-      {},
-      {},
-      {},
-      {}
+      {
+        type: 'cotton',
+        color: 'black',
+        price: 6.01,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/61LvZk%2Bk%2BHL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'cotton',
+        color: 'ivory',
+        price: 6.35,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/91ZHUFNge3L._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'cotton',
+        color: 'leopard',
+        price: 12.99,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/81h9IO7YK2L._AC_SX569_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'cotton',
+        color: 'red',
+        price: 6.35,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/51paRt0SLiL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'cotton',
+        color: 'red sugar skulls',
+        price: 4.99,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/71oyL-TqlqL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
 
 ], {});
 
