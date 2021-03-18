@@ -205,14 +205,6 @@ module.exports = {
       },
       {
         type: 'linen',
-        color,
-        price,
-        image,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: 'linen',
         color: 'white',
         price: 9.14,
         image: 'https://images-na.ssl-images-amazon.com/images/I/51FvTfYUyUL._AC_SX425_.jpg',
@@ -280,14 +272,6 @@ module.exports = {
         color: 'olive green',
         price: 16.95,
         image: 'https://images-na.ssl-images-amazon.com/images/I/81NXYQ-nXQL._AC_SX425_.jpg',
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: 'wool',
-        color,
-        price,
-        image,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -373,22 +357,6 @@ module.exports = {
       },
       {
         type: 'denim',
-        color,
-        price,
-        image,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: 'denim',
-        color,
-        price,
-        image,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: 'denim',
         color: 'light',
         price: 12.00,
         image: 'https://images-na.ssl-images-amazon.com/images/I/A1CLhbxFYUL._AC_SX425_.jpg',
@@ -419,7 +387,6 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       }
-
 
 ], {});
 
