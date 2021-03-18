@@ -202,6 +202,46 @@ module.exports = {
         image: 'https://m.media-amazon.com/images/I/51YAb8Yrc9L._AC_SX425_.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        type: 'linen',
+        color,
+        price,
+        image,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'linen',
+        color: 'white',
+        price: 9.14,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/51FvTfYUyUL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'linen',
+        color: 'bordeaux',
+        price: 9.18,
+        image: 'https://m.media-amazon.com/images/I/71grqwZkcrL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'linen',
+        color: 'carot',
+        price: 8.15,
+        image: 'https://m.media-amazon.com/images/I/91X+efziTpL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: 'linen',
+        color: 'kelly green',
+        price: 9.59,
+        image: 'https://m.media-amazon.com/images/I/91KkwEJdbyL._AC_SX425_.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
 
 ], {});
