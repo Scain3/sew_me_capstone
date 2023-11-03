@@ -73,4 +73,14 @@ app.use((err, _req, res, _next) => {
   });
 });
 
+var myEmitter = new (require('events').EventEmitter)();
+
+// add this handler before emitting any events
+process.on('uncaughtException', function (err) {
+    console.log('UNCAUGHT EXCEPTION - keeping process alive:', err); // err.message is "foobar"
+});
+
+myEmitter.emit('error', new Error('foobar'));
+
+
 module.exports = app;
