@@ -36,7 +36,7 @@ function ProfileButton({ user }) {
         <ShoppingCartIcon />
       </div>
       <button className="profile-button" onClick={openMenu}>
-        <img className="profile-photo" src="https://images.pexels.com/photos/6389355/pexels-photo-6389355.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="profile-photo" />
+        <img className="profile-photo" src="https://images.pexels.com/photos/6389355/pexels-photo-6389355.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="profile" />
       </button>
       {showMenu && (
         <ul className="profile-dropdown">

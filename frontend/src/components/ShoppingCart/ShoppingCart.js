@@ -44,7 +44,7 @@ function ShoppingCart(){
 
 
             ))}</div>
-            <h1 className="total">{"Total:" + " " }
+            <h1 className="total">{"Total:  " }
                 <span>${cartItems.reduce((currentSum, cartItem) => {
                         const price = parseFloat(cartItem.patternPrice) + parseFloat(cartItem.fabricPrice) + parseFloat(cartItem.tailorPrice)
 

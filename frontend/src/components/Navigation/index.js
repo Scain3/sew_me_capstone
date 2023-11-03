@@ -6,7 +6,6 @@ import LoginFormModal from '../LoginFormModal';
 import SignupFormModal from '../SignupFormModal';
 import './Navigation.css';
 import SearchBar from '../Search/SearchBar';
-import ShoppingCartIcon from '../ShoppingCart/ShoppingIcon';
 import SecondNav from '../SecondNav/SecondNav';
 import {login} from '../../store/session';
 
@@ -14,7 +13,7 @@ import {login} from '../../store/session';
 function Navigation({ isLoaded }){
   const dispatch = useDispatch();
   const sessionUser = useSelector(state => state.session.user);
-  const [errors, setErrors] = useState([]);
+  const [setErrors] = useState([]);
 
   const demoLogin = () => {
     const email = 'demo@user.io';
