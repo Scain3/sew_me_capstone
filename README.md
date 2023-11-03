@@ -1,5 +1,7 @@
 #Sew-Me
 
+Link: https://sew-me.herokuapp.com/
+
 Sew me is an application that allows users to feel a part of the creation process when purchasing customized clothing. 
 The customer can pick out a pattern that has fabric type and length recommendations based on the type of garment or the size of the garment the user requires. 
 After selecting the clothing pattern, the user is then prompted to pick out the fabric that they would like each part of their garment to be sewn with. 
