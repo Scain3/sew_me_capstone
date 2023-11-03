@@ -154,6 +154,6 @@ body{
   cursor: ponter;
 }
 
-@media screen {
-  
+@media screen and (max-width: 1400px){
+
 }
